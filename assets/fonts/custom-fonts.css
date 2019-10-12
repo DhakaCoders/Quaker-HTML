@@ -1,0 +1,12 @@
+
+@font-face {
+  font-family: 'PFCatalog-Regular';
+  src: url('PFCatalog-Regular/PFCatalog-Regular.eot?#iefix') format('embedded-opentype'),
+    url('PFCatalog-Regular/PFCatalog-Regular.otf')  format('opentype'),
+	url('PFCatalog-Regular/PFCatalog-Regular.woff') format('woff'),
+	url('PFCatalog-Regular/PFCatalog-Regular.ttf')  format('truetype'), 
+	url('PFCatalog-Regular/PFCatalog-Regular.svg#PFCatalog-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

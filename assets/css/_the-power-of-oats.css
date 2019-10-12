@@ -1,0 +1,140 @@
+.qk-banner-sec-wrp{
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center center !important;
+	height: 900px !important;
+	padding-top: 300px;
+}
+.qk-banner-dsc{
+	max-width: 600px;
+	width: 100%;
+	font-size: 16px;
+	line-height: 22px;
+	padding-left: 95px;
+}
+
+.qk-banner-dsc strong{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 70px;
+	line-height: 75px;
+	font-family: 'PFCatalog-Regular';
+	margin-bottom: 28px;
+}
+/*
+--------------------------
+pk-two-grid-sec-wrp
+--------------------------
+*/
+.pk-two-grid-sec-wrp{
+	padding-top: 115px;
+	background-image: url(../images/two-grid-bg.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+.enti-hdr{
+	max-width: 650px;
+	width: 100%;
+	margin: 0 auto;
+}
+.enti-hdr h3{
+	margin: 0;
+	line-height: 45px;
+	font-family: 'PFCatalog-Regular';
+	color: #002853;
+	text-align: center;
+}
+.pk-two-plate-wrp{
+	padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 150px;
+}
+.pk-two-plate-wrp ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.pk-two-plate-wrp ul li{
+	padding-bottom: 175px;
+}
+.pk-two-plate-wrp ul li .pk-two-plate-lft-bg{
+    float: left;
+    width: 40%;
+    padding-left: 30px;
+    position: relative;
+    z-index: 10;
+}
+.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-lft-bg{
+    float: right;
+    padding-right: 55px;
+    padding-left: 0;
+    width: 44%;
+}
+.pk-two-plate-wrp ul li .pk-two-plate-lft-img{
+	background-repeat:no-repeat !important;
+	background-position:center center !important;
+	background-size:cover !important;
+	min-height:505px !important;
+}
+.pk-two-plate-wrp ul li .pk-two-plate-lft-img:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top: -25px;
+	right: 25px;
+	bottom: 25px;
+	border:10px solid #e5e8eb;
+	z-index: -1;
+
+}
+.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-lft-img:after {
+    left: 25px;
+    top: 30px;
+    right: 25px;
+    bottom: -25px;
+}
+.pk-two-plate-wrp ul li .pk-two-plate-dsc-rgt-con{
+    float: left;
+    width: 60%;
+    padding-left: 150px;
+    padding-top: 100px;
+}
+.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-dsc-rgt-con{
+    padding-left: 40px;
+    padding-top: 100px;
+    padding-right: 140px;
+    width: 56%;
+}
+
+.pk-two-plate-rgt-dsc h3{
+	margin: 0;
+	color: #002853;
+	font-family: 'PFCatalog-Regular';
+	margin-bottom: 25px;
+}
+.pk-two-plate-rgt-dsc span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 16px;
+	line-height: 24px;
+	color: #002853;
+}
+.pk-two-plate-rgt-dsc p{
+	font-size: 12px;
+	line-height: 17px;
+	color: #8d96a5;
+}
+.pk-two-plate-rgt-dsc p:first-of-type{
+	padding-top: 40px;
+}
+.pk-two-plate-lft-img span {
+    background-image: url(../images/pk-brnd-logo.png);
+    background-repeat: no-repeat;
+    background-size: 155px 155px;
+    width: 155px;
+    height: 155px;
+    position: absolute;
+    top: -75px;
+    right: -75px;
+}

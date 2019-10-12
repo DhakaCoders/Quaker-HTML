@@ -1,0 +1,108 @@
+ .footer-wrp{
+ 	background: #002853;
+ 	/*padding: 20px 0;*/
+ 	color:#fff;
+ }
+.ftr-top{
+	position: relative;
+	padding-bottom:80px;
+	text-align:center;
+}
+.ftr-top strong {    
+    font-family: PFcatalogBlack;
+    font-size: 117px;
+    position: relative;
+    top: -90px;
+}
+.ftr-top:after{
+	content: "";
+	position: absolute;
+	background:url(../images/frt-Q.png)no-repeat; 
+	background-position: center center;
+	background-size: 100% auto;
+	top: 0;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width:277px;
+	height: 392px;
+}
+
+
+
+.ftr-social {
+	text-align: center;
+	padding: 20px 0;
+}
+.ftr-social ul{
+	display: table;
+	margin: 0 auto;
+}
+.ftr-social li{
+	float: left;
+}
+.ftr-social li:not(:last-child){
+	padding-right: 10px;
+}
+.ftr-social li a{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 35px;
+	color: inherit;
+	max-width: 
+}
+
+.ftr-social li a:hover img{
+	opacity: .5
+}
+
+.ftr-links{
+	padding: 30px;
+}
+.ftr-links ul{
+	display: table;
+	margin: 0 auto;
+}
+.ftr-links li{
+	float: left;
+	padding: 0 10px;
+	position: relative;
+}
+.ftr-links li a{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 15px;
+	color: #7d889c;
+}
+.ftr-links li:not(:last-child):after{
+	content:"|";
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 15px;
+	color: #7d889c;
+}
+.ftr-links li a:hover{
+	color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+/*power of ots*/
+
+/*power of ots*/
+
+.ftr-top-sec{
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	background-position: center center!important;
+	min-height: 420px;
+}
+
+

@@ -2,6 +2,42 @@
 
 
 
+.benefits-oats-main-sec{
+	position: relative;
+	background: #fff;
+}
+.benefits-oats-main-bg{
+	position: absolute;
+	left: 0;
+	right: 0;
+	top:0;
+	bottom: 60%
+	background-repeat: no-repeat!important;
+	background-size: cover!important;
+	background-position: center center!important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

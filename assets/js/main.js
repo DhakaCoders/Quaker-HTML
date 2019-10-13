@@ -26,6 +26,10 @@ var windowWidth = $(window).width();
 
 //$("[data-fancybox]").fancybox({});
 
+$( function() {
+    $( "#tabs" ).tabs();
+} );
+
 
 $('.hdr-search-btn').on('click', function(){
     $(this).parent().toggleClass('hdr-search-expend');

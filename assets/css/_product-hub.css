@@ -15,6 +15,7 @@ product-list-sec-wrp
 }
 .product-filter-menu ul li{
 	float: left;
+	padding: 0 19px;
 }
 .product-filter-menu ul li a{
 	display: inline-block;
@@ -23,8 +24,8 @@ product-list-sec-wrp
 	font-size: 16px;
 	line-height: 18px;
 	color: #7f93a9;
-	padding: 0 19px 8px;
 	font-family: 'PFCatalog-Light';
+	padding-bottom: 8px;
 }
 .product-filter-menu ul li.ui-tabs-active a {
     color: #11365e;
@@ -54,4 +55,20 @@ product-list-sec-wrp
 .product-list-dsc{
 	text-align: center;
 	padding-top: 25px;
+}
+.product-list-dsc h5{
+	margin: 0;
+	font-size: 16px;
+	line-height: 18px;
+	color:#113660;
+	font-family: 'PFCatalog-Light';
+	margin-bottom: 5px;
+}
+.product-list-dsc strong{
+	display: inline-block;
+	vertical-align: baseline;
+	color: #7f93a9;
+	font-size: 16px;
+	line-height: 18px;
+	font-family: 'PFCatalog-Light';
 }

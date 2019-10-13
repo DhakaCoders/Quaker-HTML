@@ -10,3 +10,39 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'PFCatalog-Black';
+  src: url('PFCatalog-Black/PFCatalog-Black.eot?#iefix') format('embedded-opentype'),
+    url('PFCatalog-Black/PFCatalog-Black.otf')  format('opentype'),
+	url('PFCatalog-Black/PFCatalog-Black.woff') format('woff'),
+	url('PFCatalog-Black/PFCatalog-Black.ttf')  format('truetype'), 
+	url('PFCatalog-Black/PFCatalog-Black.svg#PFCatalog-Black') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'PFCatalog-Light';
+  src: url('PFCatalog-Light/PFCatalog-Light.eot?#iefix') format('embedded-opentype'),
+    url('PFCatalog-Light/PFCatalog-Light.otf')  format('opentype'),
+	url('PFCatalog-Light/PFCatalog-Light.woff') format('woff'),
+	url('PFCatalog-Light/PFCatalog-Light.ttf')  format('truetype'), 
+	url('PFCatalog-Light/PFCatalog-Light.svg#PFCatalog-Light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+@font-face {
+  font-family: 'PFCatalog-bold';
+  src: url('PFCatalog-bold/PFCatalog-bold.eot?#iefix') format('embedded-opentype'),
+    url('PFCatalog-bold/PFCatalog-bold.otf')  format('opentype'),
+	url('PFCatalog-bold/PFCatalog-bold.woff') format('woff'),
+	url('PFCatalog-bold/PFCatalog-bold.ttf')  format('truetype'), 
+	url('PFCatalog-bold/PFCatalog-bold.svg#PFCatalog-bold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+

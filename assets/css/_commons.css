@@ -8,6 +8,9 @@ Commons
 a, button, input{
 	outline: 0;
 	border: 0;
+	-ms-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
 }
 a, a:hover, a:focus, button:hover, button:focus{
 	text-decoration: none;
@@ -89,7 +92,8 @@ Containers
 	max-width: 1320px;
 	width: 100%;
 }
-.container-md{}
+.container-md{
+}
 
 .container-sm{}
 

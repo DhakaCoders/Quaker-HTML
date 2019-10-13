@@ -106,3 +106,138 @@
 }
 
 
+
+
+.ftr-top-2{
+	background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+.ftr-top-2-innr{
+	padding: 175px 0 205px;
+	max-width: 990px;
+	margin: 0 auto;
+}
+.ftr-top-2-innr strong{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 60px;
+	font-family: 'PFCatalog-Black';
+	font-weight: normal;
+	margin-bottom: 10px;
+}
+.ftr-top-2-innr p{
+	font-size: 16px;
+}
+.ftr-top-2-innr a {
+    display: inline-block;
+    vertical-align: baseline;
+    font-family: 'PFCatalog-Light';
+    color: inherit;
+    margin-top: 45px;
+    position: relative;
+    padding-right: 30px;
+}
+.ftr-top-2-innr a:after{
+	content: "";
+	position: absolute;
+	right: 0;
+	top:2px;
+	background-image: url(../images/right-arrow-long.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	width:20px;
+	height: 15px;	
+	-ms-transition: all .3s ease;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.ftr-top-2-innr a:hover:after{
+	right:-5px;
+}
+
+
+.ftr-top-3{
+	background: #002853;
+	color:#fff;
+	text-align: center;
+}
+.ftr-top-3-innr{
+	padding: 100px 0 100px;
+	max-width: 870px;
+	margin: 0 auto;
+}
+.ftr-top-3-innr p{
+	font-size: 28px;
+	font-family: 'PFCatalog-bold';
+}
+
+
+
+
+.ftr-top-4{
+	text-align: center;
+	padding: 70px 0 100px;
+}
+
+.ftr-top-4-innr{
+	max-width: 900px;
+	margin: 0 auto;
+}
+.ftr-top-4-top {
+	padding-bottom: 90px;
+}
+.ftr-top-4-top h2{
+	margin-bottom: 10px;
+	font-family: 'PFCatalog-Black';
+}
+
+.ftr-top-4-top p{
+	margin-bottom: 10px;
+}
+.ftr-top-4-top p span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-weight: 700;
+}
+.ftr-top-4-img{
+	text-align: center;
+    padding-bottom: 115px;
+}
+.ftr-top-4-img a{
+	display: inline-block;
+	vertical-align: baseline;
+	max-width: 645px
+}
+.ftr-top-4-img a img{
+	width:100%;
+}
+.features-of-ots{
+	max-width: 1260px;
+	margin: 0 auto;
+}
+.features-of-ots li{
+	float: left;
+	padding: 0 30px;
+	width: 25%;
+}
+
+.features-of-ots li h5{
+	font-size: 18px;
+	font-family: 'PFCatalog-Black';
+	text-transform: uppercase;
+	margin-bottom:15px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

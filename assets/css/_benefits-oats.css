@@ -5,34 +5,88 @@
 .benefits-oats-main-sec{
 	position: relative;
 	background: #fff;
+	z-index: 1;min-height:800px;
 }
 .benefits-oats-main-bg{
 	position: absolute;
 	left: 0;
 	right: 0;
 	top:0;
-	bottom: 60%
+	bottom: 60%;
 	background-repeat: no-repeat!important;
 	background-size: cover!important;
 	background-position: center center!important;
+	z-index: 1;
+}
+.benefits-oats-main-sec:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	top:2px;
+	background-image: url(../images/benefits-oats-main-spun.png);
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	width:731px;
+	height: 836px;
+	z-index: 2
+}
+.benefits-oats-main-innr{
+	
+}
+.benefits-oats-element {
+    background: #fff;
+    -ms-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    max-width: 1070px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    padding: 50px;
+    border-radius: 10px;
+    top: -90px;
 }
 
 
 
+.benefits-oats-element li{
+	padding: 10px;
+	position: relative;
+	float: left;
+	width:25%;
+}
+.benefits-oats-element li:not(:last-child):after {
+    content: "|";
+    position: absolute;
+    right: -7px;
+    top: 8px;
+    color: #000;
+    font-size: 35px;
+}
+.benefits-oats-element img{
+	max-width: 210px;
+}
+
+.benefits-oats-features-main{
+	padding-left: 100px;
+	position: relative;
+	z-index: 10
+}
+
+.benefits-oats-features-main-col-1 .benefits-oats-con-1{
+	width:44%;
+	float: left;
+}
+.benefits-oats-features-main-col-1 .benefits-oats-con-2{
+	width:66%;
+	float: left;
+}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+.benefits-oats-features-main-col-2{
+	padding-left: 710px;
+}
 
 
 
@@ -73,6 +127,11 @@
 }
 .benefits-oats-con p{
 	font-size:16px;
+}
+.benefits-oats-2{
+	background: url(../images/benefits-oats-featurs-bg.jpg)no-repeat;
+	background-size: cover;
+	background-position: center center;
 }
 .benefits-oats-2 li .benefits-oats-con p{
 	max-width: 350px

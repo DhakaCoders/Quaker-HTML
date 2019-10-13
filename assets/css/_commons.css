@@ -59,6 +59,7 @@ Containers fluid
 /**
 Containers
 */
+.container-2,
 .container-xlg,
 .container-lg,
 .container-md,
@@ -69,6 +70,8 @@ Containers
     margin-right: auto;
     margin-left: auto;
 }
+.container-2:before,
+.container-2:after,
 .container-xlg:before,
 .container-xlg:after,
 .container-lg:before,
@@ -86,6 +89,10 @@ Containers
 .container-xlg{}
 .container-lg{
 	max-width: 1510px;
+	width: 100%;
+}
+.container-2{
+	max-width: 1425px;
 	width: 100%;
 }
 .container{

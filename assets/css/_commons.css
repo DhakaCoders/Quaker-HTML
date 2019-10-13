@@ -95,10 +95,9 @@ Containers
 .container-md{
 }
 
-.container-sm{}
+.container-sm{
 
-
-
+}
 
 .first:first-child{
 	padding-left: 0;
@@ -108,6 +107,7 @@ Containers
 	padding-right: 0;
 	margin-right: 0;
 }
+
 img{
 	max-width: 100%;
 	height: auto;

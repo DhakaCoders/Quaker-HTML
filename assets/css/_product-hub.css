@@ -3,6 +3,9 @@
 product-list-sec-wrp
 ----------------------
 */
+.product-hub-prd-tp{
+	padding-top: 315px;
+}
 .product-list-sec-wrp{
 	padding-top: 110px;
 	padding-bottom: 120px;
@@ -68,7 +71,7 @@ product-list-sec-wrp
 	font-size: 16px;
 	line-height: 18px;
 	color:#113660;
-	font-family: 'PFCatalog-Light';
+	font-family: 'PFCatalog-bold';
 	margin-bottom: 5px;
 }
 .product-list-dsc h5 a{
@@ -84,7 +87,7 @@ product-list-sec-wrp
 .product-list-dsc strong{
 	display: inline-block;
 	vertical-align: baseline;
-	color: #7f93a9;
+	color: #1e3869;
 	font-size: 16px;
 	line-height: 18px;
 	font-family: 'PFCatalog-Light';

@@ -61,8 +61,64 @@ $('.img-change-pagi ol li.img-change-pagi-2').on('click', function(e){
 
 ///////////////////////////// Milon
 
+/*------------ Start of gallery and isotop -------*/
 
 
+
+/*$('.gallery-2items-controller ul').isotope({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  masonry: {
+    // use outer width of grid-sizer for columnWidth
+    columnWidth:'.grid-item',
+    gutter: 0
+  }
+})
+
+var $container= $('#isotope').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows',
+
+});*/
+  
+ // bind filter button click
+/*$('#filter-menu').on( 'click', 'a', function(e) {
+  e.preventDefault();
+  $('a.button').not(this).removeClass('checked');
+    $(this).addClass('checked');
+  var filterValue = $( this).attr('data-filter');
+  var filtercheckedText = $(this).text();
+  //alert(filtercheckedText);
+  $container.isotope({ filter: filterValue });
+  
+});
+*/
+
+
+if($('#filter-menu').length){
+  // init Isotope
+  var $container = $('#isotope').isotope({
+    itemSelector: '.grid-item',
+    layoutMode: 'fitRows',
+
+  });
+  // bind filter button click
+  $('#filter-menu').on( 'click', 'a', function(e) {
+    e.preventDefault();
+    $('#filter-menu a').removeClass('is-checked');
+    $(this).addClass('is-checked');
+    var filterValue = $( this ).attr('data-filter');
+    $container.isotope({ filter: filterValue });
+  });
+}
+
+if($('.masonry').length){
+  $('.masonry').masonry({
+    // options
+    itemSelector: '.grid-item',
+    columnWidth: auto
+  });
+}
 
 /////////////////////////// Prashanto
 
@@ -110,35 +166,6 @@ $('.hdr-search-btn').on('click', function(){
 
 
 
-/*------------ Start of gallery and isotop -------*/
-
-$('.gallery-2items-controller ul').isotope({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  masonry: {
-    // use outer width of grid-sizer for columnWidth
-    columnWidth:'.grid-item',
-    gutter: 0
-  }
-})
-
-var $container= $('#isotope').isotope({
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows',
-
-});
-  
- // bind filter button click
-$('#filter-menu').on( 'click', 'a', function(e) {
-  e.preventDefault();
-  $('a.button').not(this).removeClass('checked');
-    $(this).addClass('checked');
-  var filterValue = $( this).attr('data-filter');
-  var filtercheckedText = $(this).text();
-  //alert(filtercheckedText);
-  $container.isotope({ filter: filterValue });
-  
-});
 
 
 

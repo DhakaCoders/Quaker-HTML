@@ -45,15 +45,15 @@ if( $('#QP-tabs').length ){
 
 $('.img-change-pagi ol li.img-change-pagi-1').on('click', function(e){
   e.preventDefault();
-  $(this).parent().parent().parent().find('.img-1').fadeIn(300);
-  $(this).parent().parent().parent().find('.img-2').fadeOut();
-  $('.img-change-pagi ol li.img-change-pagi-2').removeClass('img-change-pagi-active');
+  $(this).parents('.qp-tab-con-col').find('.img-1').show();
+  $(this).parents('.qp-tab-con-col').find('.img-2').hide();
+  $(this).parent().find('li').removeClass('img-change-pagi-active');
   $(this).addClass('img-change-pagi-active');
 });
 $('.img-change-pagi ol li.img-change-pagi-2').on('click', function(e){
   e.preventDefault();
-  $(this).parent().parent().parent().find('.img-2').fadeIn(300);
-  $(this).parent().parent().parent().find('.img-1').fadeOut();
+  $(this).parents('.qp-tab-con-col').find('.img-2').show();
+  $(this).parents('.qp-tab-con-col').find('.img-1').hide();
   $('.img-change-pagi ol li.img-change-pagi-1').removeClass('img-change-pagi-active');
   $(this).addClass('img-change-pagi-active');
 });
@@ -126,6 +126,47 @@ if($('.masonry').length){
 
 
 //////////////////////////// Shoriful 
+
+if( $('.recipeItemsSlider').length ){
+    $('.recipeItemsSlider').slick({
+      dots: false,
+      arrow: false,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 3.5,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+          }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+      ]
+    });
+}
+
+
 
 
 

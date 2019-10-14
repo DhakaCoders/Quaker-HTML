@@ -156,16 +156,6 @@ nav.main-nav li.menu-item-has-children ul.sub-menu a {
 	font-weight: 600;
 	position: relative;
 }
-nav.main-nav li.menu-item-has-children ul.sub-menu a:before{
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 8px;
-	background-image: url(../images/submenu-arrow.svg);
-	width: 8px;
-	height: 6px;
-	background-size: 100% auto;
-}
 nav.main-nav li.menu-item-has-children ul.sub-menu a i{
 	padding-right: 15px;
 }

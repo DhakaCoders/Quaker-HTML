@@ -14,6 +14,9 @@ if( $('.promoBannerSlider').length ){
     });
 }
 
+if( $('#QP-tabs').length ){
+  $('#QP-tabs').tabs();
+}
 
 ///////////////////////////// Milon
 

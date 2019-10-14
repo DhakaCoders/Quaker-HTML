@@ -104,7 +104,7 @@ Containers
 }
 
 .container-sm{
-
+	max-width: 1010px;
 }
 
 .first:first-child{

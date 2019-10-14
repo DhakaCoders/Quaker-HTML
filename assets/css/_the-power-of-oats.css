@@ -10,7 +10,7 @@
 	width: 100%;
 	font-size: 16px;
 	line-height: 22px;
-	padding-left: 90px;
+	padding-left:90px;
 }
 
 .qk-banner-dsc strong{
@@ -97,7 +97,7 @@ pk-two-grid-sec-wrp
 .pk-two-plate-wrp ul li .pk-two-plate-dsc-rgt-con{
     float: left;
     width: 60%;
-    padding-left: 150px;
+    padding-left: 156px;
     padding-top: 100px;
 }
 .pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-dsc-rgt-con{
@@ -135,6 +135,6 @@ pk-two-grid-sec-wrp
     width: 155px;
     height: 155px;
     position: absolute;
-    top: -75px;
-    right: -75px;
+    top: -73px;
+    right: -80px;
 }

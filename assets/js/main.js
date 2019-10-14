@@ -3,6 +3,18 @@
 
 /////////////////////////// Rannojit
 
+//match Height
+if($('.matchHeightCol').length){
+  $('.matchHeightCol').matchHeight();
+};
+
+if($('.scroll-btn').length){
+  $('.scroll-btn').on('click', function(e){
+    e.preventDefault();
+    var togo = $(this).data('to');
+    goToByScroll(togo, 0);
+  });
+}
 if( $('.promoBannerSlider').length ){
     $('.promoBannerSlider').slick({
       dots: false,
@@ -17,6 +29,23 @@ if( $('.promoBannerSlider').length ){
 if( $('#QP-tabs').length ){
   $('#QP-tabs').tabs();
 }
+
+
+$('.img-change-pagi ol li.img-change-pagi-1').on('click', function(e){
+  e.preventDefault();
+  $(this).parent().parent().parent().find('.img-1').fadeIn(300);
+  $(this).parent().parent().parent().find('.img-2').fadeOut();
+  $('.img-change-pagi ol li.img-change-pagi-2').removeClass('img-change-pagi-active');
+  $(this).addClass('img-change-pagi-active');
+});
+$('.img-change-pagi ol li.img-change-pagi-2').on('click', function(e){
+  e.preventDefault();
+  $(this).parent().parent().parent().find('.img-2').fadeIn(300);
+  $(this).parent().parent().parent().find('.img-1').fadeOut();
+  $('.img-change-pagi ol li.img-change-pagi-1').removeClass('img-change-pagi-active');
+  $(this).addClass('img-change-pagi-active');
+});
+
 
 ///////////////////////////// Milon
 
@@ -60,9 +89,7 @@ var windowWidth = $(window).width();
 
 //$("[data-fancybox]").fancybox({});
 
-$( function() {
     $( "#tabs" ).tabs();
-} );
 
 
 $('.hdr-search-btn').on('click', function(){

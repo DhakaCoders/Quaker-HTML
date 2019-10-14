@@ -1,9 +1,18 @@
-.promo-banner-slider-wrap{
+.promo-banner-slider{
 	overflow: hidden;
 }
 .promo-banner-slide-item,
 .promo-banner-slider-wrap{
 	position: relative;
+}
+.promo-banner-slide-item{
+	display: none;
+}
+.promo-banner-slide-item:first-child{
+	display: block;
+}
+.promoBannerSlider.slick-initialized .promo-banner-slide-item{
+	display: block;
 }
 .promo-banner-slide-img{
 	background-position: center center!important;
@@ -80,6 +89,7 @@
 	bottom: -35px;
 	z-index: 3;
 	text-align: center;
+	cursor: pointer;
 }
 .scroll-down strong{
 	margin-bottom: 10px;
@@ -241,6 +251,9 @@
 	line-height: 18px;
  	font-family: 'PFCatalog-Light';
 }
+.QP-tabs ul li a:hover{
+	color: #002853;
+}
 
 .QP-tabs ul li.ui-tabs-active a{
 	color: #002853;
@@ -324,7 +337,7 @@
 .img-change-pagi ol li.img-change-pagi-active{
 	border-color: #ffc13f;
 }
-.img-change-pagi ol li a{
+.img-change-pagi ol li span{
 	position: absolute;
 	left: 50%;
 	top: 50%;
@@ -460,4 +473,8 @@
     -ms-transition: all .3s ease;
     -webkit-transition: all .3s ease;
     transition: all .3s ease;
+}
+
+.img-2{
+	display: none;
 }

@@ -1,5 +1,80 @@
 (function($) {
 
+
+/////////////////////////// Rannojit
+
+//match Height
+if($('.matchHeightCol').length){
+  $('.matchHeightCol').matchHeight();
+};
+
+if($('.scroll-btn').length){
+  $('.scroll-btn').on('click', function(e){
+    e.preventDefault();
+    var togo = $(this).data('to');
+    goToByScroll(togo, 0);
+  });
+}
+if( $('.promoBannerSlider').length ){
+    $('.promoBannerSlider').slick({
+      dots: false,
+      infinite: false,
+      autoplay: true,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true
+    });
+    $('.promoBannerSlider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      $('.mslider-pagination a').removeClass('msiactive');
+      $('.mslider-pagination').find("[data-slide='" + nextSlide + "']").addClass('msiactive');
+      //console.log(nextSlide);
+    });
+
+    $('.mslider-pagination a').on('click', function(e){
+        e.preventDefault();
+        var goto = $(this).attr('data-slide');
+        $('.promoBannerSlider').slick('slickGoTo', goto);
+    });
+}
+
+if( $('#QP-tabs').length ){
+  $('#QP-tabs').tabs();
+}
+
+
+$('.img-change-pagi ol li.img-change-pagi-1').on('click', function(e){
+  e.preventDefault();
+  $(this).parent().parent().parent().find('.img-1').fadeIn(300);
+  $(this).parent().parent().parent().find('.img-2').fadeOut();
+  $('.img-change-pagi ol li.img-change-pagi-2').removeClass('img-change-pagi-active');
+  $(this).addClass('img-change-pagi-active');
+});
+$('.img-change-pagi ol li.img-change-pagi-2').on('click', function(e){
+  e.preventDefault();
+  $(this).parent().parent().parent().find('.img-2').fadeIn(300);
+  $(this).parent().parent().parent().find('.img-1').fadeOut();
+  $('.img-change-pagi ol li.img-change-pagi-1').removeClass('img-change-pagi-active');
+  $(this).addClass('img-change-pagi-active');
+});
+
+
+///////////////////////////// Milon
+
+
+
+
+/////////////////////////// Prashanto
+
+
+
+
+//////////////////////////// Shoriful 
+
+
+
+
+
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
@@ -26,9 +101,7 @@ var windowWidth = $(window).width();
 
 //$("[data-fancybox]").fancybox({});
 
-$( function() {
     $( "#tabs" ).tabs();
-} );
 
 
 $('.hdr-search-btn').on('click', function(){
@@ -109,6 +182,10 @@ if( $('.responsive-slider').length ){
       ]
     });
 }
+
+
+
+
 
     new WOW().init();
 

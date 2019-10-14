@@ -2,7 +2,11 @@
 All Transitions
 */
 .gallery-hover-controller:hover .dsw-ms-gallery-item img,
-a,input,img,textarea,button{
+a,input,img,textarea,button,.qp-more-hover-btn,
+.h-our-recipes-sec-hdr a:after,.quaker-products-more-btn a:after,
+.about-sec-grd-col a:after,
+.promo-banner-slide-des a:after,
+.h-our-story-sec-col-des a:after{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;

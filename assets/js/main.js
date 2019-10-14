@@ -1,5 +1,36 @@
 (function($) {
 
+
+/////////////////////////// Rannojit
+
+if( $('.promoBannerSlider').length ){
+    $('.promoBannerSlider').slick({
+      dots: false,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true
+    });
+}
+
+
+///////////////////////////// Milon
+
+
+
+
+/////////////////////////// Prashanto
+
+
+
+
+//////////////////////////// Shoriful 
+
+
+
+
+
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
@@ -109,6 +140,10 @@ if( $('.responsive-slider').length ){
       ]
     });
 }
+
+
+
+
 
     new WOW().init();
 

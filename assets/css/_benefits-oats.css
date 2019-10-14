@@ -75,23 +75,33 @@
 }
 
 .benefits-oats-features-main-col-1 .benefits-oats-con-1{
-	width:44%;
+	width:48%;
 	float: left;
 }
 .benefits-oats-features-main-col-1 .benefits-oats-con-2{
-	width:66%;
+	width:52%;
 	float: left;
 }
 
 
 .benefits-oats-features-main-col-2{
-	padding-left: 710px;
+	/*padding-left: 710px;*/
 }
 
 
+.benefits-oats-features-main-col-2 .benefits-oats-con-1{
+	width:52%;
+	float: right;
+}
+.benefits-oats-features-main-col-2 .benefits-oats-con-2{
+	width:52%;
+	float: right;
+}
 
-
-
+.benefits-oats-features-main-col-3 .benefits-oats-con{
+	width:75%;
+	float: right;	
+}
 
 
 

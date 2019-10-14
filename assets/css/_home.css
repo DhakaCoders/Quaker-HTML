@@ -113,11 +113,59 @@
 	background: #002853;
 }
 
-
-
-
-
-
+.mslider-pagination{
+	position: absolute;
+	right: 60px;
+	bottom: 40px;
+	z-index: 20;
+}
+.mslider-pagination a{
+	margin-left: 35px;
+	color: #969eac;
+	position: relative;
+	padding-bottom: 10px;
+	font-size: 15px;
+	line-height: 20px;
+	cursor: pointer;
+}
+.mslider-pagination a:after{
+	content: "";
+	left: 0;
+	right: 4px;
+	height: 2px;
+	background: #c6ced9;
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+}
+.mslider-pagination a.msiactive{
+	color: #002853;
+}
+.mslider-pagination a span{
+	height: 2px;
+	position: absolute;
+	z-index: 15px;
+	background: #002853;
+	left: 0;
+	bottom: 0;
+	width: 0;
+	z-index: 11;	
+}
+.mslider-pagination a.msiactive span{
+	width: 100%;
+	transition: all 3s;
+	-ms-transition: all 3s;
+	-webkit-transition: all 3s;
+}
+.h-our-recipes-sec-hdr a:hover:after,
+.quaker-products-more-btn a:hover:after{
+	right: 14px;
+}
+.about-sec-grd-col a:hover:after,
+.promo-banner-slide-des a:hover:after,
+.h-our-story-sec-col-des a:hover:after{
+	right: -5px;
+}
 /*about section*/
 
 .about-section{
@@ -309,6 +357,10 @@
 	position: absolute;
 	right: 0;
 	top: 0;
+	opacity: 0;
+}
+.qp-tab-con-col:hover .qp-more-hover-btn{
+	opacity: 1;
 }
 .qp-more-hover-btn span{
 	display: inline-block;

@@ -19,10 +19,22 @@ if( $('.promoBannerSlider').length ){
     $('.promoBannerSlider').slick({
       dots: false,
       infinite: false,
+      autoplay: true,
       speed: 300,
       slidesToShow: 1,
       slidesToScroll: 1,
       fade: true
+    });
+    $('.promoBannerSlider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
+      $('.mslider-pagination a').removeClass('msiactive');
+      $('.mslider-pagination').find("[data-slide='" + nextSlide + "']").addClass('msiactive');
+      //console.log(nextSlide);
+    });
+
+    $('.mslider-pagination a').on('click', function(e){
+        e.preventDefault();
+        var goto = $(this).attr('data-slide');
+        $('.promoBannerSlider').slick('slickGoTo', goto);
     });
 }
 

@@ -1,0 +1,53 @@
+/*
+-----------------------
+-----------------------
+*/
+.loader-page-bg{
+	background-repeat: no-repeat !important;
+	background-size: cover !important;
+	background-position: center center !important;
+	min-height: 100vh;
+}
+.loader-dsc-wrp{
+	text-align: center;
+}
+.loader-logo a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+.loader-text-logo{
+	padding-top: 105px;
+}
+.loading-plc-wrp{
+	padding-top: 80px;
+	text-align: center;
+}
+.loading-plc-wrp span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 12px;
+	line-height: 14px;
+	font-family: 'PFCatalog-Light';
+	color: #132e53;
+}
+.loading-plc{
+	max-width: 210px;
+	width: 100%;
+	height: 12px;
+	margin: 0 auto;
+	background-color: #c6cbd0;
+	margin-top: 10px;
+	position: relative;
+	border-radius: 50px 50px;
+}
+.loading-plc-parsent{
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	background-color: #132e53;
+	width: 80%;
+	height: 12px;
+	border-radius: 50px 50px;
+}

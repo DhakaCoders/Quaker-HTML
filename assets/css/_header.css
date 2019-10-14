@@ -6,7 +6,7 @@ Start header
 	left: 0;
 	right: 0;
 	top: 0;
-	z-index: 2;
+	z-index: 20;
 }
 .hdr-lft{
 	width: 29%;
@@ -27,8 +27,8 @@ Start header
 }
 .main-nav > ul > li{
 	float: left;
+	padding: 10px 10px 0;
 	position: relative;
-	padding: 10px 10px;
 }
 .main-nav > ul > li > a{
 	display: inline-block;
@@ -40,6 +40,7 @@ Start header
 	color: #667e98;
 	position: relative;
 	font-family: 'PFCatalog-Regular';
+	padding-bottom: 8px;
 }
 .main-nav > ul > li > a:after{
 	content: "";
@@ -48,7 +49,7 @@ Start header
 	height: 2px;
 	background-color: #002853;
 	left: 0;
-	bottom: -5px;
+	top: 100%;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 	transition: all 0.5s;
@@ -68,7 +69,7 @@ Start header
 	height: 2px;
 	background-color: #002853;
 	left: 0;
-	bottom: -5px;
+	bottom: -10px;
 }
 .main-nav ul > li.menu-item-has-children:hover a.active:after{
 	background-color: #9fd355;

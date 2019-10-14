@@ -1,11 +1,13 @@
 /**
 All Transitions
 */
+.gallery-hover-controller:hover .dsw-ms-gallery-item img,
 a,input,img,textarea,button{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
 }
+.gallery-hover-controller:hover .dsw-ms-gallery-item img,
 .scale{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);

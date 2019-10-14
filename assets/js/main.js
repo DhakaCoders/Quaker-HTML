@@ -1,5 +1,39 @@
 (function($) {
 
+
+/////////////////////////// Rannojit
+
+if( $('.promoBannerSlider').length ){
+    $('.promoBannerSlider').slick({
+      dots: false,
+      infinite: false,
+      speed: 300,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      fade: true
+    });
+}
+
+if( $('#QP-tabs').length ){
+  $('#QP-tabs').tabs();
+}
+
+///////////////////////////// Milon
+
+
+
+
+/////////////////////////// Prashanto
+
+
+
+
+//////////////////////////// Shoriful 
+
+
+
+
+
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
@@ -34,6 +68,40 @@ $( function() {
 $('.hdr-search-btn').on('click', function(){
     $(this).parent().toggleClass('hdr-search-expend');
   });
+
+
+
+/*------------ Start of gallery and isotop -------*/
+
+$('.gallery-2items-controller ul').isotope({
+  itemSelector: '.grid-item',
+  percentPosition: true,
+  masonry: {
+    // use outer width of grid-sizer for columnWidth
+    columnWidth:'.grid-item',
+    gutter: 0
+  }
+})
+
+var $container= $('#isotope').isotope({
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows',
+
+});
+  
+ // bind filter button click
+$('#filter-menu').on( 'click', 'a', function(e) {
+  e.preventDefault();
+  $('a.button').not(this).removeClass('checked');
+    $(this).addClass('checked');
+  var filterValue = $( this).attr('data-filter');
+  var filtercheckedText = $(this).text();
+  //alert(filtercheckedText);
+  $container.isotope({ filter: filterValue });
+  
+});
+
+
 
 /**
 Slick slider
@@ -75,6 +143,10 @@ if( $('.responsive-slider').length ){
       ]
     });
 }
+
+
+
+
 
     new WOW().init();
 

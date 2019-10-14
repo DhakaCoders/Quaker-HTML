@@ -6,6 +6,13 @@
 @import url('_home.css');
 @import url('_the-power-of-oats.css');
 @import url('_product-hub.css');
+<<<<<<< HEAD
+@import url('_recipe-page.css');
+=======
+@import url('_recipes-hub.css');
+@import url('_loader.css');
+>>>>>>> 8ee278be04d5bf6c66b992fcbf795eb53f6f4fa4
 @import url('_contact.css');
 @import url('_footer.css');
+@import url('_benefits-oats.css');
 

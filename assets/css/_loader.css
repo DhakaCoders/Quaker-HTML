@@ -1,7 +1,11 @@
 /*
 -----------------------
+loader-sec-wrp
 -----------------------
 */
+.loader-sec-wrp{
+	padding-bottom: 220px;
+}
 .loader-page-bg{
 	background-repeat: no-repeat !important;
 	background-size: cover !important;

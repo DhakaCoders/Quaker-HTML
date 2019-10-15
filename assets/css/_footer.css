@@ -190,21 +190,18 @@
 }
 
 .power-energy-necessary-innr{
-	/*max-width: 900px;*/
-	margin: 0 auto;
 }
 .power-energy-necessary-top {
 	max-width: 900px;
 	margin: 0 auto;
-	padding-bottom: 90px;
+	padding-bottom: 85px;
 }
 .power-energy-necessary-top h2{
 	margin-bottom: 18px;
 	font-family: 'PFCatalog-Black';
 }
-
-.power-energy-necessary-top p{
-	margin-bottom: 10px;
+.power-energy-necessary-top p {
+    margin-bottom: 13px;
 }
 .power-energy-necessary-top p span{
 	display: inline-block;
@@ -223,16 +220,15 @@
 .power-energy-necessary-img a img{
 	width:100%;
 }
-.features-of-ots{
-	max-width: 1260px;
-	margin: 0 auto;
+.features-of-ots {
+    max-width: 1240px;
+    margin: 0 auto;
 }
-.features-of-ots li{
-	float: left;
-	padding: 0 30px;
-	width: 25%;
+.features-of-ots li {
+    float: left;
+    padding: 0 23px;
+    width: 25%;
 }
-
 .features-of-ots li h5{
 	font-size: 18px;
 	font-family: 'PFCatalog-Black';

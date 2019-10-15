@@ -1,0 +1,197 @@
+/*
+----------------------
+-----------------------
+*/
+.product-innr-bnr-dsc-wrp{
+	position: relative;
+	padding-bottom: 180px;
+}
+.product-inr-prd-tp{
+	padding-top: 250px;
+}
+.product-innr-dsc{
+	float: left;
+	padding-top: 70px;
+}
+.product-innr-dsc span{
+	display: block;
+	font-size: 14px;
+	line-height: 16px;
+	font-family: 'PFCatalog-Black';
+	color: #002853;
+}
+.product-innr-dsc strong{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 80px;
+	line-height: 90px;
+	font-family: 'PFCatalog-Black';
+	color: #002853;
+	margin-bottom: 10px;
+	margin-left: -5px;
+}
+.product-innr-dsc h5{
+	margin: 0;
+	font-size: 20px;
+	line-height: 22px;
+	font-family: 'PFCatalog-Regular';
+	color: #002853;
+}
+.product-inr-tab-wrp{
+	float: left;
+}
+.product-inr-tab-wrp .img-change-pagi{
+	margin-top: -55px;
+	margin-left: 12px;
+}
+.product-inr-tab-wrp .img-change-pagi ol li{
+	width: 23px;
+	height: 23px;
+	margin: 0 8px;
+}
+.product-inr-icon{
+	float: left;
+	padding-top: 5px;
+}
+.product-inr-loader-wrp{
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+.loader-title-lft{
+	float: left;
+	padding-right: 15px;
+	border-right: 1px solid #fff;
+	margin-top: 30px;
+}
+.loader-title-lft strong{
+	display:block;
+	font-size: 20px;
+	line-height: 21px;
+	color: #fff;
+	font-family: 'PFCatalog-Black';
+	text-align: right;
+	margin-bottom: 5px;
+}
+.loader-title-lft span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 12px;
+	line-height: 14px;
+	color: #fff;
+	font-family: 'PFCatalog-Regular';
+}
+.loader-title-rgt{
+	float: right;
+}
+.loader-title-rgt strong{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 120px;
+	line-height: 120px;
+	font-family: 'PFCatalog-Black';
+	color: #fff;
+	padding-left: 12px;
+}
+/*
+----------------------------
+product-inr-content-sec-wrp
+----------------------------
+*/
+.product-inr-content-sec-wrp{
+	background: url(../images/product-inr-content-bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	padding-top: 165px;
+}
+.product-inr-content-wrp{
+	max-width: 985px;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	padding-bottom: 330px;
+}
+.product-inr-lft-content{
+	float: left;
+	width: 50%;
+	padding-right: 140px;
+	line-height: 24px;
+}
+.product-inr-rgt-content{
+	float: left;
+	width: 50%;
+	line-height: 16px;
+	padding-left: 90px;
+}
+.product-inr-rgt-content h4,
+.product-inr-lft-content h4{
+	margin: 0;
+	font-size: 26px;
+	line-height: 28px;
+	color: #00224e;
+	font-family: 'PFCatalog-Black';
+	margin-bottom: 10px;
+}
+.product-inr-rgt-content h4{
+	margin-bottom: 0;
+}
+.product-inr-rgt-content span{
+	display: inline-block;
+	vertical-align: baseline;
+	font-size: 12px;
+	line-height: 14px;
+	color: #00224e;
+}
+.product-inr-rgt-content ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-top: 15px;
+}
+.product-inr-rgt-content ul li{
+	float: left;
+	width: 100%;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	border-bottom: 1px solid #dad9d6;
+}
+.product-inr-rgt-content ul li span{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
+	width: 50%;
+	float: left;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #001c48;
+}
+.product-inr-rgt-content ul li span:last-of-type{
+	text-align: right;
+}
+.product-inr-rgt-content h5{
+	margin: 0;
+	font-size: 14px;
+	line-height: 16px;
+	color: #00224e;
+	font-family: 'PFCatalog-Black';
+	margin-top: 30px;
+	margin-bottom: 8px;
+}
+.product-inr-rgt-content p{
+	font-size: 11px;
+}
+.product-inr-cnt-bt-img{
+	position: absolute;
+	left: 60px;
+	right: 0;
+	bottom: -220px;
+}
+.product-inr-slider-prd-tp{
+	padding-top: 240px;
+}
+.recipe-slider-sec-hdr p{
+	font-size: 12px;
+	text-align: center;
+}

@@ -39,7 +39,7 @@ Start header
 	line-height: 18px;
 	color: #667e98;
 	position: relative;
-	font-family: 'PFCatalog-Regular';
+	font-family: 'PFCatalog-Light';
 	padding-bottom: 8px;
 }
 .main-nav > ul > li > a:after{
@@ -70,6 +70,9 @@ Start header
 	background-color: #002853;
 	left: 0;
 	bottom: -10px;
+}
+nav.main-nav li.menu-item-has-children:hover a:after{
+	content: none;
 }
 .main-nav ul > li.menu-item-has-children:hover a.active:after{
 	background-color: #9fd355;
@@ -173,11 +176,19 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a{
 
 .hdr-search-area{
 	float: right;
+	position: relative;
+}
+.hdr-search-btn{
+	cursor: pointer;
+}
+.hdr-search-btn:hover{
+	background-color: #fff;
+	transition: all 0.5s;
 }
 .hdr-search-frm{
 	position: absolute;
-	right: 12px;
-	bottom: 0;
+	right: 0;
+	top: 40px;
 	width: 0;
 	opacity: 0;
 	transition: all 0.5s;

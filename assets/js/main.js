@@ -61,6 +61,22 @@ $('.img-change-pagi ol li.img-change-pagi-2').on('click', function(e){
 
 ///////////////////////////// Milon
 
+
+$('.img-change-pagi ol li.img-change-pagi-1').on('click', function(e){
+  e.preventDefault();
+  $(this).parent().parent().parent().find('.img-1').fadeIn(300);
+  $(this).parent().parent().parent().find('.img-2').fadeOut();
+  $('.img-change-pagi ol li.img-change-pagi-2').removeClass('img-change-pagi-active');
+  $(this).addClass('img-change-pagi-active');
+});
+$('.img-change-pagi ol li.img-change-pagi-2').on('click', function(e){
+  e.preventDefault();
+  $(this).parent().parent().parent().find('.img-2').fadeIn(300);
+  $(this).parent().parent().parent().find('.img-1').fadeOut();
+  $('.img-change-pagi ol li.img-change-pagi-1').removeClass('img-change-pagi-active');
+  $(this).addClass('img-change-pagi-active');
+});
+
 /*------------ Start of gallery and isotop -------*/
 
 
@@ -157,8 +173,9 @@ var windowWidth = $(window).width();
 
 //$("[data-fancybox]").fancybox({});
 
-    $( "#tabs" ).tabs();
-
+if( $('#tabs').length ){
+  $( "#tabs" ).tabs();
+}
 
 $('.hdr-search-btn').on('click', function(){
     $(this).parent().toggleClass('hdr-search-expend');

@@ -29,7 +29,29 @@ macy-2items-isotop-gallery-sec
 	color: #7f93a9;
 	font-family: 'PFCatalog-Light';
 	padding-bottom: 8px;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+	position: relative;
 }
+.button.is-checked{
+	color: #002853;
+}
+.button.checked:after,
+.button.is-checked:after{
+	content: "";
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #002853;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
 .qk-ms-gallery-wrp{
 	padding-top: 60px;
 }
@@ -47,6 +69,11 @@ macy-2items-isotop-gallery-sec
 }
 .dsw-ms-gallery-item{
 	overflow: hidden;
+}
+.dsw-ms-gallery-item a{
+	display: inline-block;
+	vertical-align: baseline;
+	text-decoration: none;
 }
 .qk-gallery-item-dsc{
 	position: absolute;

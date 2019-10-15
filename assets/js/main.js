@@ -172,6 +172,20 @@ var $container= $('#isotope').isotope({
 });
 */
 
+if( $('#ph-tabs').length ){
+  $( "#ph-tabs" ).tabs();
+}
+
+$('.hdr-search-btn').on('click', function(){
+    $(this).parent().toggleClass('hdr-search-expend');
+  });
+
+
+/*
+-------------------------
+  Masonary Js
+-------------------------
+*/
 
 if($('#filter-menu').length){
   // init Isotope
@@ -197,6 +211,9 @@ if($('.masonry').length){
     columnWidth: auto
   });
 }
+
+
+
 
 /////////////////////////// Prashanto
 
@@ -234,17 +251,6 @@ var windowWidth = $(window).width();
 
 
 //$("[data-fancybox]").fancybox({});
-
-if( $('#tabs').length ){
-  $( "#tabs" ).tabs();
-}
-
-$('.hdr-search-btn').on('click', function(){
-    $(this).parent().toggleClass('hdr-search-expend');
-  });
-
-
-
 
 
 

@@ -58,6 +58,68 @@ $('.img-change-pagi ol li.img-change-pagi-2').on('click', function(e){
   $(this).addClass('img-change-pagi-active');
 });
 
+if( $('.recipeItemsSlider').length ){
+    $('.recipeItemsSlider').slick({
+      dots: false,
+      infinite: false,
+      arrow: false,
+      speed: 300,
+      slidesToShow: 3.5,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+}
+
+if( $('.followUsSlider').length ){
+    $('.followUsSlider').slick({
+      dots: false,
+      infinite: false,
+      arrow: false,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+}
+
 
 ///////////////////////////// Milon
 

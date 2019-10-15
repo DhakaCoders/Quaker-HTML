@@ -28,7 +28,6 @@
 	line-height: 90px;
 	font-family: 'PFCatalog-Black';
 	color: #002853;
-	margin-top: 5px;
 	margin-bottom: 10px;
 }
 .product-innr-dsc h5{
@@ -117,7 +116,7 @@ product-inr-content-sec-wrp
 	float: left;
 	width: 50%;
 	padding-right: 140px;
-	line-height: 16px;
+	line-height: 24px;
 }
 .product-inr-rgt-content{
 	float: left;

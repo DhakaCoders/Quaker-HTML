@@ -156,7 +156,7 @@ product-inr-content-sec-wrp
 	padding-top: 5px;
 	border-bottom: 1px solid #dad9d6;
 }
-.product-inr-rgt-content ul li a{
+.product-inr-rgt-content ul li span{
 	display: inline-block;
 	vertical-align: baseline;
 	text-decoration: none;
@@ -167,7 +167,7 @@ product-inr-content-sec-wrp
 	font-weight: 400;
 	color: #001c48;
 }
-.product-inr-rgt-content ul li a:last-of-type{
+.product-inr-rgt-content ul li span:last-of-type{
 	text-align: right;
 }
 .product-inr-rgt-content h5{

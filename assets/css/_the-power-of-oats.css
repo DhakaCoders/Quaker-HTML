@@ -46,8 +46,10 @@ pk-two-grid-sec-wrp
 	width: 100%;
 	margin: 0 auto;
 }
-.enti-hdr h3{
+.enti-hdr h2,
+.enti-hdr h1{
 	margin: 0;
+	font-size: 40px;
 	line-height: 45px;
 	font-family: 'PFCatalog-Black';
 	color: #002853;

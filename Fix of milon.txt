@@ -1,0 +1,56 @@
+loader
+-----------------
+1. https://www.screencast.com/t/a35pGmPFh
+	padding bottom hobe
+
+header
+-----------
+1. https://www.screencast.com/t/3pWJyh0O
+	1599px thakei margin 0 kore daw
+2. https://www.screencast.com/t/nnChtbNcz
+	i) cursor pointer hobe
+	ii) hover korle opacity use kora jete pare. mane akta hover dite hobe
+3. https://www.screencast.com/t/08TEp0QKpcq
+	sub-menu ber hole akta border ber hoy oita hobena
+
+Products_hub
+-------------
+1. https://www.screencast.com/t/xXuHktGPP
+	container-lg ar bodhole just container class ta use koro r left ar padding ta badh daw
+2. https://www.screencast.com/t/xXuHktGPP
+	p ar br badh diye max-width komay diye manage koro
+3. https://www.screencast.com/t/prat4e2vR2F4
+	fixed height hobena min-height deoa valo. content barleo problem hobena
+	r bottom a padding dite hobe 100px dile hobe
+4. https://www.screencast.com/t/VjzNJAEJ
+	click korle dhakka mare
+5. https://www.screencast.com/t/y61XrdTE
+	i) clear left korte hobe
+	ii) box a hover effects dite hobe
+6. https://www.screencast.com/t/gIgd3F9G0MHL
+	parent section a overflow hidden daw. bcoz ul a (-) margin ache to responsive a scrollbar aste pare
+
+Recipes_Hub
+-------------
+1. https://www.screencast.com/t/BKxJ3A6gJRwW
+	ai banner ar fix Products_hub page ar motoi hobe
+2. https://www.screencast.com/t/Vq5r7UBoK
+	click korle dhakka mare. r active border ta gray border ar upor thakbe
+3. https://www.screencast.com/t/tAc9njQNWm
+	link hobe
+
+Products_inner
+---------------
+1. https://www.screencast.com/t/qJo5r5T7WsL
+	ai gap ta aktu besi mone hosche
+2. https://www.screencast.com/t/8O64i7RpBDF
+	ai text 2 ta ak label a hobe . so amra left a padding dite pari ai text 2 tate
+3. https://www.screencast.com/t/rCO1zsCrz1
+	ai tateo padding left dite hobe
+4. https://www.screencast.com/t/IqwTF1i8QMq
+	text uteh ache. r bottom pojonto content thik nai
+
+
+the_power_of_oats
+---------------------
+1.

@@ -12,7 +12,8 @@ a,input,img,textarea,button,.qp-more-hover-btn,
 	-webkit-transition: all 0.5s;
 }
 .gallery-hover-controller:hover .dsw-ms-gallery-item img,
-.scale{
+.scale,
+.follow-us-grd-item:hover > img{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);

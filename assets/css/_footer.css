@@ -41,14 +41,13 @@
 	float: left;
 }
 .ftr-social li:not(:last-child){
-	padding-right: 10px;
+	padding-right: 13px;
 }
 .ftr-social li a{
 	display: inline-block;
 	vertical-align: baseline;
 	font-size: 35px;
 	color: inherit;
-	max-width: 
 }
 
 .ftr-social li a:hover img{
@@ -231,12 +230,25 @@
 
 
 
+/*footer 2*/
 
+#footer-white{
+	background: #fff;
+}
 
+#footer-white .ftr-social ul li a{
+	color: #002853;
+}
 
-
-
-
+#footer-white .ftr-links ul li a:hover{
+	color: #002853;
+}
+#footer-white .ftr-links{
+	padding-top: 50px;
+}
+#footer-white .ftr-social{
+	padding-top: 90px;
+}
 
 
 

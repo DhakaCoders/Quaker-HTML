@@ -38,8 +38,8 @@ Containers fluid
 .container-fluid{
 	padding-left: 60px;
 	padding-right: 60px;
-	margin-left: 2%;
-	margin-right: 2%;
+	margin-left: 5%;
+	margin-right: 5%;
   
 }
 .container-fluid .row{

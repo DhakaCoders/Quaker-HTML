@@ -71,6 +71,9 @@ Start header
 	left: 0;
 	bottom: -10px;
 }
+nav.main-nav li.menu-item-has-children:hover a:after{
+	content: none;
+}
 .main-nav ul > li.menu-item-has-children:hover a.active:after{
 	background-color: #9fd355;
 }
@@ -174,6 +177,13 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a{
 .hdr-search-area{
 	float: right;
 	position: relative;
+}
+.hdr-search-btn{
+	cursor: pointer;
+}
+.hdr-search-btn:hover{
+	background-color: #fff;
+	transition: all 0.5s;
 }
 .hdr-search-frm{
 	position: absolute;

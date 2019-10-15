@@ -3,7 +3,6 @@
 -----------------------
 */
 .product-innr-bnr-dsc-wrp{
-	padding-left: 90px;
 	position: relative;
 	padding-bottom: 180px;
 }
@@ -29,6 +28,7 @@
 	font-family: 'PFCatalog-Black';
 	color: #002853;
 	margin-bottom: 10px;
+	margin-left: -5px;
 }
 .product-innr-dsc h5{
 	margin: 0;
@@ -42,12 +42,12 @@
 }
 .product-inr-tab-wrp .img-change-pagi{
 	margin-top: -55px;
-	margin-left: 20px;
+	margin-left: 12px;
 }
 .product-inr-tab-wrp .img-change-pagi ol li{
 	width: 23px;
 	height: 23px;
-	margin: 0 10px;
+	margin: 0 8px;
 }
 .product-inr-icon{
 	float: left;

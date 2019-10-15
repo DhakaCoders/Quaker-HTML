@@ -53,4 +53,13 @@ Products_inner
 
 the_power_of_oats
 ---------------------
-1.
+1. https://www.screencast.com/t/zylSjIZkVhD
+	ai banner ar fix Products_hub page ar motoi hobe
+2. https://www.screencast.com/t/iDnhUbaBb
+	ata h1 hobe abar h2 diyeo design kore rakhte hobe atar
+3. https://www.screencast.com/t/kE4Puawv4
+	ai text gulo p diye. p ar vitore strong daw . span hobena
+	https://www.screencast.com/t/Cu0Rng1pa
+	r ata normal p ar design thake
+4. https://www.screencast.com/t/Zt3qF19Li
+	ai gap ta kom hobe

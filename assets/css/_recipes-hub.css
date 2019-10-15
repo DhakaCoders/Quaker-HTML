@@ -29,7 +29,19 @@ macy-2items-isotop-gallery-sec
 	color: #7f93a9;
 	font-family: 'PFCatalog-Light';
 	padding-bottom: 8px;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 }
+.button.checked,
+.button.is-checked{
+	color: #002853;
+	border-bottom: 2px solid #002853;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
 .qk-ms-gallery-wrp{
 	padding-top: 60px;
 }

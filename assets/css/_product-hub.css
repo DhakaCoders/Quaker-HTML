@@ -29,10 +29,16 @@ product-list-sec-wrp
 	color: #7f93a9;
 	font-family: 'PFCatalog-Light';
 	padding-bottom: 8px;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .product-filter-menu ul li.ui-tabs-active a {
     color: #11365e;
     border-bottom: 2px solid #11365e;
+    -ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
+	transition: all 0.5s;
 }
 .product-filter-menu ul li a:hover{
 	color: #11365e;

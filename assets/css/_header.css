@@ -173,11 +173,12 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a{
 
 .hdr-search-area{
 	float: right;
+	position: relative;
 }
 .hdr-search-frm{
 	position: absolute;
-	right: 12px;
-	bottom: 0;
+	right: 0;
+	top: 40px;
 	width: 0;
 	opacity: 0;
 	transition: all 0.5s;

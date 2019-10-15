@@ -43,26 +43,88 @@ if( $('#QP-tabs').length ){
 }
 
 
-$('.img-change-pagi ol li.img-change-pagi-1').on('click', function(e){
+$('li.img-change-pagi-1').on('click', function(e){
   e.preventDefault();
-  $(this).parent().parent().parent().find('.img-1').fadeIn(300);
-  $(this).parent().parent().parent().find('.img-2').fadeOut();
-  $('.img-change-pagi ol li.img-change-pagi-2').removeClass('img-change-pagi-active');
+  $(this).parents().find('.img-1').show();
+  $(this).parents().find('.img-2').hide();
+  $(this).parents().find('li.img-change-pagi-2').removeClass('img-change-pagi-active');
   $(this).addClass('img-change-pagi-active');
 });
-$('.img-change-pagi ol li.img-change-pagi-2').on('click', function(e){
+$('li.img-change-pagi-2').on('click', function(e){
   e.preventDefault();
-  $(this).parent().parent().parent().find('.img-2').fadeIn(300);
-  $(this).parent().parent().parent().find('.img-1').fadeOut();
-  $('.img-change-pagi ol li.img-change-pagi-1').removeClass('img-change-pagi-active');
+  $(this).parents().find('.img-2').show();
+  $(this).parents().find('.img-1').hide();
+  $(this).parents().find('li.img-change-pagi-1').removeClass('img-change-pagi-active');
   $(this).addClass('img-change-pagi-active');
 });
+
+if( $('.recipeItemsSlider').length ){
+    $('.recipeItemsSlider').slick({
+      dots: false,
+      infinite: false,
+      arrow: false,
+      speed: 300,
+      slidesToShow: 3.5,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+}
+
+if( $('.followUsSlider').length ){
+    $('.followUsSlider').slick({
+      dots: false,
+      infinite: false,
+      arrow: false,
+      speed: 300,
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+          }
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2
+          }
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+          }
+        }
+      ]
+    });
+}
 
 
 ///////////////////////////// Milon
 
 
-$('.img-change-pagi ol li.img-change-pagi-1').on('click', function(e){
+/*$('.img-change-pagi ol li.img-change-pagi-1').on('click', function(e){
   e.preventDefault();
   $(this).parent().parent().parent().find('.img-1').fadeIn(300);
   $(this).parent().parent().parent().find('.img-2').fadeOut();
@@ -75,7 +137,7 @@ $('.img-change-pagi ol li.img-change-pagi-2').on('click', function(e){
   $(this).parent().parent().parent().find('.img-1').fadeOut();
   $('.img-change-pagi ol li.img-change-pagi-1').removeClass('img-change-pagi-active');
   $(this).addClass('img-change-pagi-active');
-});
+});*/
 
 /*------------ Start of gallery and isotop -------*/
 
@@ -110,6 +172,20 @@ var $container= $('#isotope').isotope({
 });
 */
 
+if( $('#ph-tabs').length ){
+  $( "#ph-tabs" ).tabs();
+}
+
+$('.hdr-search-btn').on('click', function(){
+    $(this).parent().toggleClass('hdr-search-expend');
+  });
+
+
+/*
+-------------------------
+  Masonary Js
+-------------------------
+*/
 
 if($('#filter-menu').length){
   // init Isotope
@@ -135,6 +211,9 @@ if($('.masonry').length){
     columnWidth: auto
   });
 }
+
+
+
 
 /////////////////////////// Prashanto
 
@@ -172,17 +251,6 @@ var windowWidth = $(window).width();
 
 
 //$("[data-fancybox]").fancybox({});
-
-if( $('#tabs').length ){
-  $( "#tabs" ).tabs();
-}
-
-$('.hdr-search-btn').on('click', function(){
-    $(this).parent().toggleClass('hdr-search-expend');
-  });
-
-
-
 
 
 

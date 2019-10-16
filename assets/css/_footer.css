@@ -1,33 +1,47 @@
  .footer-wrp{
  	background: #002853;
- 	/*padding: 20px 0;*/
  	color:#fff;
  }
-.ftr-top{
-	position: relative;
-	padding-bottom:80px;
-	text-align:center;
-}
-.ftr-top strong {
-    font-family: PFcatalogBlack;
-    font-size: 160px;
+.ftr-top {
     position: relative;
-    top: -120px;
+    padding-bottom: 150px;
+    text-align: center;
+    margin-top: -125px;
 }
+.ftr-top-wid-subtitle strong,
+.ftr-top strong {
+    font-family: 'PFCatalog-Black';
+    display:block;
+    font-size: 160px;
+}
+.ftr-top-wid-subtitle:after,
 .ftr-top:after{
 	content: "";
 	position: absolute;
 	background:url(../images/frt-Q.png)no-repeat; 
 	background-position: center center;
 	background-size: 100% auto;
-	top: 0;
+	top: 30%;
 	left:50%;
 	transform: translate(-50%, -50%);
 	width:277px;
 	height: 392px;
 }
-
-
+.ftr-top-wid-subtitle{
+    position: relative;
+    padding-bottom: 150px;
+    text-align: center;
+    margin-top: -125px;	
+}
+.ftr-top-wid-subtitle:after{
+	top: 30%;
+}
+.ftr-top-wid-subtitle span.subtitle{
+    font-family: 'PFCatalog-Black';
+    display:block;
+    margin:auto;
+    font-size: 26px;
+}
 
 .ftr-social {
 	text-align: center;
@@ -104,16 +118,73 @@
 
 
 
+/*footer 2*/
+
+#footer-white{
+	background: #fff;
+}
+
+#footer-white .ftr-social ul li a{
+	color: #002853;
+}
+
+#footer-white .ftr-links ul li a:hover{
+	color: #002853;
+}
+#footer-white .ftr-links{
+	padding-top: 50px;
+}
+#footer-white .ftr-social{
+	padding-top: 90px;
+}
+
+
+
+
+
+
+
+
+@media(max-width: 1599px){
+
+}
+
+@media(max-width: 1199px){
+
+}
+
+@media(max-width: 991px){
+
+}
+
+@media(max-width: 767px){
+
+}
+
+@media(max-width: 639px){
+
+}
+
+@media(max-width: 575px){
+
+}
+
+@media(max-width: 479px){
+
+}
+
+@media(max-width: 359px){
+
+}
+
+
+
 
 
 
 /*power of ots*/
 
 /*power of ots*/
-
-
-
-
 
 .power-benefits-of-orga{
 	background-repeat: no-repeat !important;
@@ -162,10 +233,6 @@
 .power-benefits-of-orga-innr a:hover:after{
 	right:-5px;
 }
-
-
-
-
 .power-good-energy{
 	background: #002853;
 	color:#fff;
@@ -180,15 +247,10 @@
 	font-size: 28px;
 	font-family: 'PFCatalog-bold';
 }
-
-
-
-
 .power-energy-necessary{
 	text-align: center;
 	padding: 70px 0 100px;
 }
-
 .power-energy-necessary-innr{
 }
 .power-energy-necessary-top {
@@ -238,26 +300,40 @@
 
 
 
-/*footer 2*/
 
-#footer-white{
-	background: #fff;
+
+
+
+
+
+@media(max-width: 1599px){
+
 }
 
-#footer-white .ftr-social ul li a{
-	color: #002853;
+@media(max-width: 1199px){
+
 }
 
-#footer-white .ftr-links ul li a:hover{
-	color: #002853;
-}
-#footer-white .ftr-links{
-	padding-top: 50px;
-}
-#footer-white .ftr-social{
-	padding-top: 90px;
+@media(max-width: 991px){
+
 }
 
+@media(max-width: 767px){
 
+}
 
+@media(max-width: 639px){
 
+}
+
+@media(max-width: 575px){
+
+}
+
+@media(max-width: 479px){
+
+}
+
+@media(max-width: 359px){
+
+}

@@ -1,20 +1,18 @@
  .footer-wrp{
  	background: #002853;
  	color:#fff;
- }
+ } 
 .ftr-top {
     position: relative;
     padding-bottom: 150px;
     text-align: center;
     margin-top: -125px;
 }
-.ftr-top-wid-subtitle strong,
 .ftr-top strong {
     font-family: 'PFCatalog-Black';
     display:block;
     font-size: 160px;
 }
-.ftr-top-wid-subtitle:after,
 .ftr-top:after{
 	content: "";
 	position: absolute;
@@ -28,21 +26,7 @@
 	height: 392px;
 	z-index: 1;
 }
-.ftr-top-wid-subtitle {
-    position: relative;
-    padding-bottom: 150px;
-    text-align: center;
-    margin-top: -148px;
-}
-.ftr-top-wid-subtitle:after{
-	top: 30%;
-}
-.ftr-top-wid-subtitle span.subtitle{
-    font-family: 'PFCatalog-Black';
-    display:block;
-    margin:auto;
-    font-size: 26px;
-}
+
 .ftr-social {
 	text-align: center;
 	padding: 20px 0;
@@ -142,6 +126,48 @@
 
 
 
+/*footer 3*/
+
+
+.ftr-top-wid-subtitle {
+    position: relative;
+    padding-bottom: 150px;
+    text-align: center;
+    margin-top: -114px;
+}
+.ftr-top-wid-subtitle:after{
+	content: "";
+	position: absolute;
+	background:url(../images/frt-Q.png)no-repeat; 
+	background-position: center center;
+	background-size: 100% auto;
+	top: 30%;
+	left:50%;
+	transform: translate(-50%, -50%);
+	width:277px;
+	height: 392px;
+	z-index: 1;
+}
+.ftr-top-wid-subtitle:after{
+	top: 30%;
+}
+
+.ftr-top-wid-subtitle-innr{
+	display: inline;
+	position: relative;
+}
+.ftr-top-wid-subtitle strong{
+    font-family: 'PFCatalog-Black';
+    display: inline;
+    font-size: 160px;
+}
+.ftr-top-wid-subtitle span.subtitle {
+    font-family: 'PFCatalog-Black';
+    font-size: 26px;
+    position: absolute;
+    top: -122px;
+    left: 8px;
+}
 
 
 

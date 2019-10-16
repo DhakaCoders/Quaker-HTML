@@ -225,6 +225,9 @@
 	.benefits-oats-con img {
 	    max-width: 70px;
 	}
+	.benefits-unleash-power strong {
+	    font-size: 40px;
+	}
 }
 
 @media(max-width: 767px){
@@ -261,7 +264,18 @@
 	.benefits-source-vitamins li {
 	    margin-top: 15px;
 	    margin-bottom: 15px;
+	}	
+	.benefits-unleash-power strong {
+	    font-size: 32px;
 	}
+	.benefits-unleash-power p br,	
+	.benefits-unleash-power strong br{
+	    display: none
+	}
+	.benefits-unleash-power {
+	    padding: 52px 0 42px;
+	}
+
 }
 
 @media(max-width: 639px){

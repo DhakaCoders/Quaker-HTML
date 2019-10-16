@@ -30,9 +30,6 @@
     height: 753px;
     z-index: 2;
 }
-.benefits-oats-main-innr{
-	
-}
 .benefits-oats-element {
     background: #fff;
     -ms-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.05);
@@ -47,9 +44,6 @@
     border-radius: 10px;
     top: -90px;
 }
-
-
-
 .benefits-oats-element li{
 	padding: 10px;
 	position: relative;
@@ -61,8 +55,6 @@
     position: absolute;
     right: -6px;
     top: 11px;
-    color: #000;
-    font-size: 35px;
     width: 2px;
     height: 46px;
     background: #666;
@@ -70,13 +62,11 @@
 .benefits-oats-element img{
 	max-width: 210px;
 }
-
 .benefits-oats-features-main{
 	padding-left: 100px;
 	position: relative;
 	z-index: 10
 }
-
 .benefits-oats-features-main-col-1 .benefits-oats-con-1{
 	width:48%;
 	float: left;
@@ -85,13 +75,6 @@
 	width:52%;
 	float: left;
 }
-
-
-.benefits-oats-features-main-col-2{
-	/*padding-left: 710px;*/
-}
-
-
 .benefits-oats-features-main-col-2 .benefits-oats-con-1{
 	width:52%;
 	float: right;
@@ -100,16 +83,13 @@
 	width:52%;
 	float: right;
 }
-
 .benefits-oats-features-main-col-3 .benefits-oats-con{
 	width:75%;
 	float: right;	
 }
-
 .benefits-oats-features-main .benefits-oats-con{
 	margin-bottom: 80px;
 }
-
 .benefits-oats-features-main-col-1 .benefits-oats-con-1 p{
 	max-width: 340px
 }
@@ -180,7 +160,6 @@
 	top:0;
 	left:0;
 }
-
 .benefits-unleash-power{
 	padding: 105px 0 90px;
 	background: #fff;
@@ -198,8 +177,6 @@
 	margin: 0 auto;
 	line-height: 20px;
 }
-
-
 #benefits-our-recipes-sec .h-our-recipes-sec-hdr {
     max-width: 1100px;
     padding-bottom: 100px;
@@ -215,12 +192,73 @@
 }
 
 @media(max-width: 1199px){
+.benefits-oats-main-sec::after {
+    width: 485px;
+    height: 570px;
+}
+.benefits-oats-con img {
+    max-width: 70px;
+}
+.benefits-oats-con {
+    padding-left: 100px;
+    padding-top: 10px;
+}
+.benefits-oats-features-main {
+    padding-left: 65px;
+}
 	.benefits-oats-feature-btm-bg {
 		min-height: 700px;
-	}	
+	}
+	.benefits-oats-element img {
+	    max-width: 160px;
+	    width: 100%;
+	}
 }
 
 @media(max-width: 991px){
+.benefits-oats-main-sec {
+    padding-bottom: 20px;
+}	
+.benefits-oats-element li {
+    width: 50%;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.benefits-oats-element li:nth-child(2)::after {
+	content:none;
+}
+.benefits-oats-element {
+    padding: 17px 20px;
+}
+.benefits-oats-element li:not(:last-child)::after {
+    right: 0;
+    top: 23px;
+    width: 2px;
+    height: 28px;
+}
+.benefits-oats-main-sec::after {
+    content: none;
+}
+.benefits-oats-features-main .benefits-oats-con {
+    margin-bottom: 40px;
+    padding-right: 15px;
+}
+.benefits-oats-features-main-col-1 .benefits-oats-con-1,
+.benefits-oats-features-main-col-1 .benefits-oats-con-2,
+.benefits-oats-features-main-col-2 .benefits-oats-con-1,
+.benefits-oats-features-main-col-2 .benefits-oats-con-2,
+.benefits-oats-features-main-col-3 .benefits-oats-con {
+    width: 50%;
+    float: left;
+}
+.benefits-oats-features-main {
+    padding-left: 0;
+}
+
+
+
+
+
 	.benefits-source-vitamins li {
 	    margin-top: 40px;
 	    margin-bottom: 40px;
@@ -237,6 +275,19 @@
 }
 
 @media(max-width: 767px){
+.benefits-oats-features-main-col-1 .benefits-oats-con-1,
+.benefits-oats-features-main-col-1 .benefits-oats-con-2,
+.benefits-oats-features-main-col-2 .benefits-oats-con-1,
+.benefits-oats-features-main-col-2 .benefits-oats-con-2,
+.benefits-oats-features-main-col-3 .benefits-oats-con {
+    width:100%!important;
+    float: left;
+}
+.benefits-oats-features-main .benefits-oats-con {
+    margin-bottom: 30px;
+    padding-right: 0;
+}
+
 	.benefits-oats-feature-btm-bg {
 		min-height: 500px;
 	}
@@ -285,6 +336,7 @@
 }
 
 @media(max-width: 639px){
+
 	.benefits-oats-feature-btm-bg {
 		min-height: 310px;
 	}
@@ -297,6 +349,12 @@
 @media(max-width: 479px){
 	.benefits-oats-feature-btm-bg {
 		min-height: 270px;
+	}
+	.benefits-oats-element li {
+	    padding: 20px;
+	}
+	.benefits-oats-element {
+	    padding: 8px 0px;
 	}
 }
 

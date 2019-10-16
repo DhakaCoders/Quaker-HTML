@@ -1,6 +1,9 @@
 .promo-banner-slider{
 	overflow: hidden;
 }
+.promoBannerSlider{
+	margin-bottom: 0!important;
+}
 .promo-banner-slide-item,
 .promo-banner-slider-wrap{
 	position: relative;
@@ -30,6 +33,37 @@
 	z-index: 2;
 }
 
+.promoBannerSlider .slick-prev,
+.promoBannerSlider .slick-next{
+	width: 66px;
+	height: 67px;
+	z-index: 20;
+	opacity: 0;
+}
+.promoBannerSlider .slick-prev:hover{
+	left: 50px;
+}
+.promoBannerSlider .slick-next:hover{
+	right: 50px;
+}
+.promoBannerSlider .slick-prev:before,
+.promoBannerSlider .slick-next:before{
+	content: none;
+}
+.promoBannerSlider .slick-prev{
+	background: url(../images/arrow-prev.png);
+	background-size: 100% 100%;
+	left: 60px;
+}
+.promoBannerSlider:hover .slick-prev,
+.promoBannerSlider:hover .slick-next{
+	opacity: 1;
+}
+.promoBannerSlider .slick-next{
+	background: url(../images/arrow-next.png);
+	background-size: 100% 100%;
+	right: 60px;
+}
 .promo-banner-slide-des{
 	padding: 300px 0 290px;
 	color: #002853;
@@ -83,6 +117,42 @@
     transition: all .3s ease;
 }
 
+
+.promoBannerSlider .slick-current .promo-banner-slide-des  span,
+.promoBannerSlider .slick-current .promo-banner-slide-des strong{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+.promoBannerSlider .slick-current .promo-banner-slide-des p{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;	
+}
+.promoBannerSlider .slick-current .promo-banner-slide-des a{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 1.6s;
+  animation-delay: 1.6s;	
+}
+
+
+
+
 .scroll-down{
 	position: absolute;
 	left: 40px;
@@ -128,6 +198,12 @@
 	line-height: 20px;
 	cursor: pointer;
 }
+.mslider-pagination a:hover{
+	color: #002853;
+}
+.mslider-pagination a:hover:after{
+	background: #002853;
+}
 .mslider-pagination a:after{
 	content: "";
 	left: 0;
@@ -137,6 +213,9 @@
 	position: absolute;
 	bottom: 0;
 	z-index: 10;
+	transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .mslider-pagination a.msiactive{
 	color: #002853;

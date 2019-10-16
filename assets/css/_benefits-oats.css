@@ -1,7 +1,7 @@
 
 
 
-
+ 
 .benefits-oats-main-sec{
 	position: relative;
 	background: #fff;
@@ -43,7 +43,7 @@
     margin: 0 auto;
     position: relative;
     z-index: 2;
-    padding: 50px;
+    padding: 50px 40px;
     border-radius: 10px;
     top: -90px;
 }
@@ -56,13 +56,16 @@
 	float: left;
 	width:25%;
 }
-.benefits-oats-element li:not(:last-child):after {
-    content: "|";
+.benefits-oats-element li:not(:last-child)::after {
+    content: "";
     position: absolute;
-    right: -7px;
-    top: 8px;
+    right: -6px;
+    top: 11px;
     color: #000;
     font-size: 35px;
+    width: 2px;
+    height: 46px;
+    background: #666;
 }
 .benefits-oats-element img{
 	max-width: 210px;

@@ -15,9 +15,20 @@ if($('.scroll-btn').length){
     goToByScroll(togo, 0);
   });
 }
+function goToByScroll(id, offset){
+  if(id){
+      // Remove "link" from the ID
+    id = id.replace("link", "");
+      // Scroll
+    $('html,body').animate(
+        {scrollTop: $(id).offset().top - offset},
+      500);
+  }
+}
+
 if( $('.promoBannerSlider').length ){
     $('.promoBannerSlider').slick({
-      dots: false,
+      dots: true,
       infinite: false,
       autoplay: true,
       speed: 300,

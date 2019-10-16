@@ -25,6 +25,9 @@ body {
     font-weight: 400;
     font-family: 'Open Sans', sans-serif;
 }
+p{
+	line-height: 1.4;
+}
 /*-- app gap use pattern --*/
 /*data-xxs = 575
 data-xs = 767

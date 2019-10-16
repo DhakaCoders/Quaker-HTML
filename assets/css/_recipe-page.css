@@ -167,6 +167,9 @@
 .recipe-items-slide-item{
 	position: relative;
 }
+.recipe-items-slide-item:hover .recipe-text span{
+	color: #9e192d;
+}
 .recipe-items-slide-img{
 	min-height: 550px;
 	background-size: cover!important;
@@ -186,6 +189,9 @@
 	color: #fff;
 	text-transform: uppercase;
 	font-family: 'PFCatalog-Black';
+		transition: all 0.5s;
+	-ms-transition: all 0.5s;
+	-webkit-transition: all 0.5s;
 }
 .recipeItemsSlider.slick-initialized .slick-slide.slick-active .recipe-text{
 	opacity: 1;

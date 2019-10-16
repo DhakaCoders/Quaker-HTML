@@ -26,6 +26,7 @@
 	transform: translate(-50%, -50%);
 	width:277px;
 	height: 392px;
+	z-index: 1;
 }
 .ftr-top-wid-subtitle{
     position: relative;
@@ -42,7 +43,6 @@
     margin:auto;
     font-size: 26px;
 }
-
 .ftr-social {
 	text-align: center;
 	padding: 20px 0;
@@ -72,11 +72,9 @@
 	font-size: 35px;
 	color: inherit;
 }
-
 .ftr-social li a:hover img{
 	opacity: .5
 }
-
 .ftr-links{
 	padding: 30px;
 }
@@ -98,7 +96,7 @@
 .ftr-links li:not(:last-child):after{
 	content:"|";
 	position: absolute;
-	right: 0;
+	right: -4px;
 	top: 0;
 	font-size: 15px;
 	color: #7d889c;
@@ -273,7 +271,7 @@
 }
 .power-benefits-of-orga-innr{
 	padding: 175px 0 205px;
-	max-width: 990px;
+	max-width: 1008px;
 	margin: 0 auto;
 }
 .power-benefits-of-orga-innr strong{
@@ -379,6 +377,8 @@
     padding: 0 23px;
     width: 25%;
     margin-bottom: 25px;
+    text-align-last: center;
+    text-align: center;
 }
 .features-of-ots li:nth-child(4n+1){
     clear: left;
@@ -393,6 +393,7 @@
 
 .features-of-ots p{
 	line-height: 18px;
+	text-align: justify;
 }
 
 

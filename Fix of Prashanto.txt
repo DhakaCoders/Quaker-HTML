@@ -3,24 +3,24 @@ he_power_of_oats
 1. https://www.screencast.com/t/hpzhMt5t
 	ai section a akta bg img hobe
 2. https://www.screencast.com/t/7F5WZFMkgCi
-	text ar alignment gulo aibox ar moto hobe.
+	text ar alignment gulo aibox ar moto hobe. ----done
 	r li a clear left lagbe jodi item baray tahole jeno problem na hoy gap jeno thik thake.
-	design kore rakhte hobe
+	design kore rakhte hobe ----done
 
 3. https://www.screencast.com/t/80kRUuoBue5R
-	aitar max-width 1008px hobe
+	aitar max-width 1008px hobe ----done
 
 Blue Footer
 ------------
 1. https://www.screencast.com/t/qfArnj2wZ
-	background mileni . overlay soho hobe
+	background mileni . overlay soho hobe ----done
 
 2. https://www.screencast.com/t/NtfbYAbV
-	z-index lagbe
+	z-index lagbe ----done
 3. https://www.screencast.com/t/II5oD8racM
 	sprit hobe. svg img gulo images folder ar vitorei ache.
 4. https://www.screencast.com/t/HGDMljGOZt
-	ai line gulor positon thik nai
+	ai line gulor positon thik nai ----done
 
 5. j j page a blue footer ta ache. sob page a check kore fix kore felo . j page a jemon ta ache.
 
@@ -29,16 +29,16 @@ Benefits_oats
 1. https://www.screencast.com/t/1q96gfXTU
 	ai banner gulor fix milon ar page a dichi. so or page a dekhe thik thak kore nao. jemon container gap etc
 2. https://www.screencast.com/t/oO4W1SYsj
-	aikhane img ar parent a text align center daw. 
+	aikhane img ar parent a text align center daw.  ----done
 	https://www.screencast.com/t/SdTcTH89agKz
 		gap and line position mileni .
 3. https://www.screencast.com/t/WFYaU57g7X
-	img tag ta h5 ar upore hobe
-	same niche akta section ache oitateo amon a hobe
+	img tag ta h5 ar upore hobe  ----done
+	same niche akta section ache oitateo amon a hobe  ----done
 4. https://www.screencast.com/t/xdHyO0o27xCM
-	ai section ar icon gulo thik nai
+	ai section ar icon gulo thik nai  ----done
 5. https://www.screencast.com/t/jCFKf51fk
- 	ai khane akta slider hobe . home page a korchi copy kore bosao
+ 	ai khane akta slider hobe . home page a korchi copy kore bosao  ----done
 6. https://www.screencast.com/t/zBz7CbxPbW6
 	1600 media tei break hoye geche
 
@@ -48,15 +48,15 @@ History
 -------------------
 1. main banner ar fix milon ar page gulo thake dekhe nao. milon kore thakle just tomay milay nite hobe
 2. https://www.screencast.com/t/syORQ9byNPwU
-	text-align center hobe
+	text-align center hobe  ----done
 3. https://www.screencast.com/t/ZLTuX2ofarT
-	i) padding 45 45 daw. r last box ar p te br use koro
-	ii) p ar line-height 21 hobe . 
+	i) padding 45 45 daw. r last box ar p te br use koro  ----done
+	ii) p ar line-height 21 hobe .   ----done
 4. https://www.screencast.com/t/wgepEWjHZ
-	li te clear lagbe.
-	r akta li jodi baray tahole jeno design thik thake gap and padding
+	li te clear lagbe.  ----done
+	r akta li jodi baray tahole jeno design thik thake gap and padding  ----done
 5. https://www.screencast.com/t/2qfXAb3W
-	gap mileni
+	gap mileni  ----done
 
 
 

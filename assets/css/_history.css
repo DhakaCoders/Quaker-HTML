@@ -6,6 +6,7 @@
 .bnr-btm-des-sec{
 	background: #0c325b;
 	padding:83px 0 45px;
+	text-align: center;
 }
 .bnr-btm-des-sec .bnr-btm-des-innr{
 	max-width: 975px;
@@ -18,12 +19,8 @@
 	color:#fff;
 	margin-bottom: 35px;
 }
-
-
-
-
 .top-history-sec{
-	padding: 90px 0 75px;
+	padding: 90px 0 55px;
 	text-align: center;
 	background-repeat: no-repeat!important;
 	background-size: cover!important;
@@ -34,7 +31,7 @@
 	margin: 0 auto;
 }
 .top-history-head {
-	padding-bottom: 50px;
+    padding-bottom: 118px;
 }
 .top-history-head h1{
 	font-family: 'PFCatalog-Black';
@@ -45,16 +42,12 @@
 .top-history-head p{
 	font-family: 'PFCatalog-Light';
 }
-
-.top-history-main{
-
-}
-.top-history-main li{
-	width:33.333%;
-	float: left;
-	padding-left: 60px;
-	padding-right: 60px;
-
+.top-history-main li {
+    width: 33.333%;
+    float: left;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-bottom: 30px;
 }
 .top-history-main li:nth-child(3n+1){
 	clear: left;
@@ -63,9 +56,9 @@
 	max-width: 250px;
 	margin-bottom: 30px;
 }
-
-
-
+.top-history-main li p{
+	line-height: 21px;
+}
 .history-line-sec{	
 	background-repeat: no-repeat!important;
 	background-size: cover!important;

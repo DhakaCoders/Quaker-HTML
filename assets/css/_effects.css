@@ -28,10 +28,10 @@ a,input,img,textarea,button,.qp-more-hover-btn,
 	-webkit-transition: all 0.3s;
 }
 .product-list-item:hover .product-list-img a img{
-	transform: scale(1.1);
-	-ms-transform: scale(1.1);
-	-webkit-transform: scale(1.1);
-	-o-transform: scale(1.1);
+	transform: scale(1.03);
+	-ms-transform: scale(1.03);
+	-webkit-transform: scale(1.03);
+	-o-transform: scale(1.03);
 }
 
 /**

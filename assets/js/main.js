@@ -17,7 +17,7 @@ if($('.scroll-btn').length){
 }
 if( $('.promoBannerSlider').length ){
     $('.promoBannerSlider').slick({
-      dots: false,
+      dots: true,
       infinite: false,
       autoplay: true,
       speed: 300,

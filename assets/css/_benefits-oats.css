@@ -137,10 +137,11 @@
 	max-width: 1195px;
 	margin: 0 auto;
 }
-.benefits-oats-con{
-	position: relative;
-	padding-left: 140px;
-	padding-top: 10px;
+.benefits-oats-con {
+    position: relative;
+    padding-left: 140px;
+    padding-top: 10px;
+    padding-right: 12px;
 }
 .benefits-oats-con h5 {
     font-family: 'PFCatalog-Black';
@@ -162,6 +163,9 @@
 	width:46.36%;
 	margin-top: 60px;
 	margin-bottom: 60px;
+}
+.benefits-source-vitamins li:nth-child(2n+1){
+	clear: left;
 }
 .benefits-source-vitamins li:nth-child(2n+1){
 	clear: left;
@@ -205,19 +209,65 @@
 }
 
 @media(max-width: 1199px){
-
+	.benefits-oats-feature-btm-bg {
+		min-height: 700px;
+	}	
 }
 
 @media(max-width: 991px){
-
+	.benefits-source-vitamins li {
+	    margin-top: 40px;
+	    margin-bottom: 40px;
+	}
+	.benefits-oats-con {
+	    padding-left: 100px;
+	}
+	.benefits-oats-con img {
+	    max-width: 70px;
+	}
 }
 
 @media(max-width: 767px){
-
+	.benefits-oats-feature-btm-bg {
+		min-height: 500px;
+	}
+	.benefits-source-vitamins li:nth-child(2n+1){
+		clear: initial;
+	}
+	.benefits-source-vitamins li {
+		width:100%!important;
+	}	
+	.benefits-oats-con h5 br{
+	   display: none;
+	}
+	.benefits-source-vitamins li .benefits-oats-con p {
+	    max-width: 100%!important;
+	}
+	.benefits-source-vitamins {
+	    border-width: 10px;
+	    border-left:0;
+	    border-right: 0; 
+	    padding-top: 44px;
+	    padding-bottom: 40px;
+	}
+	.benefits-oats-con {
+	    padding-left: 70px;
+	    padding-top: 0;
+	    padding-right: 0;
+	}
+	.benefits-oats-con img {
+	    max-width: 45px;
+	}
+	.benefits-source-vitamins li {
+	    margin-top: 15px;
+	    margin-bottom: 15px;
+	}
 }
 
 @media(max-width: 639px){
-
+	.benefits-oats-feature-btm-bg {
+		min-height: 310px;
+	}
 }
 
 @media(max-width: 575px){
@@ -225,7 +275,9 @@
 }
 
 @media(max-width: 479px){
-
+	.benefits-oats-feature-btm-bg {
+		min-height: 270px;
+	}
 }
 
 @media(max-width: 359px){

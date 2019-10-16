@@ -1,7 +1,7 @@
 he_power_of_oats
 -----------------------
 1. https://www.screencast.com/t/hpzhMt5t
-	ai section a akta bg img hobe
+	ai section a akta bg img hobe >>> (etar moto bg milche na)
 2. https://www.screencast.com/t/7F5WZFMkgCi
 	text ar alignment gulo aibox ar moto hobe. ----done
 	r li a clear left lagbe jodi item baray tahole jeno problem na hoy gap jeno thik thake.
@@ -18,7 +18,7 @@ Blue Footer
 2. https://www.screencast.com/t/NtfbYAbV
 	z-index lagbe ----done
 3. https://www.screencast.com/t/II5oD8racM
-	sprit hobe. svg img gulo images folder ar vitorei ache.
+	sprit hobe. svg img gulo images folder ar vitorei ache. ----done
 4. https://www.screencast.com/t/HGDMljGOZt
 	ai line gulor positon thik nai ----done
 
@@ -31,7 +31,7 @@ Benefits_oats
 2. https://www.screencast.com/t/oO4W1SYsj
 	aikhane img ar parent a text align center daw.  ----done
 	https://www.screencast.com/t/SdTcTH89agKz
-		gap and line position mileni .
+		gap and line position mileni .----done
 3. https://www.screencast.com/t/WFYaU57g7X
 	img tag ta h5 ar upore hobe  ----done
 	same niche akta section ache oitateo amon a hobe  ----done
@@ -40,7 +40,7 @@ Benefits_oats
 5. https://www.screencast.com/t/jCFKf51fk
  	ai khane akta slider hobe . home page a korchi copy kore bosao  ----done
 6. https://www.screencast.com/t/zBz7CbxPbW6
-	1600 media tei break hoye geche
+	1600 media tei break hoye geche  ----done
 
 
 

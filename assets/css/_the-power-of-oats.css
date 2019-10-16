@@ -19,6 +19,7 @@ the-power-prd-tp
 	width: 100%;
 	font-size: 16px;
 	line-height: 22px;
+	color: #0f345d;
 }
 
 .qk-banner-dsc strong{
@@ -28,6 +29,7 @@ the-power-prd-tp
 	line-height: 75px;
 	font-family: 'PFCatalog-Regular';
 	margin-bottom: 28px;
+	color: #082f58;
 }
 /*
 --------------------------
@@ -129,6 +131,7 @@ pk-two-grid-sec-wrp
 	font-size: 16px;
 	line-height: 24px;
 	color: #002853;
+	font-weight: normal;
 }
 .pk-two-plate-rgt-dsc p{
 	font-size: 12px;

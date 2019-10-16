@@ -1,6 +1,6 @@
 (function($) {
 
-
+var windowWidth = $(window).width();
 /////////////////////////// Rannojit
 
 //match Height
@@ -209,28 +209,31 @@ $('.hdr-search-btn').on('click', function(){
 
 //sm-popup-main-menu
 
-if (windowWidth <= 991) {
-  if( $('.nav-opener').length ){
-    $('.nav-opener-btn').on('click', function(){
-      $('.main-nav ul').fadeIn(500);
-      $('.main-nav ul').addClass('add-cls-show');
-      $(this).removeClass('menu-expend');
-    });
-  };
+if (windowWidth < 992) {
+  $('.nav-opener-btn').on('click', function(){
+    $(this).toggleClass('menu-expend');
+    $('.main-nav').toggleClass('menu-show');
+  });
+
+  $('.main-nav > ul > li.menu-item-has-children > a').on('click', function(e){
+    e.preventDefault();
+    $(this).parent().find('ul.sub-menu').slideToggle(500);
+    $(this).toggleClass('sub-menu-expend')
+  });
+}
 
 
-  if( $('.main-nav ul').length ){
-    $('.nav-opener-btn').on('click', function(){
-      $('.main-nav ul').fadeOut(500);
-      $('.main-nav ul').removeClass('add-cls-show');
-    });
-
-    $('.main-nav > ul > li.menu-item-has-children > a').on('click', function(e){
-      e.preventDefault();
-      $(this).parent().find('ul.sub-menu').slideToggle(500);
-      $(this).toggleClass('sub-menu-expend')
-    });
-  };
+window.onscroll=function(){
+  scrollFunction()
+};
+function scrollFunction(){
+  if(document.body.scrollTop>700||document.documentElement.scrollTop>700){
+    $(".logo").css({'top':'0','z-index':'9999'});
+    $(".logo").addClass('add-cls');
+  }else{
+    $(".logo").css('top', '-100px');
+    $(".logo").removeClass('add-cls');
+  }
 }
 
 

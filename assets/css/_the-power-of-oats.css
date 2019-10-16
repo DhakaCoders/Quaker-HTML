@@ -138,7 +138,7 @@ pk-two-grid-sec-wrp
 	line-height: 17px;
 	color: #8d96a5;
 }
-.pk-two-plate-rgt-dsc p:first-of-type{
+.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-rgt-dsc p:first-of-type{
 	padding-top: 40px;
 }
 .pk-two-plate-lft-img span {

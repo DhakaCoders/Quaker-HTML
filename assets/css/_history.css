@@ -82,6 +82,10 @@
     font-family: 'PFCatalog-Light';
     padding-bottom: 55px;
 }
+.history-timeline-main-wrp{
+	max-height: 820px;
+	overflow-y: auto;
+}
 .history-timeline-main {
     max-width: 1100px;
     margin: 0 auto;
@@ -221,47 +225,50 @@
 	    padding: 60px 0 75px;
 	}
 
-.history-timeline-main:after,
-.history-timeline-main:before,
-.history-timeline-main ul li .time-line-des h3:after {
-    content: none;;
-}
-.history-timeline-main ul li .time-line-img {
-    width: 100%;
-    padding-right:0;
-    text-align: center;
-}
-.history-timeline-main ul li .time-line-des {
-    float: left;
-    width: 100%;
-    padding-left: 0;
-    padding-top: 20px;
-}
-.history-timeline-main ul li:nth-child(2n+2) .time-line-des {
-    float: left;
-    padding-right: 0;
-    padding-left: 0;
-    text-align: left;
-}
-.history-timeline-main ul li:nth-child(2n+2) .time-line-img {
-    float: left;
-    padding-right: 0;
-    padding-left: 0;
-    text-align: center;
-}
-.history-timeline-main {
-    padding : 0 25px;
-}
-.history-timeline-main ul li {
-    padding-bottom: 40px;
-}
-.history-timeline-sec {
-    padding: 50px 0 10px;
-}
-.history-timeline-top {
-    padding-bottom: 25px;
-}
-
+	.history-timeline-main:after,
+	.history-timeline-main:before,
+	.history-timeline-main ul li .time-line-des h3:after {
+	    content: none;;
+	}
+	.history-timeline-main ul li .time-line-img {
+	    width: 100%;
+	    padding-right:0;
+	    text-align: center;
+	}
+	.history-timeline-main ul li .time-line-des {
+	    float: left;
+	    width: 100%;
+	    padding-left: 0;
+	    padding-top: 20px;
+	}
+	.history-timeline-main ul li:nth-child(2n+2) .time-line-des {
+	    float: left;
+	    padding-right: 0;
+	    padding-left: 0;
+	    text-align: left;
+	}
+	.history-timeline-main ul li:nth-child(2n+2) .time-line-img {
+	    float: left;
+	    padding-right: 0;
+	    padding-left: 0;
+	    text-align: center;
+	}
+	.history-timeline-main {
+	    padding : 0 25px;
+	}
+	.history-timeline-main ul li {
+	    padding-bottom: 40px;
+	}
+	.history-timeline-sec {
+	    padding: 50px 0 10px;
+	}
+	.history-timeline-top {
+	    padding-bottom: 25px;
+	}
+	.history-timeline-main-wrp{
+		max-height: initial;
+		overflow-y: initial;
+	}
 
 }
 

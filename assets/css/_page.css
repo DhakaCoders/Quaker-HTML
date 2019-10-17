@@ -14,10 +14,141 @@
 .page-banner {
     height: 100%;
 }
-.bnr-des{
-    position: absolute;
-    left: 0;
-    right: 0;
+.all-page-heading{
+    position: relative;
     z-index: 2;
     text-align: left;
+    padding-top: 350px;
+    padding-bottom: 100px;
+}
+.banner-bg{
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-position: center center !important;
+}
+.qk-banner-sec-wrp{
+    min-height: 900px !important;
+    position: relative;
+    overflow: hidden;
+}
+.qk-banner-dsc{
+    max-width: 600px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 22px;
+    color: #0f345d;
+}
+
+.qk-banner-dsc strong{
+    display: inline-block;
+    vertical-align: baseline;
+    font-size: 70px;
+    line-height: 75px;
+    font-family: 'PFCatalog-Regular';
+    margin-bottom: 28px;
+    color: #082f58;
+}
+
+@media(max-width: 1599px){
+    
+}
+@media(max-width: 1199px){
+    .hide-md{
+        display: none!important;
+    }
+    .show-md{
+        display: block!important;
+    }
+    .banner-bg,
+    .qk-banner-sec-wrp{
+        min-height: 750px !important;
+    }
+    .qk-banner-dsc strong{
+        font-size: 60px;
+        line-height: 65px;
+    }
+    
+
+}
+
+@media(max-width: 991px){
+    .hide-sm{
+        display: none!important;
+    }
+    .show-sm{
+        display: block!important;
+    }
+    .banner-bg,
+    .qk-banner-sec-wrp{
+        min-height: 650px !important;
+    }
+    .all-page-heading{
+        padding-top: 250px;
+    }
+    .qk-banner-dsc strong{
+        font-size: 50px;
+        line-height: 55px;
+    }
+}
+
+
+@media(max-width: 767px){
+    .hide-xs{
+        display: none!important;
+    }
+    .show-xs{
+        display: block!important;
+    }
+    .banner-bg,
+    .qk-banner-sec-wrp{
+        min-height:450px !important;
+        position: static;
+    }
+    .page-banner-wrap{
+        position: static;
+    }
+    .all-page-heading{
+        background-color: #f5f8fa;
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .all-page-heading .qk-banner-dsc strong br{
+        display: none !important;
+    }
+    .qk-banner-dsc {
+        max-width: 350px;
+        width: 100%;
+    }
+    .qk-banner-dsc strong{
+        font-size: 40px;
+        line-height: 45px;
+    }
+    .qk-banner-dsc p br{
+        display: none;
+    }
+}
+
+
+
+@media(max-width: 639px){
+
+}
+
+
+
+@media(max-width: 575px){
+
+
+}
+
+
+@media(max-width: 479px){
+
+
+}
+
+
+
+@media(max-width: 359px){
+
 }

@@ -34,7 +34,7 @@ if( $('.promoBannerSlider').length ){
       speed: 300,
       slidesToShow: 1,
       slidesToScroll: 1,
-      fade: true
+      //fade: true
     });
     $('.promoBannerSlider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
       $('.mslider-pagination a').removeClass('msiactive');
@@ -79,21 +79,15 @@ if( $('.recipeItemsSlider').length ){
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 992,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 2.5,
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 576,
           settings: {
-            slidesToShow: 2,
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
+            slidesToShow: 1.2,
           }
         }
       ]
@@ -110,21 +104,15 @@ if( $('.followUsSlider').length ){
       slidesToScroll: 1,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 768,
           settings: {
-            slidesToShow: 3,
+            slidesToShow: 2.5,
           }
         },
         {
-          breakpoint: 600,
+          breakpoint: 576,
           settings: {
-            slidesToShow: 2
-          }
-        },
-        {
-          breakpoint: 480,
-          settings: {
-            slidesToShow: 1,
+            slidesToShow: 1.2,
           }
         }
       ]

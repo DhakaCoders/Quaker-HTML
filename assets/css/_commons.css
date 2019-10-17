@@ -92,11 +92,9 @@ Containers
 .container-xlg{}
 .container-lg{
 	max-width: 1510px;
-	width: 100%;
 }
 .container-2{
 	max-width: 1425px;
-	width: 100%;
 }
 .container{
 	max-width: 1320px;
@@ -105,7 +103,6 @@ Containers
 .container-md{
 	max-width: 1200px;
 }
-
 .container-sm{
 	max-width: 1010px;
 }

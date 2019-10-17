@@ -6,31 +6,6 @@ the-power-prd-tp
 .the-power-prd-tp{
 	padding-top: 300px !important;
 }
-.qk-banner-sec-wrp{
-	background-repeat: no-repeat !important;
-	background-size: cover !important;
-	background-position: center center !important;
-	min-height: 900px !important;
-	padding-top: 350px;
-	padding-bottom: 100px;
-}
-.qk-banner-dsc{
-	max-width: 600px;
-	width: 100%;
-	font-size: 16px;
-	line-height: 22px;
-	color: #0f345d;
-}
-
-.qk-banner-dsc strong{
-	display: inline-block;
-	vertical-align: baseline;
-	font-size: 70px;
-	line-height: 75px;
-	font-family: 'PFCatalog-Regular';
-	margin-bottom: 28px;
-	color: #082f58;
-}
 /*
 --------------------------
 pk-two-grid-sec-wrp
@@ -123,6 +98,8 @@ pk-two-grid-sec-wrp
 	margin: 0;
 	color: #002853;
 	font-family: 'PFCatalog-Black';
+}
+.pk-two-plate-wrp ul li:nth-child(2n+1) .pk-two-plate-rgt-dsc h4{
 	margin-bottom: 25px;
 }
 .pk-two-plate-rgt-dsc p strong{
@@ -139,7 +116,7 @@ pk-two-grid-sec-wrp
 	color: #8d96a5;
 }
 .pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-rgt-dsc p:first-of-type{
-	padding-top: 40px;
+	padding-top: 30px;
 }
 .pk-two-plate-lft-img span {
     background-image: url(../images/pk-brnd-logo.png);
@@ -150,4 +127,172 @@ pk-two-grid-sec-wrp
     position: absolute;
     top: -73px;
     right: -80px;
+}
+
+/*
+----------------------
+ Responsive css
+-----------------------
+*/
+@media(max-width: 1599px){
+    
+}
+@media(max-width: 1199px){
+    .hide-md{
+        display: none!important;
+    }
+    .show-md{
+        display: block!important;
+    }
+    .enti-hdr h2,
+    .enti-hdr h1{
+    	font-size: 36px;
+    	line-height: 40px;
+    }
+    .pk-two-plate-wrp ul li .pk-two-plate-dsc-rgt-con {
+	    padding-left: 80px;
+	    padding-top: 85px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-dsc-rgt-con {
+	    padding-top: 50px;
+	    padding-right: 70px;
+	}
+
+}
+
+@media(max-width: 991px){
+    .hide-sm{
+        display: none!important;
+    }
+    .show-sm{
+        display: block!important;
+    }
+    .enti-hdr h2,
+    .enti-hdr h1{
+    	font-size: 33px;
+    	line-height: 37px;
+    }
+    .pk-two-plate-wrp {
+	    padding-left: 0;
+	    padding-right: 0;
+	}
+	.pk-two-plate-wrp ul li .pk-two-plate-dsc-rgt-con {
+	    padding-left: 50px;
+	    padding-top: 50px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-dsc-rgt-con {
+	    padding-top: 30px;
+	    padding-right: 50px;
+	    padding-left: 0;
+	}
+	.pk-two-plate-rgt-dsc h4 br{
+		display: none;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-lft-bg{
+		padding-right: 30px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-lft-img:after{
+		right: 0;
+	}
+	.pk-two-plate-wrp ul li {
+	    padding-bottom: 100px;
+	}
+    
+}
+
+
+@media(max-width: 767px){
+    .hide-xs{
+        display: none!important;
+    }
+    .show-xs{
+        display: block!important;
+    }
+    .enti-hdr h2,
+    .enti-hdr h1{
+    	font-size: 28px;
+    	line-height: 34px;
+    }
+    .pk-two-grid-sec-wrp{
+    	padding-top: 70px;
+    }
+    .enti-hdr {
+	    max-width: 430px;
+	    width: 100%;
+	    margin: 0 auto;
+	}
+	.pk-two-plate-wrp{
+		padding-top: 120px;
+	}
+	.pk-two-plate-wrp ul li .pk-two-plate-lft-bg {
+	    float: left;
+	    width: 100%;
+	}
+	.pk-two-plate-wrp ul li .pk-two-plate-lft-img{
+		min-height: 320px !important;
+	}
+	.pk-two-plate-lft-img span {
+	    background-size: 92px 92px;
+	    width: 92px;
+	    height: 92px;
+	    top: -47px;
+	    right: -5px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+1) .pk-two-plate-lft-bg{
+		padding-right: 30px;
+		padding-left: 25px;
+	}
+	.pk-two-plate-wrp ul li .pk-two-plate-lft-img:after{
+		right: 35px;
+	}
+	.pk-two-plate-wrp ul li .pk-two-plate-dsc-rgt-con {
+	    width: 100%;
+	    padding-left: 30px;
+	}
+	.pk-two-plate-wrp ul li .pk-two-plate-dsc-rgt-con {
+	    padding-top: 40px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-lft-bg {
+	    width: 100%;
+	    padding-right: 20px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-dsc-rgt-con {
+	    width: 100%;
+	    padding-top: 50px;
+	}
+	.pk-two-plate-wrp ul li {
+	    padding-bottom: 45px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-dsc-rgt-con{
+		padding-right: 20px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+1) .pk-two-plate-dsc-rgt-con{
+		padding-right: 30px;
+	}
+
+}
+
+
+
+@media(max-width: 639px){
+
+}
+
+
+
+@media(max-width: 575px){
+
+
+}
+
+
+@media(max-width: 479px){
+
+
+}
+
+
+
+@media(max-width: 359px){
+
 }

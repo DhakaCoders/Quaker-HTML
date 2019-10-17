@@ -35,8 +35,8 @@
 
 .promoBannerSlider .slick-prev,
 .promoBannerSlider .slick-next{
-	width: 66px;
-	height: 67px;
+	width: 62px;
+	height: 62px;
 	z-index: 20;
 	opacity: 0;
 }
@@ -101,7 +101,9 @@
     padding-right: 30px;
     font-size: 14px;
 }
-
+.promo-banner-slide-img-xs{
+	display: none;
+}
 .promo-banner-slide-des a:after {
     content: "";
     position: absolute;
@@ -278,6 +280,7 @@
 	line-height: 68px;
 	margin-bottom: 55px;
 	font-family: 'PFCatalog-Black';
+	margin-top: 0;
 }
 
 .about-sec-grd-cols{
@@ -609,4 +612,196 @@
 
 .img-2{
 	display: none;
+}
+
+
+@media(max-width: 1449px){
+	.promoBannerSlider .slick-prev{
+		left: 40px;
+	}
+	.promoBannerSlider .slick-next{
+		right: 40px;
+	}
+	.promoBannerSlider .slick-prev:hover {
+   		 left: 30px;
+	}
+	.promoBannerSlider .slick-next:hover {
+   		 right: 30px;
+	}
+	.promo-banner-slider-wrap .promo-banner-slide-des{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+@media(max-width: 1399px){
+	.promoBannerSlider .slick-prev{
+		left: 30px;
+	}
+	.promoBannerSlider .slick-next{
+		right: 30px;
+	}
+	.promoBannerSlider .slick-prev:hover {
+   		 left: 20px;
+	}
+	.promoBannerSlider .slick-next:hover {
+   		 right: 20px;
+	}
+	.promo-banner-slider-wrap .promo-banner-slide-des{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+}
+@media(max-width: 1199px){
+
+
+}
+
+
+@media(max-width: 991px){
+	.promoBannerSlider .slick-prev{
+		left: 20px;
+	}
+	.promoBannerSlider .slick-next{
+		right: 20px;
+	}
+	.promoBannerSlider .slick-prev:hover {
+   		 left: 15px;
+	}
+	.promoBannerSlider .slick-next:hover {
+   		 right: 15px;
+	}
+	.promo-banner-slider-wrap .promo-banner-slide-des{
+		padding-left: 30px;
+		padding-right: 30px;
+	}
+	.about-sec-con h1{
+		line-height: 48px;
+	}
+	.about-sec-grd-col p br{
+		display: none;
+	}
+	.about-sec-rgt-img{
+		width: 485px;
+	}
+}
+
+
+@media(max-width: 767px){
+	.promoBannerSlider .slick-prev,
+	.promoBannerSlider .slick-next{
+		width: 55px;
+		height: 55px;
+	}
+	.promo-banner-slide-des strong {
+	    font-size: 45px;
+	    line-height: 48px;
+	}
+	.promo-banner-slide-des{
+		padding-top: 250px;
+		padding-bottom: 250px;
+	}
+	.mslider-pagination{
+		right: 20px;
+	}
+	.scroll-down{
+		display: none;
+	}
+	.mslider-pagination a:first-child{
+		margin-left: 0;
+	}
+	.mslider-pagination{
+		left: 15px;
+		right: 15px;
+		text-align: center;
+	}
+	.about-sec-grd-col{
+		width: 100%;
+		padding-bottom: 40px;
+	}
+	.about-sec-grd-col p{
+		margin-bottom: 20px;
+	}
+	.about-sec-rgt-img{
+		width: 270px;
+		height: 360px;
+		right: 15px;
+		top: initial;
+		bottom: -83px;
+		background: url(../images/Flakes_milk_xs.png)!important;
+	    background-repeat: no-repeat!important;
+	    background-position: center center!important;
+	    z-index: 10;
+
+	}
+	.about-section{
+		padding-bottom: 250px;
+		overflow: hidden;
+	}
+
+
+}
+
+
+
+@media(max-width: 639px){
+
+}
+
+
+
+@media(max-width: 575px){
+	.promo-banner-slide-img{
+		
+	}
+	.promo-banner-slide-img-xs{
+		display: block;
+		position: static;
+		height: 800px;
+		background-position: center center!important;
+    	background-size: cover!important;
+    	background-repeat: no-repeat!important;
+	}
+	.promo-banner-slide-img{
+		display: none;
+	}
+	.promo-banner-slider-wrap .promo-banner-slide-des{
+		padding-top: 0;
+		margin-top: -150px;
+		padding-right: 0;
+		padding-left: 0;
+		padding-bottom: 127px;
+	}
+	.promo-banner-slide-des p{
+		margin-bottom: 25px;
+	}
+	.promoBannerSlider .slick-prev,
+	.promoBannerSlider .slick-next{
+		width: 40px;
+		height: 40px;
+	}
+
+}
+
+
+@media(max-width: 479px){
+	.promo-banner-slide-des strong {
+	    font-size: 40px;
+	    line-height: 45px;
+	}
+	.mslider-pagination a{
+		margin-left: 30px;
+	}
+}
+
+
+
+@media(max-width: 359px){
+	.promo-banner-slide-des strong {
+	    font-size: 35px;
+	    line-height: 40px;
+	}
+	.mslider-pagination a{
+		margin-left: 20px;
+	}
+
 }

@@ -80,13 +80,17 @@
 	h1,.quaker-products-sec-hdr h2,
 	.h-our-recipes-sec-hdr h3,
 	.h-our-story-sec-col-des h4,
-	.recipe-follow-us-sec-hdr h3{ 
+	.recipe-follow-us-sec-hdr h3,
+	.recipe-sec-hdr h2,
+	.recipe-slider-sec-hdr h3{ 
 		font-size: 48px;
 	}
 	.quaker-products-sec-hdr h2,
 	.h-our-recipes-sec-hdr h3,
 	.h-our-story-sec-col-des h4,
-	.recipe-follow-us-sec-hdr h3{
+	.recipe-follow-us-sec-hdr h3,
+	.recipe-sec-hdr h2,
+	.recipe-slider-sec-hdr h3{
 		line-height: 1;
 	}
 	h2{
@@ -114,7 +118,9 @@
 	h1,.quaker-products-sec-hdr h2,
 	.h-our-recipes-sec-hdr h3,
 	.h-our-story-sec-col-des h4,
-	.recipe-follow-us-sec-hdr h3{ 
+	.recipe-follow-us-sec-hdr h3,
+	.recipe-sec-hdr h2,
+	.recipe-slider-sec-hdr h3{ 
 		font-size: 45px;
 	}
 	h2{
@@ -143,7 +149,9 @@
 	h1,.quaker-products-sec-hdr h2,
 	.h-our-recipes-sec-hdr h3,
 	.h-our-story-sec-col-des h4,
-	.recipe-follow-us-sec-hdr h3{ 
+	.recipe-follow-us-sec-hdr h3,
+	.recipe-sec-hdr h2,
+	.recipe-slider-sec-hdr h3{ 
 		font-size: 40px;
 	}
 	h2{

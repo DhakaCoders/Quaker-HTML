@@ -104,7 +104,7 @@
 	max-width: 530px;
 	width: 100%;
 	margin: 0 auto;
-	padding-bottom: 180px;
+	padding-bottom: 170px;
 }
 .recipe-con-sec-btns a{
 	display: inline-block;
@@ -117,6 +117,7 @@
 	margin-left: 13px;
 	margin-right: 13px;
 	position: relative;
+	margin-bottom: 10px;
 }
 .recipe-con-sec-btns a:first-child:after,
 .recipe-con-sec-btns a:last-child:after{
@@ -129,19 +130,28 @@
 	right: 20px;
 }
 .recipe-con-sec-btns a:first-child:after{
-	background: url(../images/recipe-cnt-next.jpg);
+	background: url(../images/recipe-cnt-next.png)!important;
 	background-repeat: no-repeat;
 	width: 28px;
 	height: 21px;
 
 }
 .recipe-con-sec-btns a:last-child:after{
-	background: url(../images/recipe-cnt-chef.jpg);
+	background: url(../images/recipe-cnt-chef.png)!important;
 	background-repeat: no-repeat;
 	width: 22px;
 	height: 23px;
 	right: 18px;
 }
+
+a.transparent-btn:hover:first-child:after{
+	background: url(../images/recipe-cnt-next-white.png)!important;
+}
+a.transparent-btn:hover:last-child:after{
+	background: url(../images/recipe-cnt-chef-white.png)!important;
+}
+
+
 .recipe-con-sec-btns a:last-child{
 	padding-right: 55px;
 }
@@ -276,6 +286,13 @@
 		font-size: 15px;
 		line-height: 20px;
 	}
+	.recipe-sec-hdr {
+	    padding-top: 100px;
+	    padding-bottom: 80px;
+	}
+	.recipe-con-sec-btns{
+		padding-bottom: 150px;
+	}
 }
 
 
@@ -283,6 +300,19 @@
 	.recipe-text span{
 		font-size: 16px;
 		line-height: 202x;
+	}
+	.recipe-sec-hdr {
+	    padding-top: 80px;
+	    padding-bottom: 60px;
+	}
+	.recipe-con-sec-btns{
+		padding-bottom: 100px;
+	}
+	.recipe-slider-sec-hdr{
+		padding-bottom: 60px;
+	}
+	.recipe-cnt-sct-btm-wrp {
+	    margin-bottom: 100px;
 	}
 }
 
@@ -297,6 +327,15 @@
 	}
 	#footer-white .ftr-social{
 		padding-top: 60px!important;
+	}
+	.recipe-sec-hdr p br{
+		display: none;
+	}
+	.recipe-slider-sec-hdr{
+		padding-bottom: 60px;
+	}
+	.recipe-cnt-sct-btm-wrp {
+	    margin-bottom: 80px;
 	}
 }
 
@@ -325,6 +364,25 @@
 	.follow-us-grd-item-follow-icon{
 		left: 10px;
 		top: 10px;
+	}
+	.recipe-cnt-sct-btm-left{
+		width: 100%;
+		padding-right: 0;
+	}
+	.recipe-cnt-sct-btm-right{
+		width: 100%;
+	}
+	.recipe-con-sec-btns{
+		text-align: center;
+	}
+	.recipe-cnt-sct-btm-left{
+		padding-bottom: 30px;
+	}
+	.recipe-cnt-sct-btm-wrp {
+	    margin-bottom: 55px;
+	}
+	.recipe-con-sec-btns {
+	    padding-bottom: 80px;
 	}
 }
 

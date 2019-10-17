@@ -88,6 +88,12 @@
     position: relative;
     padding-top: 30px;
 }
+.history-timeline-main {
+    max-height: 885px;
+    overflow-y: auto;
+}
+
+
 .history-timeline-main:after{
 	content:"";
 	position: absolute;

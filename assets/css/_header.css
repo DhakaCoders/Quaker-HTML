@@ -37,6 +37,16 @@ Start header
 .logo.add-cls{
 	max-width: 90px;
 	width: 100%;
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+}
+#hdr-lft-logo{
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
 }
 .main-nav{
 	float: left;
@@ -213,7 +223,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a{
 .hdr-search-frm{
 	position: absolute;
 	right: 0;
-	top: 40px;
+	top: 45px;
 	width: 0;
 	opacity: 0;
 	transition: all 0.5s;
@@ -234,8 +244,8 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a{
 	width: 100%;
 	font-weight: 300;
 }
-.hdr-search-expend .hdr-search-frm form input[type="search"]{
-	padding: 17px 10px 17px 30px;
+.hdr-search-expend .hdr-search-frm form input[type="search"] {
+    padding: 17px 10px 17px 15px;
 }
 
 }
@@ -465,7 +475,9 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a{
 
 
 @media(max-width: 575px){
-
+	.hdr-search-expend .hdr-search-frm {
+	    width: 290px;
+	}
 
 }
 

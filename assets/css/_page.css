@@ -132,6 +132,9 @@
     .qk-banner-dsc p br{
         display: none;
     }
+    .product-hub-prd-tp .all-page-heading {
+        padding-top: 50px;
+    }
 }
 
 

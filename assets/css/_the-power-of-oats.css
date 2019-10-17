@@ -98,6 +98,8 @@ pk-two-grid-sec-wrp
 	margin: 0;
 	color: #002853;
 	font-family: 'PFCatalog-Black';
+}
+.pk-two-plate-wrp ul li:nth-child(2n+1) .pk-two-plate-rgt-dsc h4{
 	margin-bottom: 25px;
 }
 .pk-two-plate-rgt-dsc p strong{
@@ -114,7 +116,7 @@ pk-two-grid-sec-wrp
 	color: #8d96a5;
 }
 .pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-rgt-dsc p:first-of-type{
-	padding-top: 40px;
+	padding-top: 30px;
 }
 .pk-two-plate-lft-img span {
     background-image: url(../images/pk-brnd-logo.png);
@@ -186,6 +188,15 @@ pk-two-grid-sec-wrp
 	.pk-two-plate-rgt-dsc h4 br{
 		display: none;
 	}
+	.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-lft-bg{
+		padding-right: 30px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-lft-img:after{
+		right: 0;
+	}
+	.pk-two-plate-wrp ul li {
+	    padding-bottom: 100px;
+	}
     
 }
 
@@ -212,6 +223,51 @@ pk-two-grid-sec-wrp
 	}
 	.pk-two-plate-wrp{
 		padding-top: 120px;
+	}
+	.pk-two-plate-wrp ul li .pk-two-plate-lft-bg {
+	    float: left;
+	    width: 100%;
+	}
+	.pk-two-plate-wrp ul li .pk-two-plate-lft-img{
+		min-height: 320px !important;
+	}
+	.pk-two-plate-lft-img span {
+	    background-size: 92px 92px;
+	    width: 92px;
+	    height: 92px;
+	    top: -47px;
+	    right: -5px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+1) .pk-two-plate-lft-bg{
+		padding-right: 30px;
+		padding-left: 25px;
+	}
+	.pk-two-plate-wrp ul li .pk-two-plate-lft-img:after{
+		right: 35px;
+	}
+	.pk-two-plate-wrp ul li .pk-two-plate-dsc-rgt-con {
+	    width: 100%;
+	    padding-left: 30px;
+	}
+	.pk-two-plate-wrp ul li .pk-two-plate-dsc-rgt-con {
+	    padding-top: 40px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-lft-bg {
+	    width: 100%;
+	    padding-right: 20px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-dsc-rgt-con {
+	    width: 100%;
+	    padding-top: 50px;
+	}
+	.pk-two-plate-wrp ul li {
+	    padding-bottom: 45px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+2) .pk-two-plate-dsc-rgt-con{
+		padding-right: 20px;
+	}
+	.pk-two-plate-wrp ul li:nth-child(2n+1) .pk-two-plate-dsc-rgt-con{
+		padding-right: 30px;
 	}
 
 }

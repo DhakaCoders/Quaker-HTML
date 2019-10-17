@@ -610,3 +610,58 @@
 .img-2{
 	display: none;
 }
+
+
+@media(max-width: 1449px){
+	.promoBannerSlider .slick-prev{
+		left: 40px;
+	}
+	.promoBannerSlider .slick-next{
+		right: 40px;
+	}
+	.promoBannerSlider .slick-prev:hover {
+   		 left: 30px;
+	}
+	.promoBannerSlider .slick-next:hover {
+   		 right: 30px;
+	}
+}
+@media(max-width: 1199px){
+
+
+}
+
+
+@media(max-width: 991px){
+
+}
+
+
+@media(max-width: 767px){
+
+}
+
+
+
+@media(max-width: 639px){
+
+}
+
+
+
+@media(max-width: 575px){
+
+
+}
+
+
+@media(max-width: 479px){
+
+
+}
+
+
+
+@media(max-width: 359px){
+
+}

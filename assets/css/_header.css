@@ -203,7 +203,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a{
 	cursor: pointer;
 	padding: 5px 5px 5px 7px;
 }
-.hdr-search-expend .hdr-search-btn:hover,
+.hdr-search-expend,
 .hdr-search-btn:hover{
 	background-color: #fff;
 	-ms-transition: all 0.5s;

@@ -1,7 +1,11 @@
 .recipe-banner-sec-wrp{
-	background-repeat: no-repeat!important;
-	background-size: cover!important;
 	padding-top: 332px;
+	overflow: hidden;
+	position: relative;
+}
+.recipe-banner-wrp{
+	position: relative;
+	z-index: 10;
 }
 .recipe-banner-dsc{
 	max-width: 460px;
@@ -9,7 +13,7 @@
 	position: relative;
 	padding-bottom: 180px;
 }
-.recipe-banner-dsc strong{
+.recipe-banner-dsc span{
 	color: #ffffff;
 	text-transform: uppercase;
 	font-weight: normal;
@@ -18,10 +22,11 @@
 	padding-left: 10px;
 	
 }
-.recipe-banner-dsc h1{
+.recipe-banner-dsc strong{
 	margin-top: 10px;
 	margin-bottom: 25px;
 	text-transform: uppercase;
+	display: block;
 	color: #ffffff;
 	font-size: 80px;
 	line-height: 62px;
@@ -293,6 +298,10 @@ a.transparent-btn:hover:last-child:after{
 	.recipe-con-sec-btns{
 		padding-bottom: 150px;
 	}
+	.recipe-banner-icon{
+		padding-top: 80px;
+		padding-bottom: 70px;
+	}
 }
 
 
@@ -313,6 +322,13 @@ a.transparent-btn:hover:last-child:after{
 	}
 	.recipe-cnt-sct-btm-wrp {
 	    margin-bottom: 100px;
+	}
+	.recipe-banner-icon{
+		padding-top: 0;
+	}
+	.recipe-banner-dsc strong{
+		margin-bottom: 10px;
+		margin-top: 0;
 	}
 }
 
@@ -336,6 +352,12 @@ a.transparent-btn:hover:last-child:after{
 	}
 	.recipe-cnt-sct-btm-wrp {
 	    margin-bottom: 80px;
+	}
+	.recipe-banner-sec-wrp{
+		padding-top: 0;
+	}
+	.recipe-banner-wrp{
+		background: #f5f8fa;
 	}
 }
 

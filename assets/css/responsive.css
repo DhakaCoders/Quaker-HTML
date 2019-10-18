@@ -82,7 +82,8 @@
 	.h-our-story-sec-col-des h4,
 	.recipe-follow-us-sec-hdr h3,
 	.recipe-sec-hdr h2,
-	.recipe-slider-sec-hdr h3{ 
+	.recipe-slider-sec-hdr h3,
+	.recipe-banner-dsc strong{ 
 		font-size: 48px;
 	}
 	.quaker-products-sec-hdr h2,
@@ -90,7 +91,8 @@
 	.h-our-story-sec-col-des h4,
 	.recipe-follow-us-sec-hdr h3,
 	.recipe-sec-hdr h2,
-	.recipe-slider-sec-hdr h3{
+	.recipe-slider-sec-hdr h3,
+	.recipe-banner-dsc strong{
 		line-height: 1;
 	}
 	h2{

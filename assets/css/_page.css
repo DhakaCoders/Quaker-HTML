@@ -137,6 +137,9 @@
     .product-hub-prd-tp .all-page-heading {
         padding-top: 50px;
     }
+    .page-banner-wrap {
+        overflow: hidden;
+    }
 }
 
 

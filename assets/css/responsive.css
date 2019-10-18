@@ -173,7 +173,17 @@
 
 
 @media(max-width: 479px){
-
+	h1,.quaker-products-sec-hdr h2,
+	.h-our-recipes-sec-hdr h3,
+	.h-our-story-sec-col-des h4,
+	.recipe-follow-us-sec-hdr h3,
+	.recipe-sec-hdr h2,
+	.recipe-slider-sec-hdr h3{ 
+		font-size: 37px;
+	}
+	h2{
+		font-size: 33px ;
+	}
 
 }
 

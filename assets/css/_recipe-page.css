@@ -359,6 +359,24 @@ a.transparent-btn:hover:last-child:after{
 	.recipe-banner-wrp{
 		background: #f5f8fa;
 	}
+	.recipe-banner-wrp{
+		padding: 30px 0 40px;
+		
+	}
+	.recipe-banner-dsc strong,
+	.recipe-banner-dsc span,
+	.recipe-banner-dsc p{
+		color: #002853;
+	}
+	.recipe-banner-icon{
+		padding-bottom: 0;
+	}
+	.recipe-banner-dsc{
+		padding-bottom: 40px;
+	}
+	.recipe-sec-hdr{
+		padding-bottom: 40px;
+	}
 }
 
 

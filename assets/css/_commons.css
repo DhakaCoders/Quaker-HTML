@@ -243,3 +243,51 @@ form  .dropdown-menu li a{
 	background-color: #710023;
 }
 
+
+
+
+.transparent-btn{
+	position: relative;
+	overflow: hidden;
+}
+.transparent-btn span{
+	position: relative;
+	z-index: 2;
+}
+/*.transparent-btn:before{
+	content: "";
+	position: absolute;
+	transition: all .5s ease;
+	-ms-transition: all .5s ease;
+	-webkit-transition: all .5s ease;
+	border: 0px solid #002853;
+	z-index: 1;
+}*/
+/*.transparent-btn:hover:before{
+	border: 100px solid #002853;
+}*/
+.transparent-btn:hover span{
+	color: #fff;
+}
+.transparent-btn:hover:after{
+	background: url(../images/right-arrow-long-white.png)!important;
+	z-index: 5;
+	background-size: 100% auto!important;
+}
+
+
+.eff-btn{
+	top: 0;
+	left: 0;
+	position: absolute;
+	width:100%;
+	height:120%;
+	border:0px solid #002853;
+	position:absolute;
+	transition:all .5s ease;
+	z-index:1;
+	box-sizing:border-box;
+}
+.transparent-btn:hover .eff-btn{
+  border:70px solid #002853;
+}

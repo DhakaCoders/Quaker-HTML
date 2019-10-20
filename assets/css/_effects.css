@@ -7,7 +7,8 @@ a,input,img,textarea,button,.qp-more-hover-btn,
 .h-our-recipes-sec-hdr a:after,.quaker-products-more-btn a:after,
 .about-sec-grd-col a:after,
 .promo-banner-slide-des a:after,
-.h-our-story-sec-col-des a:after{
+.h-our-story-sec-col-des a:after,
+.recipe-items-slide-img{
 	transition: all 0.5s;
 	-ms-transition: all 0.5s;
 	-webkit-transition: all 0.5s;
@@ -15,7 +16,8 @@ a,input,img,textarea,button,.qp-more-hover-btn,
 .product-list-item:hover .product-list-img a img,
 .gallery-hover-controller:hover .dsw-ms-gallery-item img,
 .scale,
-.follow-us-grd-item:hover > img{
+.follow-us-grd-item:hover > img,
+.recipe-items-slide-item:hover .recipe-items-slide-img{
 	transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	-webkit-transform: scale(1.1);

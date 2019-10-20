@@ -30,11 +30,12 @@ if( $('.promoBannerSlider').length ){
     $('.promoBannerSlider').slick({
       dots: true,
       infinite: false,
-      autoplay: true,
-      speed: 300,
+      //autoplay: true,
+      autoplaySpeed: 6000,
+      speed: 700,
       slidesToShow: 1,
       slidesToScroll: 1,
-      fade: true
+      //fade: true
     });
     $('.promoBannerSlider').on('beforeChange', function(event, slick, currentSlide, nextSlide){
       $('.mslider-pagination a').removeClass('msiactive');

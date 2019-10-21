@@ -188,10 +188,12 @@ a.transparent-btn:hover:last-child:after{
 	color: #9e192d;
 }
 .recipe-items-slide-img{
+	position: relative;
 	min-height: 550px;
 	background-size: cover!important;
 	background-position: center center!important;
 	background-repeat: no-repeat!important;
+	transition: all 0.5s;
 }
 .recipe-text{
 	position: absolute;

@@ -345,6 +345,17 @@ if( $('.responsive-slider').length ){
 
 
     new WOW().init();
+$(document).ready(function () {
+ $('body').addClass('aniLoaded');
+});
+
+$('.recipeItemsSliderController').onScreen({
+  tolerance: 250,
+  toggleClass: false,
+  doIn: function() {
+    $(this).addClass('onScreen')
+  }
+});
 
 })(jQuery);
 

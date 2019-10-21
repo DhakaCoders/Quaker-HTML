@@ -40,11 +40,7 @@ a,input,img,textarea,button,.qp-more-hover-btn,
 	transform-origin: 100% 50%;
 	opacity: 1;
 }
-.promoBannerSlider .slick-current .promo-banner-slide-des span,
-.promoBannerSlider .slick-current .promo-banner-slide-des strong{
-	top: 0;
-	opacity: 1;
-}
+
 /**
 All Hovers
 */
@@ -59,3 +55,44 @@ nav.main-nav ul li.current-menu-item a{
 	color:#fff;
 }
 
+
+/**
+Custom animations
+*/
+.prInnerHdr{
+	opacity: 0;
+	transition: all 0.5s;
+	transition-delay: 1.5s;
+}
+.aniLoaded .product-inr-bg-rgt{
+	width: 100%;
+}
+.aniLoaded .product-inr-bg-lft{
+	width: 50%;
+}
+.aniLoaded .prInnerHdr{
+	opacity: 1;
+}
+.prInnerTitle{
+  -webkit-animation-name: TitleUP;
+  animation-name: TitleUP;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;	
+}
+.recipe-items-slide-img:after{
+	background: #fff;
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	transition: all 0.5s;
+}
+.onScreen .recipe-items-slide-img:after{
+	width: 0;
+}

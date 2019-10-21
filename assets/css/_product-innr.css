@@ -10,6 +10,7 @@
 .product-inr-prd-tp{
 	padding-top: 250px;
 	position: relative;
+	background: #fff;
 }
 .falvor-icon{
 	position: absolute;
@@ -28,12 +29,14 @@
 	left:0;
 	top: 0;
 	bottom: 0;
-	width: 50%;
+	width: 0;
 	background:url(../images/product-inr-bg-lft.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center center;
 	z-index: 1;
+	transition: all 0.7s;
+	transition-delay: 0.7s;
 }
 .product-inr-bg-rgt{
 	position: absolute;
@@ -41,11 +44,10 @@
 	left: 0;
 	top: 0;
 	bottom: 0;
-	width: 100%;
-	background:url(../images/product-inr-bg-rgt.jpg);
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-position: center center;
+	width: 0;
+	background: #fec046;
+	opacity: 0.90;
+	transition: all .7s;
 }
 .product-inr-tab-wrp {
     float: none;
@@ -58,6 +60,7 @@
 .product-innr-dsc{
 	float: left;
 	padding-top: 70px;
+	overflow: hidden;
 }
 .product-innr-dsc span{
 	display: block;
@@ -229,6 +232,7 @@ product-inr-content-sec-wrp
 	left: 60px;
 	right: 0;
 	bottom: -220px;
+	z-index: 3;
 }
 .product-inr-slider-prd-tp{
 	padding-top: 240px;

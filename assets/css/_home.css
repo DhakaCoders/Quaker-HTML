@@ -135,6 +135,26 @@
   -webkit-animation-delay: 0.7s;
   animation-delay: 0.7s;
 }*/
+.promoBannerSlider .slick-current .promo-banner-slide-des span{
+  -webkit-animation-name: TitleUP;
+  animation-name: TitleUP;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;	
+}
+.promoBannerSlider .slick-current .promo-banner-slide-des strong{
+  -webkit-animation-name: TitleUP;
+  animation-name: TitleUP;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
 .promoBannerSlider .slick-current .promo-banner-slide-des p{
   -webkit-animation-name: fadeInUpShort;
   animation-name: fadeInUpShort;
@@ -630,14 +650,6 @@
 	overflow: hidden;
 	margin-bottom: 5px;
 }
-.promo-banner-slide-des span,
-.promo-banner-slide-des .sTitle strong{
-	position: absolute;
-	top: 100%;
-	width: 100%;
-	padding: 0;
-	opacity: 0;
-}
 .promo-banner-slide-des .sTitle{
 	min-height: 143px;
 	margin-bottom: 15px;
@@ -646,18 +658,6 @@
 .promo-banner-slide-des .sTitle,
 .promo-banner-slide-des .ssubTitle{
 	position: relative;
-}
-.promo-banner-slide-des span{
-    -ms-transition: all .4s ease;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-    transition-delay: 0.5s;
-}
-.promo-banner-slide-des .sTitle strong{
-    -ms-transition: all .4s ease;
-    -webkit-transition: all .4s ease;
-    transition: all .4s ease;
-    transition-delay: 0.7s;	
 }
 @media(max-width: 1449px){
 	.promoBannerSlider .slick-prev{

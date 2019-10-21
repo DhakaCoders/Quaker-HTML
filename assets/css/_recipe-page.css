@@ -118,7 +118,6 @@
 	font-size: 16px;
 	color: #11365e;
 	font-family: 'PFCatalog-Light';
-	border: 1px solid #002853;
 	border-radius: 5px;
 	margin-left: 13px;
 	margin-right: 13px;
@@ -154,9 +153,16 @@ a.transparent-btn:hover:first-child:after{
 	background: url(../images/recipe-cnt-next-white.png)!important;
 }
 a.transparent-btn:hover:last-child:after{
-	background: url(../images/recipe-cnt-chef-white.png)!important;
+	background: url(../images/right-arrow-long-white.png)!important;
 }
-
+a.transparent-btn.transparent-btn-arrow:hover:after{
+	background: url(../images/right-arrow-long-white.png)!important;
+	background-size: 100% auto!important;
+}
+a.transparent-btn.transparent-btn-flow:hover:after{
+	background: url(../images/recipe-cnt-chef-white.png)!important;
+	background-size: 100% auto!important;
+}
 
 .recipe-con-sec-btns a:last-child{
 	padding-right: 55px;

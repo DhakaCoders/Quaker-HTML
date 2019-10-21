@@ -11,7 +11,8 @@
 	max-width: 460px;
 	width: 100%;
 	position: relative;
-	padding-bottom: 180px;
+	margin-bottom: 180px;
+	overflow: hidden;
 }
 .recipe-banner-dsc span{
 	color: #ffffff;

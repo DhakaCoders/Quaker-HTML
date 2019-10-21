@@ -14,6 +14,7 @@
   <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
   <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
@@ -98,23 +99,24 @@
 </header><!-- end of header -->
 
 <section class="recipe-banner-sec-wrp">
-  <div class="page-banner-wrap">
-    <div class="banner-bg" style="background: url(assets/images/recipe-page-bg.png);">
-    </div>
+  <div class="page-banner-wrap hasBgAnimation">
+    <div class="banner-bg" style="background: url(assets/images/recipe-page-bg.png);"></div>
   </div>
   <div class="recipe-banner-wrp">
     <div class="container">
       <div class="row">
         <div class="col-sm-12">
             <div class="recipe-banner-dsc">
-              <span class="fadeIn wow" data-wow-delay="0.2s">ΟVERNIGHT OATS</span>
-              <strong class="fadeIn wow" data-wow-delay="0.4s">Recipe 1</strong>
-              <p class="fadeIn wow" data-wow-delay="0.8s">Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              <div class="prInnerTitle">
+                <span>ΟVERNIGHT OATS</span>
+                <strong>Recipe 1</strong>
+                <p>Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.Aenean lacinia bibendum nulla sed consectetur. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+              </div>
             </div>
-            <div class="recipe-banner-icon fadeIn wow hide-xs" data-wow-delay="1s">
+            <div class="recipe-banner-icon hide-xs" data-aos="fade" data-aos-delay="1200">
                 <img src="assets/images/recipe-page-banner-icon.png">
             </div>
-            <div class="recipe-banner-icon fadeIn wow show-xs" data-wow-delay="1s">
+            <div class="recipe-banner-icon show-xs" data-aos="fade" data-aos-delay="1200">
                 <img src="assets/images/recipe-page-banner-icon-blue.png">
             </div>
           </div>
@@ -194,12 +196,12 @@
 </section><!-- end of .recipe-cnt-sct -->
 
 <section class="recipe-slider-section">
-	<div class="recipe-slider-sec-hdr fadeInUp wow" data-wow-delay=".4s">
-		<h3>Δοκιμάστε επίσης...</h3>
+	<div class="recipe-slider-sec-hdr">
+		<h3 data-aos="fade-up" data-aos-delay="300">Δοκιμάστε επίσης...</h3>
 	</div>
 	<div class="recipeItemsSliderController">
     <ul class="clearfix recipe-items-slider recipeItemsSlider ulc">
-      <li class="fadeInLeft wow" data-wow-delay=".2s">
+      <li>
         <div class="recipe-items-slide-item">
           <a href="#" class="overlay-link"></a>
           <div class="recipe-items-slide-img" style="background: url(assets/images/img-1.jpg);"></div>
@@ -208,7 +210,7 @@
           </div>
         </div>
       </li>
-      <li class="fadeInLeft wow" data-wow-delay=".3s">
+      <li>
         <div class="recipe-items-slide-item">
           <a href="#" class="overlay-link"></a>
           <div class="recipe-items-slide-img" style="background: url(assets/images/img-2.jpg);"></div>
@@ -217,7 +219,7 @@
           </div>
         </div>
       </li>
-      <li class="fadeInLeft wow" data-wow-delay=".4s">
+      <li>
         <div class="recipe-items-slide-item">
           <a href="#" class="overlay-link"></a>
           <div class="recipe-items-slide-img" style="background: url(assets/images/img-3.jpg);"></div>
@@ -226,7 +228,7 @@
           </div>
         </div>
       </li>
-      <li class="fadeInLeft wow" data-wow-delay=".5s">
+      <li>
         <div class="recipe-items-slide-item">
           <a href="#" class="overlay-link"></a>
           <div class="recipe-items-slide-img" style="background: url(assets/images/img-4.jpg);"></div>
@@ -235,7 +237,7 @@
           </div>
         </div>
       </li>
-       <li class="fadeInLeft wow" data-wow-delay=".6s">
+       <li>
         <div class="recipe-items-slide-item">
           <a href="#" class="overlay-link"></a>
           <div class="recipe-items-slide-img" style="background: url(assets/images/img-1.jpg);"></div>
@@ -253,12 +255,12 @@
     <div class="row">
       <div class="col-sm-12">
         <div class="recipe-follow-us-sec-hdr">
-          <h3 class="fadeInUp wow" data-wow-delay=".2s">Αντλήστε έμπνευση από τη δύναμη της βρώμης!</h3>
-          <h4 class="fadeInUp wow" data-wow-delay=".4s">Ακολουθήστε μας στο Instagram:</h4>
+          <h3 data-aos="fade-up" data-aos-delay="300">Αντλήστε έμπνευση από τη δύναμη της βρώμης!</h3>
+          <h4 data-aos="fade-up" data-aos-delay="500">Ακολουθήστε μας στο Instagram:</h4>
         </div>
-        <div class="followUsSliderController">
+        <div class="followUsSliderController" data-aos="fade-up" data-aos-delay="800">
           <ul class="clearfix follow-us-slider followUsSlider">
-            <li class="fadeInLeft wow" data-wow-delay=".1s">
+            <li>
               <div class="follow-us-grd-item">
                 <a class="overlay-link" href="#"></a>
                 <img src="assets/images/recipe-instgm-1.jpg">
@@ -267,7 +269,7 @@
                 </div>
               </div>
             </li>
-            <li class="fadeInLeft wow" data-wow-delay=".2s">
+            <li>
               <div class="follow-us-grd-item">
                 <a class="overlay-link" href="#"></a>
                 <img src="assets/images/recipe-instgm-2.jpg">
@@ -276,7 +278,7 @@
                 </div>
               </div>
             </li>
-            <li class="fadeInLeft wow" data-wow-delay=".3s">
+            <li>
               <div class="follow-us-grd-item">
                 <a class="overlay-link" href="#"></a>
                 <img src="assets/images/recipe-instgm-3.jpg">
@@ -351,6 +353,8 @@
 <script src="assets/js/jquery.matchHeight-min.js"></script>
 <script src="assets/js/jquery-ui.js"></script>
 <script src="assets/js/wow.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/jquery.onscreen.min.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/main.js"></script>
 

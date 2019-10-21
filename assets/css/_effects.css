@@ -96,3 +96,23 @@ Custom animations
 .onScreen .recipe-items-slide-img:after{
 	width: 0;
 }
+
+.hasBgAnimation{
+    opacity: 0;
+    width: 0;
+    transition: all .7s;
+}
+.aniLoaded .page-banner-wrap{
+	width: 100%;
+	opacity: 1;
+}
+.hasBgAnimation + .container{
+	position: relative;
+	z-index: 3;
+}
+
+.recipe-banner-dsc .prInnerTitle,
+.qk-banner-dsc .prInnerTitle{
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;	
+}

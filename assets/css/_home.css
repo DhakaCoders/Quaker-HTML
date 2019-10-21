@@ -426,11 +426,12 @@
 	color: #002853;
 	font-size: 16px;
 	line-height: 20px;
-	border: 1px solid #253f61;
 	border-radius: 10px;
 	padding: 20px 50px 20px 18px;
 	position: relative;
  	font-family: 'PFCatalog-Light';
+ 	transition:all .5s ease;
+ 	transition-delay: background 0.5s;
 }
 
 .quaker-products-more-btn a:after {
@@ -450,7 +451,16 @@
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
-
+.quaker-products-more-btn a:before{
+	content: '';
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border: 1px solid #002853;
+	position: absolute;
+	border-radius: 10px;
+}
 .qp-tab-con-col{
 	float: left;
 	width: 50%;

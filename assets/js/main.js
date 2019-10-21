@@ -357,6 +357,13 @@ $('.recipeItemsSliderController').onScreen({
   }
 });
 
+AOS.init({
+  once: true,
+  duration: 800
+});
+
+$('.hasBgAnimation .banner-bg').css('min-width', windowWidth);
+
 })(jQuery);
 
 

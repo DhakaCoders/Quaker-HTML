@@ -281,13 +281,20 @@ form  .dropdown-menu li a{
 	left: 0;
 	position: absolute;
 	width:100%;
-	height:120%;
-	border:0px solid #002853;
+	height:100%;
+	border: 0px solid #002853;
 	position:absolute;
+	background: #002853;
 	transition:all .5s ease;
 	z-index:1;
 	box-sizing:border-box;
+	transform: scale(0);
+	transform-origin: center center;
+	border-radius: 10px;
 }
 .transparent-btn:hover .eff-btn{
-  border:70px solid #002853;
+  transform: scale(1);
+}
+.transparent-btn:hover{
+	/*border-color: transparent;*/
 }

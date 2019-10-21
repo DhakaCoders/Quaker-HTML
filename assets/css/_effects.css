@@ -35,7 +35,16 @@ a,input,img,textarea,button,.qp-more-hover-btn,
 	-webkit-transform: scale(1.03);
 	-o-transform: scale(1.03);
 }
-
+.promoBannerSlider .slick-current .promo-banner-slide-img{
+	transform: scale(1);
+	transform-origin: 100% 50%;
+	opacity: 1;
+}
+.promoBannerSlider .slick-current .promo-banner-slide-des span,
+.promoBannerSlider .slick-current .promo-banner-slide-des strong{
+	top: 0;
+	opacity: 1;
+}
 /**
 All Hovers
 */

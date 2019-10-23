@@ -516,6 +516,9 @@
 .img-change-pagi ol li.img-change-pagi-active{
 	border-color: #ffc13f;
 }
+.product-inr-tab-wrp .img-change-pagi ol li.img-change-pagi-active{
+	border-color: #002853;
+}
 .img-change-pagi ol li span{
 	position: absolute;
 	left: 50%;

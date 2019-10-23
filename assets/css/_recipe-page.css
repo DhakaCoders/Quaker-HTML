@@ -191,9 +191,9 @@ a.transparent-btn.transparent-btn-flow:hover:after{
 	position: relative;
 	overflow: hidden;
 }
-.recipe-items-slide-item:hover .recipe-text span{
+/*.recipe-items-slide-item:hover .recipe-text span{
 	color: #9e192d;
-}
+}*/
 .recipe-items-slide-img{
 	position: relative;
 	min-height: 550px;

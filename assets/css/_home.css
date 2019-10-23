@@ -420,7 +420,8 @@
 .quaker-products-more-btn{
 	text-align: center;
 }
-.quaker-products-more-btn a{
+.quaker-products-more-btn a,
+.transparent-btn{
 	display: inline-block;
 	vertical-align: baseline;
 	color: #002853;
@@ -434,7 +435,8 @@
  	transition-delay: background 0.5s;
 }
 
-.quaker-products-more-btn a:after {
+.quaker-products-more-btn a:after,
+.transparent-btn:after {
     content: "";
     position: absolute;
     right: 16px;
@@ -451,7 +453,8 @@
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
-.quaker-products-more-btn a:before{
+.quaker-products-more-btn a:before,
+.transparent-btn:before{
 	content: '';
 	left: 0;
 	right: 0;

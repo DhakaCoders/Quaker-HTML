@@ -1,6 +1,7 @@
 (function($) {
 
 var windowWidth = $(window).width();
+var windowHeight = $(window).height();
 /////////////////////////// Rannojit
 
 //match Height
@@ -363,6 +364,37 @@ AOS.init({
 });
 
 $('.hasBgAnimation .banner-bg').css('min-width', windowWidth);
+
+var toLerance = windowHeight / 2;
+
+$('.firstLine').onScreen({
+  tolerance: toLerance,
+  toggleClass: true,
+  doIn: function() {
+    $(this).addClass('onScreen')
+  },
+  doOut: function() {
+    $(this).removeClass('notOnScreen')
+  }
+});
+
+window.onscroll=function(){
+  scrollTimeline()
+};
+function scrollTimeline(){
+  var mE = $('.middleElement').offset().top;
+  var fL = $('.firstLine').offset().top;
+  ofH = mE - fL;
+    $('.historyActiveWrap').css('height', ofH);
+}
+
+$('.historyInit ul li').onScreen({
+  tolerance: toLerance,
+  toggleClass: true,
+  doIn: function() {
+    $(this).addClass('onScreen')
+  }
+});
 
 })(jQuery);
 

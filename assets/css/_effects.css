@@ -116,3 +116,38 @@ Custom animations
   -webkit-animation-delay: 1s;
   animation-delay: 1s;	
 }
+.history-timeline-main ul li .time-line-img,
+.history-timeline-main ul li .time-line-des h3 span,
+.history-timeline-main ul li .time-line-des p{
+	opacity: 0;
+}
+.history-timeline-main ul li.onScreen .time-line-img{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;	
+}
+.history-timeline-main ul li.onScreen .time-line-des h3 span{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.history-timeline-main ul li.onScreen .time-line-des p{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}

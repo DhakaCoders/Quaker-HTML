@@ -3,29 +3,41 @@
 loader-sec-wrp
 -----------------------
 */
+.initlogo{
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 18%;
+}
+.sitelogo {
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 40%;
+}
 .loader-sec-wrp{
-	padding-bottom: 220px;
+	padding-bottom: 0;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: #e6dfd7 url(../images/loader-page-bg.jpg);
+    z-index: 99;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
 }
-.loader-page-bg{
-	background-repeat: no-repeat !important;
-	background-size: cover !important;
-	background-position: center center !important;
-	min-height: 100vh;
+.loadingdone.loader-sec-wrp{
+	z-index: -99;
 }
-.loader-dsc-wrp{
-	text-align: center;
-}
-.loader-logo a{
-	display: inline-block;
-	vertical-align: baseline;
-	text-decoration: none;
-}
-.loader-text-logo{
-	padding-top: 105px;
-}
-.loading-plc-wrp{
-	padding-top: 80px;
-	text-align: center;
+.loading-plc-wrp {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 15%;
+    text-align: center;
 }
 .loading-plc-wrp span{
 	display: inline-block;
@@ -51,7 +63,19 @@ loader-sec-wrp
 	bottom: 0;
 	left: 0;
 	background-color: #132e53;
-	width: 80%;
+	width: 0;
 	height: 12px;
 	border-radius: 50px 50px;
+	transition: all 0.5s;
+}
+.aniLoaded .loading-plc-parsent{
+	width: 100%;
+}
+@media(max-width: 767px){
+	.loading-plc-wrp{
+		bottom: 15%;
+	}
+	.sitelogo{
+		margin-top: -10px;
+	}
 }

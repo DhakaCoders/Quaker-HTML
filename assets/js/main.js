@@ -2,7 +2,6 @@
 
 var windowWidth = $(window).width();
 var windowHeight = $(window).height();
-/////////////////////////// Rannojit
 
 //match Height
 if($('.matchHeightCol').length){
@@ -136,58 +135,6 @@ if( $('.followUsSlider').length ){
     });
 }
 
-
-///////////////////////////// Milon
-
-
-/*$('.img-change-pagi ol li.img-change-pagi-1').on('click', function(e){
-  e.preventDefault();
-  $(this).parent().parent().parent().find('.img-1').fadeIn(300);
-  $(this).parent().parent().parent().find('.img-2').fadeOut();
-  $('.img-change-pagi ol li.img-change-pagi-2').removeClass('img-change-pagi-active');
-  $(this).addClass('img-change-pagi-active');
-});
-$('.img-change-pagi ol li.img-change-pagi-2').on('click', function(e){
-  e.preventDefault();
-  $(this).parent().parent().parent().find('.img-2').fadeIn(300);
-  $(this).parent().parent().parent().find('.img-1').fadeOut();
-  $('.img-change-pagi ol li.img-change-pagi-1').removeClass('img-change-pagi-active');
-  $(this).addClass('img-change-pagi-active');
-});*/
-
-/*------------ Start of gallery and isotop -------*/
-
-
-
-/*$('.gallery-2items-controller ul').isotope({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  masonry: {
-    // use outer width of grid-sizer for columnWidth
-    columnWidth:'.grid-item',
-    gutter: 0
-  }
-})
-
-var $container= $('#isotope').isotope({
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows',
-
-});*/
-  
- // bind filter button click
-/*$('#filter-menu').on( 'click', 'a', function(e) {
-  e.preventDefault();
-  $('a.button').not(this).removeClass('checked');
-    $(this).addClass('checked');
-  var filterValue = $( this).attr('data-filter');
-  var filtercheckedText = $(this).text();
-  //alert(filtercheckedText);
-  $container.isotope({ filter: filterValue });
-  
-});
-*/
-
 /*
 * Banner js
 */
@@ -269,28 +216,6 @@ if($('#filter-menu').length){
   });
 }
 
-/*if($('.masonry').length){
-  $('.masonry').masonry({
-    // options
-    itemSelector: '.grid-item',
-    columnWidth: auto
-  });
-}*/
-
-
-
-
-/////////////////////////// Prashanto
-
-
-
-
-//////////////////////////// Shoriful 
-
-
-
-
-
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
@@ -316,8 +241,6 @@ var windowWidth = $(window).width();
 
 
 //$("[data-fancybox]").fancybox({});
-
-
 
 /**
 Slick slider
@@ -413,6 +336,23 @@ $('.historyInit ul li').onScreen({
   doIn: function() {
     $(this).addClass('onScreen')
   }
+});
+
+$(window).on('load', function(){
+  setTimeout(removeLoader, 600); //wait for page load PLUS two seconds.
+});
+function removeLoader(){
+    $( "#loadingDiv" ).fadeOut(500, function() {
+      // fadeOut complete. Remove the loading div
+      $( "#loadingDiv" ).addClass('loadingdone'); //makes page more lightweight 
+  });  
+}
+
+var s = skrollr.init({
+    mobileCheck: function() {
+        return false;
+    },
+    forceHeight: false
 });
 
 })(jQuery);

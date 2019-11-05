@@ -70,17 +70,32 @@
     font-family: 'PFCatalog-Black';
     margin-bottom: 30px;
 }
-
 .sample-content-wrp ul {
     list-style: none;
     margin: 0;
     padding: 0;
     padding-top: 15px;
 }
+.sample-content-wrp ol {
+    padding: 0;
+    margin: 0;
+    padding-left: 15px;
+    display: inline-block;
+    vertical-align: baseline;
+    padding-top: 20px;
+}
+.sample-content-wrp ol li,
 .sample-content-wrp ul li{
     font-size: 18px;
     line-height: 20px;
     padding: 10px 0;
+}
+.sample-content-wrp em {
+    font-size: 18px;
+    line-height: 20px;
+    padding-top: 20px;
+    display: inline-block;
+    vertical-align: baseline;
 }
 
 @media(max-width: 1599px){

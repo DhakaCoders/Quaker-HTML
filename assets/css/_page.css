@@ -9,7 +9,8 @@
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 1
+    z-index: 1;
+    overflow: hidden;
 }
 .page-banner {
     height: 100%;
@@ -30,6 +31,7 @@
     background-position: center center !important;
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 .qk-banner-sec-wrp{
     min-height: 900px !important;
@@ -42,6 +44,7 @@
     font-size: 16px;
     line-height: 22px;
     color: #0f345d;
+    overflow: hidden;
 }
 
 .qk-banner-dsc strong{

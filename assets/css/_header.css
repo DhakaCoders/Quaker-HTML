@@ -203,13 +203,15 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a{
 	color: #002853;
 }
 
-.hdr-search-area{
-	float: right;
-	position: relative;
+.hdr-search-area {
+    float: right;
+    position: relative;
+    margin-top: -5px;
+    margin-right: -5px;
 }
 .hdr-search-btn{
 	cursor: pointer;
-	padding: 5px 5px 5px 7px;
+	padding: 10px;
 }
 .hdr-search-expend,
 .hdr-search-btn:hover{
@@ -221,7 +223,7 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a{
 .hdr-search-frm{
 	position: absolute;
 	right: 0;
-	top: 45px;
+	top: 55px;
 	width: 0;
 	opacity: 0;
 	transition: all 0.5s;
@@ -263,7 +265,25 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a{
  opacity: 1;
  color: #969696;
 }
-
+.logo-fixed img{
+	max-width: 90px;
+}
+.logo-fixed a{
+	display: inline-block;
+	margin-left: -2px;
+}
+.logo-fixed {
+    position: fixed;
+    top: -120px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    text-align: center;
+    transition: all 0.4s;
+}
+.logo-fixed.showingFixedLogo{
+	top: 0;
+}
 /*
 -----------------------
  Responsive Css

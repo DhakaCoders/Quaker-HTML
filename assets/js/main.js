@@ -1,7 +1,7 @@
 (function($) {
 
 var windowWidth = $(window).width();
-/////////////////////////// Rannojit
+var windowHeight = $(window).height();
 
 //match Height
 if($('.matchHeightCol').length){
@@ -30,8 +30,9 @@ if( $('.promoBannerSlider').length ){
     $('.promoBannerSlider').slick({
       dots: true,
       infinite: false,
-      autoplay: true,
-      speed: 300,
+      //autoplay: true,
+      autoplaySpeed: 6000,
+      speed: 700,
       slidesToShow: 1,
       slidesToScroll: 1,
       //fade: true
@@ -54,18 +55,42 @@ if( $('#QP-tabs').length ){
 }
 
 
-$('li.img-change-pagi-1').on('click', function(e){
+$('.quaker-products-sec-tab .img-change-pagi li.img-change-pagi-1').on('click', function(e){
   e.preventDefault();
-  $(this).parents().find('.img-1').show();
-  $(this).parents().find('.img-2').hide();
-  $(this).parents().find('li.img-change-pagi-2').removeClass('img-change-pagi-active');
+  $(this).parents('.qp-tab-con-col').find('.img-1').show();
+  $(this).parents('.qp-tab-con-col').find('.img-2').hide();
+  $(this).parents('.qp-tab-con-col').find('li.img-change-pagi-2').removeClass('img-change-pagi-active');
   $(this).addClass('img-change-pagi-active');
 });
-$('li.img-change-pagi-2').on('click', function(e){
+$('.quaker-products-sec-tab .img-change-pagi li.img-change-pagi-2').on('click', function(e){
   e.preventDefault();
-  $(this).parents().find('.img-2').show();
-  $(this).parents().find('.img-1').hide();
-  $(this).parents().find('li.img-change-pagi-1').removeClass('img-change-pagi-active');
+  $(this).parents('.qp-tab-con-col').find('.img-2').show();
+  $(this).parents('.qp-tab-con-col').find('.img-1').hide();
+  $(this).parents('.qp-tab-con-col').find('li.img-change-pagi-1').removeClass('img-change-pagi-active');
+  $(this).addClass('img-change-pagi-active');
+});
+
+$('.product-inr-tab-wrp .img-change-pagi li.img-change-pagi-1').on('click', function(e){
+  e.preventDefault();
+  $(this).parents('.product-inr-tab-wrp').find('.img-1').show();
+  $(this).parents('.product-inr-tab-wrp').find('.img-2').hide();
+  $(this).parents('.product-inr-tab-wrp').find('li.img-change-pagi-2').removeClass('img-change-pagi-active');
+  $(this).addClass('img-change-pagi-active');
+});
+$('.product-inr-tab-wrp .img-change-pagi li.img-change-pagi-2').on('click', function(e){
+  e.preventDefault();
+  $(this).parents('.product-inr-tab-wrp').find('.img-2').show();
+  $(this).parents('.product-inr-tab-wrp').find('.img-1').hide();
+  $(this).parents('.product-inr-tab-wrp').find('li.img-change-pagi-1').removeClass('img-change-pagi-active');
+  $(this).addClass('img-change-pagi-active');
+});
+
+$('.prPaginationOutside ol li').on('click', function(){
+  var thisdata = $(this).attr('data-pos');
+  console.log('hello');
+  var target = $('li[data-pos="'+thisdata+'"]')
+  $('.product-inr-tab-wrp .img-change-pagi').find(target).trigger('click');
+  $(this).parent().find('li').removeClass('img-change-pagi-active');
   $(this).addClass('img-change-pagi-active');
 });
 
@@ -119,58 +144,6 @@ if( $('.followUsSlider').length ){
     });
 }
 
-
-///////////////////////////// Milon
-
-
-/*$('.img-change-pagi ol li.img-change-pagi-1').on('click', function(e){
-  e.preventDefault();
-  $(this).parent().parent().parent().find('.img-1').fadeIn(300);
-  $(this).parent().parent().parent().find('.img-2').fadeOut();
-  $('.img-change-pagi ol li.img-change-pagi-2').removeClass('img-change-pagi-active');
-  $(this).addClass('img-change-pagi-active');
-});
-$('.img-change-pagi ol li.img-change-pagi-2').on('click', function(e){
-  e.preventDefault();
-  $(this).parent().parent().parent().find('.img-2').fadeIn(300);
-  $(this).parent().parent().parent().find('.img-1').fadeOut();
-  $('.img-change-pagi ol li.img-change-pagi-1').removeClass('img-change-pagi-active');
-  $(this).addClass('img-change-pagi-active');
-});*/
-
-/*------------ Start of gallery and isotop -------*/
-
-
-
-/*$('.gallery-2items-controller ul').isotope({
-  itemSelector: '.grid-item',
-  percentPosition: true,
-  masonry: {
-    // use outer width of grid-sizer for columnWidth
-    columnWidth:'.grid-item',
-    gutter: 0
-  }
-})
-
-var $container= $('#isotope').isotope({
-  itemSelector: '.grid-item',
-  layoutMode: 'fitRows',
-
-});*/
-  
- // bind filter button click
-/*$('#filter-menu').on( 'click', 'a', function(e) {
-  e.preventDefault();
-  $('a.button').not(this).removeClass('checked');
-    $(this).addClass('checked');
-  var filterValue = $( this).attr('data-filter');
-  var filtercheckedText = $(this).text();
-  //alert(filtercheckedText);
-  $container.isotope({ filter: filterValue });
-  
-});
-*/
-
 /*
 * Banner js
 */
@@ -211,73 +184,37 @@ if (windowWidth < 992) {
 }
 
 
-window.onscroll=function(){
-  scrollFunction()
-};
-function scrollFunction(){
-  if(document.body.scrollTop>700||document.documentElement.scrollTop>700){
-    $(".logo").css({'top':'0','z-index':'9999'});
-    $(".logo").addClass('add-cls');
-  }else{
-    $(".logo").css('top', '-100px');
-    $(".logo").removeClass('add-cls');
-  }
-}
-
-
 /*
 -------------------------
   Masonary Js
 -------------------------
 */
-
 if($('#filter-menu').length){
   // init Isotope
   var $container = $('#isotope').isotope({
     itemSelector: '.grid-item',
-    layoutMode: 'fitRows',
+    //layoutMode: 'fitRows',
+    masonry: {
+      columnWidth: '.width1x',
+      fitWidth: true
+    }
 
   });
   // bind filter button click
   $('#filter-menu').on( 'click', 'a', function(e) {
     e.preventDefault();
-    $('#filter-menu a').removeClass('is-checked');
+    $('#filter-menu a').removeClass('is-checked').removeClass('checked');
     $(this).addClass('is-checked');
     var filterValue = $( this ).attr('data-filter');
     $container.isotope({ filter: filterValue });
   });
 }
 
-if($('.masonry').length){
-  $('.masonry').masonry({
-    // options
-    itemSelector: '.grid-item',
-    columnWidth: auto
-  });
-}
-
-
-
-
-/////////////////////////// Prashanto
-
-
-
-
-//////////////////////////// Shoriful 
-
-
-
-
-
 $('.navbar-toggle').on('click', function(){
 	$('#mobile-nav').slideToggle(300);
 });
 	
 
-/**
-Responsive on 767px
-*/
 var windowWidth = $(window).width();
 // if (windowWidth <= 767) {
 
@@ -285,17 +222,6 @@ var windowWidth = $(window).width();
     $(this).toggleClass('menu-expend');
     $('.toggle-bar ul').slideToggle(500);
   });
-
-
-// }
-
-
-// http://codepen.io/norman_pixelkings/pen/NNbqgG
-// https://stackoverflow.com/questions/38686650/slick-slides-on-pagination-hover
-
-
-//$("[data-fancybox]").fancybox({});
-
 
 
 /**
@@ -340,10 +266,78 @@ if( $('.responsive-slider').length ){
 }
 
 
+new WOW().init();
+$(document).ready(function () {
+ $('body').addClass('aniLoaded');
+});
 
+$('.recipeItemsSliderController').onScreen({
+  tolerance: 250,
+  toggleClass: false,
+  doIn: function() {
+    $(this).addClass('onScreen')
+  }
+});
 
+AOS.init({
+  once: true,
+  duration: 800
+});
 
-    new WOW().init();
+$('.hasBgAnimation .banner-bg').css('min-width', windowWidth);
+
+var toLerance = windowHeight / 2;
+
+$('.firstLine').onScreen({
+  tolerance: toLerance,
+  toggleClass: true,
+  doIn: function() {
+    $(this).addClass('onScreen')
+  },
+  doOut: function() {
+    $(this).removeClass('notOnScreen')
+  }
+});
+
+window.onscroll=function(){
+  scrollTimeline();
+  scrollFunction();
+};
+function scrollTimeline(){
+  var mE = $('.middleElement').offset().top;
+  var fL = $('.firstLine').offset().top;
+  ofH = mE - fL;
+    $('.historyActiveWrap').css('height', ofH);
+}
+
+$('.historyInit ul li').onScreen({
+  tolerance: toLerance,
+  toggleClass: true,
+  doIn: function() {
+    $(this).addClass('onScreen')
+  }
+});
+
+$(window).on('load', function(){
+  setTimeout(removeLoader, 600); //wait for page load PLUS two seconds.
+});
+function removeLoader(){
+    $( "#loadingDiv" ).fadeOut(500, function() {
+      // fadeOut complete. Remove the loading div
+      $( "#loadingDiv" ).addClass('loadingdone'); //makes page more lightweight 
+  });  
+}
+
+function scrollFunction(){
+  if(document.body.scrollTop>700||document.documentElement.scrollTop>700){
+    $(".logo-fixed").addClass('showingFixedLogo');
+  }else{
+    $(".logo-fixed").removeClass('showingFixedLogo');
+  }
+}
+
+var prpgofstop = $('.product-inr-tab-wrp .img-change-pagi').offset().top;
+$('.prPaginationOutside').css('top', prpgofstop);
 
 })(jQuery);
 

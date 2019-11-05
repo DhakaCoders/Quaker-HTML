@@ -35,6 +35,11 @@ a,input,img,textarea,button,.qp-more-hover-btn,
 	-webkit-transform: scale(1.03);
 	-o-transform: scale(1.03);
 }
+.promoBannerSlider .slick-current .promo-banner-slide-img{
+	transform: scale(1);
+	transform-origin: 100% 50%;
+	opacity: 1;
+}
 
 /**
 All Hovers
@@ -50,3 +55,99 @@ nav.main-nav ul li.current-menu-item a{
 	color:#fff;
 }
 
+
+/**
+Custom animations
+*/
+.prInnerHdr{
+	opacity: 0;
+	transition: all 0.5s;
+	transition-delay: 1.5s;
+}
+.aniLoaded .product-inr-bg-rgt{
+	width: 100%;
+}
+.aniLoaded .product-inr-bg-lft{
+	width: 50%;
+}
+.aniLoaded .prInnerHdr{
+	opacity: 1;
+}
+.prInnerTitle{
+  -webkit-animation-name: TitleUP;
+  animation-name: TitleUP;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;	
+}
+.recipe-items-slide-img:after{
+	background: #fff;
+	content: "";
+	position: absolute;
+	right: 0;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	transition: all 0.5s;
+}
+.onScreen .recipe-items-slide-img:after{
+	width: 0;
+}
+
+.hasBgAnimation{
+    opacity: 0;
+    width: 0;
+    transition: all .7s;
+}
+.aniLoaded .page-banner-wrap{
+	width: 100%;
+	opacity: 1;
+}
+.hasBgAnimation + .container{
+	position: relative;
+	z-index: 3;
+}
+
+.recipe-banner-dsc .prInnerTitle,
+.qk-banner-dsc .prInnerTitle{
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;	
+}
+.history-timeline-main ul li .time-line-img,
+.history-timeline-main ul li .time-line-des h3 span,
+.history-timeline-main ul li .time-line-des p{
+	opacity: 0;
+}
+.history-timeline-main ul li.onScreen .time-line-img{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;	
+}
+.history-timeline-main ul li.onScreen .time-line-des h3 span{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.history-timeline-main ul li.onScreen .time-line-des p{
+  -webkit-animation-name: fadeInUpShort;
+  animation-name: fadeInUpShort;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}

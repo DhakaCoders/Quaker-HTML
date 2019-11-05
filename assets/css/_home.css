@@ -27,6 +27,10 @@
 	top: 0;
 	bottom: 0;
 	z-index: 1;
+	transform: scale(2);
+	opacity: 0;
+	transform-origin: 50% 50%;
+	transition: all 0.5s;
 }
 .promo-banner-slide-des-controller{
 	position: relative;
@@ -75,14 +79,14 @@
 	font-family: 'PFCatalog-bold';
 	font-size: 14px;
 	line-height: 16px;
-	margin-bottom: 5px;
+	padding-bottom: 5px;
 }
 .promo-banner-slide-des strong{
 	display: block;
 	font-family: 'PFCatalog-bold';
 	font-size: 60px;
 	line-height: 64px;
-	margin-bottom: 15px;
+	padding-bottom: 15px;
 }
 .promo-banner-slide-des p{
 	max-width: 410px;
@@ -120,12 +124,32 @@
 }
 
 
-.promoBannerSlider .slick-current .promo-banner-slide-des  span,
+/*.promoBannerSlider .slick-current .promo-banner-slide-des  span,
 .promoBannerSlider .slick-current .promo-banner-slide-des strong{
   -webkit-animation-name: fadeInUpShort;
   animation-name: fadeInUpShort;
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}*/
+.promoBannerSlider .slick-current .promo-banner-slide-des span{
+  -webkit-animation-name: TitleUP;
+  animation-name: TitleUP;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;	
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;	
+}
+.promoBannerSlider .slick-current .promo-banner-slide-des strong{
+  -webkit-animation-name: TitleUP;
+  animation-name: TitleUP;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
   -webkit-animation-fill-mode: both;
   animation-fill-mode: both;	
   -webkit-animation-delay: 0.7s;
@@ -396,20 +420,23 @@
 .quaker-products-more-btn{
 	text-align: center;
 }
-.quaker-products-more-btn a{
+.quaker-products-more-btn a,
+.transparent-btn{
 	display: inline-block;
 	vertical-align: baseline;
 	color: #002853;
 	font-size: 16px;
 	line-height: 20px;
-	border: 1px solid #253f61;
 	border-radius: 10px;
 	padding: 20px 50px 20px 18px;
 	position: relative;
  	font-family: 'PFCatalog-Light';
+ 	transition:all .5s ease;
+ 	transition-delay: background 0.5s;
 }
 
-.quaker-products-more-btn a:after {
+.quaker-products-more-btn a:after,
+.transparent-btn:after {
     content: "";
     position: absolute;
     right: 16px;
@@ -426,7 +453,17 @@
     -ms-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);
 }
-
+.quaker-products-more-btn a:before,
+.transparent-btn:before{
+	content: '';
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	border: 1px solid #002853;
+	position: absolute;
+	border-radius: 10px;
+}
 .qp-tab-con-col{
 	float: left;
 	width: 50%;
@@ -478,6 +515,9 @@
 }
 .img-change-pagi ol li.img-change-pagi-active{
 	border-color: #ffc13f;
+}
+.product-inr-tab-wrp .img-change-pagi ol li.img-change-pagi-active{
+	border-color: #002853;
 }
 .img-change-pagi ol li span{
 	position: absolute;
@@ -621,8 +661,20 @@
 .img-2{
 	display: none;
 }
-
-
+.promo-banner-slide-des .ssubTitle{
+	min-height: 21px;
+	overflow: hidden;
+	margin-bottom: 5px;
+}
+.promo-banner-slide-des .sTitle{
+	min-height: 143px;
+	margin-bottom: 15px;
+	overflow: hidden;
+}
+.promo-banner-slide-des .sTitle,
+.promo-banner-slide-des .ssubTitle{
+	position: relative;
+}
 @media(max-width: 1449px){
 	.promoBannerSlider .slick-prev{
 		left: 40px;

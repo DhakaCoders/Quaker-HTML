@@ -5,15 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!--   <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
-  <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
-  <?php } ?> --> 
-
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
   <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
@@ -27,22 +23,17 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->	
 
-  <svg style="display: none;">
-
-  <symbol xmlns="http://www.w3.org/2000/svg" width="26.719" height="27.09" viewBox="0 0 26.719 27.09">
-    <path id="ic_facebook" class="cls-1" d="M762.643,5491.2H738.875a1.486,1.486,0,0,0-1.475,1.5v24.1a1.486,1.486,0,0,0,1.475,1.5h12.8v-10.5h-3.482v-4.08h3.482v-3.02c0-3.5,2.108-5.41,5.186-5.41a27.3,27.3,0,0,1,3.111.17v3.65h-2.135c-1.674,0-2,.81-2,1.99v2.62h3.993l-0.52,4.08h-3.473v10.5h6.808a1.486,1.486,0,0,0,1.475-1.5v-24.1A1.486,1.486,0,0,0,762.643,5491.2Z" transform="translate(-737.406 -5491.19)"/>
-  </symbol>
-
-  <symboll xmlns="http://www.w3.org/2000/svg" width="39.312" height="28.12" viewBox="0 0 39.312 28.12">
-    <path id="ic_youTube" class="cls-1" d="M817.594,5495.59a4.971,4.971,0,0,0-3.477-3.55c-3.067-.84-15.364-0.84-15.364-0.84s-12.3,0-15.365.84a4.974,4.974,0,0,0-3.477,3.55c-0.821,3.13-.821,9.66-0.821,9.66s0,6.53.821,9.66a4.974,4.974,0,0,0,3.477,3.55c3.067,0.84,15.365.84,15.365,0.84s12.3,0,15.364-.84a4.971,4.971,0,0,0,3.477-3.55c0.822-3.13.822-9.66,0.822-9.66S818.416,5498.72,817.594,5495.59Zm-22.863,15.59v-11.86l10.278,5.93Z" transform="translate(-779.094 -5491.19)"/>
-  </symbol>
-
-  <symbol xmlns="http://www.w3.org/2000/svg" width="27.688" height="28.12" viewBox="0 0 27.688 28.12">
-    <path id="ic_instagram" class="cls-1" d="M846.746,5493.23c3.7,0,4.138.02,5.6,0.08a7.788,7.788,0,0,1,2.573.49,4.245,4.245,0,0,1,1.593,1.05,4.378,4.378,0,0,1,1.036,1.61,7.883,7.883,0,0,1,.477,2.61c0.066,1.48.081,1.93,0.081,5.68s-0.015,4.2-.081,5.68a7.883,7.883,0,0,1-.477,2.61,4.378,4.378,0,0,1-1.036,1.61,4.245,4.245,0,0,1-1.593,1.05,7.788,7.788,0,0,1-2.573.49c-1.46.06-1.9,0.08-5.6,0.08s-4.137-.02-5.6-0.08a7.78,7.78,0,0,1-2.572-.49,4.237,4.237,0,0,1-1.593-1.05,4.38,4.38,0,0,1-1.037-1.61,7.937,7.937,0,0,1-.477-2.61c-0.066-1.48-.08-1.93-0.08-5.68s0.014-4.2.08-5.68a7.937,7.937,0,0,1,.477-2.61,4.38,4.38,0,0,1,1.037-1.61,4.237,4.237,0,0,1,1.593-1.05,7.78,7.78,0,0,1,2.572-.49c1.461-.06,1.9-0.08,5.6-0.08m0-2.53c-3.762,0-4.234.02-5.712,0.09a9.783,9.783,0,0,0-3.362.65,7.129,7.129,0,0,0-4.052,4.11,10.37,10.37,0,0,0-.644,3.41c-0.067,1.5-.083,1.97-0.083,5.79s0.016,4.29.083,5.79a10.37,10.37,0,0,0,.644,3.41,7.129,7.129,0,0,0,4.052,4.11,9.783,9.783,0,0,0,3.362.65c1.478,0.07,1.95.09,5.712,0.09s4.235-.02,5.712-0.09a9.784,9.784,0,0,0,3.363-.65,7.129,7.129,0,0,0,4.052-4.11,10.423,10.423,0,0,0,.644-3.41c0.067-1.5.083-1.98,0.083-5.79s-0.016-4.29-.083-5.79a10.423,10.423,0,0,0-.644-3.41,7.129,7.129,0,0,0-4.052-4.11,9.784,9.784,0,0,0-3.363-.65c-1.477-.07-1.949-0.09-5.712-0.09h0Zm0,6.84a7.211,7.211,0,1,0,7.115,7.21A7.158,7.158,0,0,0,846.746,5497.54Zm0,11.89a4.68,4.68,0,1,1,4.618-4.68A4.645,4.645,0,0,1,846.746,5509.43Zm9.058-12.18a1.663,1.663,0,1,1-1.663-1.69A1.679,1.679,0,0,1,855.8,5497.25Z" transform="translate(-832.906 -5490.69)"/>
-  </symbol>
-
-
-  </svg>
+<svg style="display: none;">
+<symbol xmlns="http://www.w3.org/2000/svg" width="26.719" height="27.09" viewBox="0 0 26.719 27.09">
+  <path id="ic_facebook" class="cls-1" d="M762.643,5491.2H738.875a1.486,1.486,0,0,0-1.475,1.5v24.1a1.486,1.486,0,0,0,1.475,1.5h12.8v-10.5h-3.482v-4.08h3.482v-3.02c0-3.5,2.108-5.41,5.186-5.41a27.3,27.3,0,0,1,3.111.17v3.65h-2.135c-1.674,0-2,.81-2,1.99v2.62h3.993l-0.52,4.08h-3.473v10.5h6.808a1.486,1.486,0,0,0,1.475-1.5v-24.1A1.486,1.486,0,0,0,762.643,5491.2Z" transform="translate(-737.406 -5491.19)"/>
+</symbol>
+<symboll xmlns="http://www.w3.org/2000/svg" width="39.312" height="28.12" viewBox="0 0 39.312 28.12">
+  <path id="ic_youTube" class="cls-1" d="M817.594,5495.59a4.971,4.971,0,0,0-3.477-3.55c-3.067-.84-15.364-0.84-15.364-0.84s-12.3,0-15.365.84a4.974,4.974,0,0,0-3.477,3.55c-0.821,3.13-.821,9.66-0.821,9.66s0,6.53.821,9.66a4.974,4.974,0,0,0,3.477,3.55c3.067,0.84,15.365.84,15.365,0.84s12.3,0,15.364-.84a4.971,4.971,0,0,0,3.477-3.55c0.822-3.13.822-9.66,0.822-9.66S818.416,5498.72,817.594,5495.59Zm-22.863,15.59v-11.86l10.278,5.93Z" transform="translate(-779.094 -5491.19)"/>
+</symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" width="27.688" height="28.12" viewBox="0 0 27.688 28.12">
+  <path id="ic_instagram" class="cls-1" d="M846.746,5493.23c3.7,0,4.138.02,5.6,0.08a7.788,7.788,0,0,1,2.573.49,4.245,4.245,0,0,1,1.593,1.05,4.378,4.378,0,0,1,1.036,1.61,7.883,7.883,0,0,1,.477,2.61c0.066,1.48.081,1.93,0.081,5.68s-0.015,4.2-.081,5.68a7.883,7.883,0,0,1-.477,2.61,4.378,4.378,0,0,1-1.036,1.61,4.245,4.245,0,0,1-1.593,1.05,7.788,7.788,0,0,1-2.573.49c-1.46.06-1.9,0.08-5.6,0.08s-4.137-.02-5.6-0.08a7.78,7.78,0,0,1-2.572-.49,4.237,4.237,0,0,1-1.593-1.05,4.38,4.38,0,0,1-1.037-1.61,7.937,7.937,0,0,1-.477-2.61c-0.066-1.48-.08-1.93-0.08-5.68s0.014-4.2.08-5.68a7.937,7.937,0,0,1,.477-2.61,4.38,4.38,0,0,1,1.037-1.61,4.237,4.237,0,0,1,1.593-1.05,7.78,7.78,0,0,1,2.572-.49c1.461-.06,1.9-0.08,5.6-0.08m0-2.53c-3.762,0-4.234.02-5.712,0.09a9.783,9.783,0,0,0-3.362.65,7.129,7.129,0,0,0-4.052,4.11,10.37,10.37,0,0,0-.644,3.41c-0.067,1.5-.083,1.97-0.083,5.79s0.016,4.29.083,5.79a10.37,10.37,0,0,0,.644,3.41,7.129,7.129,0,0,0,4.052,4.11,9.783,9.783,0,0,0,3.362.65c1.478,0.07,1.95.09,5.712,0.09s4.235-.02,5.712-0.09a9.784,9.784,0,0,0,3.363-.65,7.129,7.129,0,0,0,4.052-4.11,10.423,10.423,0,0,0,.644-3.41c0.067-1.5.083-1.98,0.083-5.79s-0.016-4.29-.083-5.79a10.423,10.423,0,0,0-.644-3.41,7.129,7.129,0,0,0-4.052-4.11,9.784,9.784,0,0,0-3.363-.65c-1.477-.07-1.949-0.09-5.712-0.09h0Zm0,6.84a7.211,7.211,0,1,0,7.115,7.21A7.158,7.158,0,0,0,846.746,5497.54Zm0,11.89a4.68,4.68,0,1,1,4.618-4.68A4.645,4.645,0,0,1,846.746,5509.43Zm9.058-12.18a1.663,1.663,0,1,1-1.663-1.69A1.679,1.679,0,0,1,855.8,5497.25Z" transform="translate(-832.906 -5490.69)"/>
+</symbol>
+</svg>
 
 </head>
 <body>
@@ -100,7 +91,7 @@
 
 
 <section class="qk-banner-sec-wrp">
-  <div class="page-banner-wrap">
+  <div class="page-banner-wrap hasBgAnimation">
     <div class="banner-bg" style="background: url(assets/images/hm-banner-bg.jpg);">
     </div>
   </div>
@@ -109,8 +100,8 @@
       <div class="row">
         <div class="col-sm-12">
           <div class="qk-banner-dsc">
-            <strong class="fadeIn wow" data-wow-delay="0.4s">Ανακαλύψτε <br> τη δύναμη της <br> βρώμης Quaker</strong>
-           <p class="fadeIn wow" data-wow-delay="0.8s">Τι κρύβεται πίσω από τη δύναμη της βρώμης Quaker; <br>
+            <strong data-aos="fade-up" data-aos-delay="800">Ανακαλύψτε <br> τη δύναμη της <br> βρώμης Quaker</strong>
+            <p data-aos="fade-up" data-aos-delay="1000">Τι κρύβεται πίσω από τη δύναμη της βρώμης Quaker; <br>
           Ένα ξεχωριστό δημητριακό με μοναδικά θρεπτικά <br> συστατικά και υψηλή διατροφική αξία!</p>
           </div>
         </div>
@@ -135,32 +126,39 @@
             <ul class="clearfix">
               <li>
                 <div class="pk-two-plate-dsc-innr clearfix">
-                  <div class="pk-two-plate-lft-bg fadeInLeft wow" data-wow-delay="0.2s">
-                    <div class="pk-two-plate-lft-img" style="background:url(assets/images/two-grid-img-1.png);">
+                  <div class="pk-two-plate-lft-bg" data-aos="fade-right">
+                    <div class="border-around"></div>
+                    <div class="pk-two-plate-lft-img">
+                    <img class="tilt-effect" src="assets/images/two-grid-img-1.png" data-tilt-options='{ "extraImgs" : 1, "bgfixed" : false, "movement": { "translateX" : 30, "translateY" : 30, "translateZ" : -50 } }'>
                       <span></span>
                     </div>
                   </div>
                   <div class="pk-two-plate-dsc-rgt-con">
-                    <div class="pk-two-plate-rgt-dsc">
-                      <h4 class="fadeIn wow" data-wow-delay="0.3s">Καλή λειτουργία της καρδιάς</h4>
-                     <p class="fadeIn wow" data-wow-delay="0.4s"><strong>Μια σωστή δίαιτα, ωφέλιμη και για την υγεία της καρδιάς μας*, ακολουθεί εν γένει τις βασικές αξίες της καλής διατροφής, η οποία στηρίζεται στην καθημερινή κατανάλωση δημητριακών ολικής άλεσης, ποικιλίας φρούτων και λαχανικών, γαλακτοκομικών προϊόντων χαμηλών σε λιπαρά, άπαχου κρέατος, πουλερικών και ψαριών**, ξηρών καρπών και οσπρίων καθώς και μικρών ποσοτήτων ακόρεστων λιπαρών.</strong></p>
-                     <p class="fadeIn wow" data-wow-delay="0.5s">*H βρώμη περιέχει την διαλυτή φυτική ίνα β-γλυκάνη, η οποία είναι σε σημαντικό βαθμό μοναδικό στοιχείο της βρώμης και συμβάλλει στη διατήρηση των φυσιολογικών επιπέδων της χοληστερόλης στο αίμα.</p>
-                     <p class="fadeIn wow" data-wow-delay="0.6s">**Σχετικά με την κατανάλωση άπαχου κρέατος, πουλερικών και ψαριών η γενική σύσταση κατανάλωσης είναι έως 2 φορές την εβδομάδα.</p>
+                    <div class="pk-two-plate-rgt-dsc" data-aos="fade" data-aos-delay="300">
+                      <h4>Καλή λειτουργία της καρδιάς</h4>
+                      <p><strong>Μια σωστή δίαιτα, ωφέλιμη και για την υγεία της καρδιάς μας*, ακολουθεί εν γένει τις βασικές αξίες της καλής διατροφής, η οποία στηρίζεται στην καθημερινή κατανάλωση δημητριακών ολικής άλεσης, ποικιλίας φρούτων και λαχανικών, γαλακτοκομικών προϊόντων χαμηλών σε λιπαρά, άπαχου κρέατος, πουλερικών και ψαριών**, ξηρών καρπών και οσπρίων καθώς και μικρών ποσοτήτων ακόρεστων λιπαρών.</strong></p>
+                     <p>*H βρώμη περιέχει την διαλυτή φυτική ίνα β-γλυκάνη, η οποία είναι σε σημαντικό βαθμό μοναδικό στοιχείο της βρώμης και συμβάλλει στη διατήρηση των φυσιολογικών επιπέδων της χοληστερόλης στο αίμα.</p>
+                     <p>**Σχετικά με την κατανάλωση άπαχου κρέατος, πουλερικών και ψαριών η γενική σύσταση κατανάλωσης είναι έως 2 φορές την εβδομάδα.</p>
                     </div>
                   </div>
                 </div>
               </li>
               <li>
                 <div class="pk-two-plate-dsc-innr clearfix">
-                  <div class="pk-two-plate-lft-bg fadeInLeft wow" data-wow-delay="0.8s">
-                    <div class="pk-two-plate-lft-img" style="background:url(assets/images/two-grid-img-2.png);">
+                  <div class="pk-two-plate-lft-bg" data-aos="fade-right">
+                    <div class="pk-two-plate-lft-img">
+                    <div class="border-around"></div>
+                    <div class="pk-two-plate-lft-img">
+                    <img class="tilt-effect" src="assets/images/two-grid-img-2.png" data-tilt-options='{ "extraImgs" : 1, "bgfixed" : false, "movement": { "translateX" : 30, "translateY" : 30, "translateZ" : -50 } }'>
+                      <span></span>
+                    </div>
                     </div>
                   </div>
                   <div class="pk-two-plate-dsc-rgt-con">
-                    <div class="pk-two-plate-rgt-dsc">
-                      <h4 class="fadeIn wow" data-wow-delay="0.9s">Καλή λειτουργία <br> του πεπτικού συστήματος</h4>
-                     <p class="fadeIn wow" data-wow-delay="0.10s"><strong>Η βρώμη αποτελεί ένα δημητριακό 100% ολικής άλεσης, έχει υψηλή περιεκτικότητα σε φυτικές ίνες και η κατανάλωσή της συμβάλλει στην καλή λειτουργία του εντέρου. </strong></p> 
-                    <p class="fadeIn wow" data-wow-delay="0.11s"><strong>Ως πηγή φυτικών ινών η βρώμη είναι μία εξαιρετική επιλογή, καθώς 40 γραμμάρια κλασσικής βρώμης Quaker παρέχουν 3,6 γραμμάρια φυτικών ινών. Οι ειδικοί συνιστούν την κατανάλωση τουλάχιστον 30 γραμμαρίων φυτικών ινών την ημέρα, μέσα από μία ποικιλία δημητριακών, φρούτων, λαχανικών και οσπρίων.</strong></p>
+                    <div class="pk-two-plate-rgt-dsc" data-aos="fade" data-aos-delay="300">
+                      <h4>Καλή λειτουργία <br> του πεπτικού συστήματος</h4>
+                     <p><strong>Η βρώμη αποτελεί ένα δημητριακό 100% ολικής άλεσης, έχει υψηλή περιεκτικότητα σε φυτικές ίνες και η κατανάλωσή της συμβάλλει στην καλή λειτουργία του εντέρου. </strong></p> 
+                    <p><strong>Ως πηγή φυτικών ινών η βρώμη είναι μία εξαιρετική επιλογή, καθώς 40 γραμμάρια κλασσικής βρώμης Quaker παρέχουν 3,6 γραμμάρια φυτικών ινών. Οι ειδικοί συνιστούν την κατανάλωση τουλάχιστον 30 γραμμαρίων φυτικών ινών την ημέρα, μέσα από μία ποικιλία δημητριακών, φρούτων, λαχανικών και οσπρίων.</strong></p>
                     </div>
                   </div>
                 </div>
@@ -179,28 +177,30 @@
       <div class="col-sm-12">
         <div class="power-energy-necessary-innr">
           <div class="power-energy-necessary-top"> 
-            <h3>Ενέργεια απαραίτητη για <br/> το ιδανικό ξεκίνημα της ημέρας </h3>
+            <h3 data-aos="fade-up" data-aos-delay="300">Ενέργεια απαραίτητη για <br/> το ιδανικό ξεκίνημα της ημέρας </h3>
+            <div data-aos="fade-up" data-aos-delay="500">
             <p>Οι νιφάδες βρώμης Quaker αποτελούν ένα προϊόν <span>100% ολικής άλεσης, </span> καθώς διατηρούν το φύτρο, το ενδοσπέρμιο και το πίτουρο (μέρη του καρπού) κατά τη διαδικασία της άλεσης. Χάρη στη σύνθεσή τους λοιπόν, είναι σε θέση να προσφέρουν στον οργανισμό με τον καλύτερο τρόπο υψηλή ενεργειακή αξία, πρωτεΐνες, φυτικές ίνες και βιταμίνες! </p>
             <p>Δείτε εδώ την ανατομία του ξεχωριστού καρπού της βρώμης:</p>
+            </div>
           </div>
           <div class="power-energy-necessary-img"> 
-            <a href="#"><img src="assets/images/power-energy-necessary-img.png" alt=""></a>
+            <a data-aos="fade" data-aos-delay="300" href="#"><img src="assets/images/power-energy-necessary-img.png" alt=""></a>
           </div>
           <div class="features-of-ots"> 
             <ul class="ulc clearfix">
-              <li>
+              <li data-aos="fade" data-aos-delay="300">
                 <h5>1. ΤΟ ΦΥΤΡΟ</h5>
                 <p>Η καρδιά του καρπού. Περιέχει πολύτιμες θρεπτικές ουσίες όπως βιταμίνες του συμπλέγματος Β καθώς και πολυακόρεστα αλλά και μονοακόρεστα λιπαρά.</p>
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="500">
                 <h5>2. ΤΟ ΕΝΔΟΣΠΕΡΜΙΟ </h5>
                 <p>Το μεγαλύτερο τμήμα του πυρήνα. Περιέχει ωφέλιμους υδατάνθρακες που παρέχουν ενέργεια.</p>
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="700">
                 <h5>3. TO ΠΙΤΟΥΡΟ</h5>
                 <p>Η τραχιά, εξωτερική στοιβάδα του πυρήνα. Αποτελείται από πολλαπλές στρώσεις και είναι βρώσιμη, περιέχοντας αβενανθραμίδες που υποστηρίζουν την καλή λειτουργία της καρδιάς.</p>
               </li>
-              <li>
+              <li data-aos="fade" data-aos-delay="900">
                 <h5>4. Ο ΦΛΟΙΟΣ</h5>
                 <p>Το ινώδες, μη βρώσιμο προστατευτικό περίβλημα που περιβάλλει τον πυρήνα. Αφαιρείται κατά την άλεση. </p>
               </li>
@@ -217,7 +217,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="power-good-energy-innr">
+        <div class="power-good-energy-innr" data-aos="fade" data-aos-delay="300">
           <p>Χαρίζοντας καλή ενέργεια που διαρκεί, η βρώμη Quaker αποτελεί μία  <br /> ιδανική επιλογή για την καθημερινή διατροφή μας.</p>
         </div>
       </div>
@@ -232,7 +232,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="power-benefits-of-orga-innr fadeInLeft wow" data-wow-delay="0.2s">
+        <div class="power-benefits-of-orga-innr" data-aos="fade-right" data-aos-delay="300">
           <strong>Τα οφέλη για  <br /> τον οργανισμό μας</strong> 
           <p>Ένας καρπός, τόσα πολλά οφέλη! Ανακαλύψτε σήμερα το <br /> διατροφικό θησαυρό της βρώμης.</p>
           <a href="#">Mάθετε περισσότερα</a>
@@ -304,13 +304,19 @@
 <script src="assets/js/ie10-viewport-bug-workaround.js"></script>
 <script src="assets/fancybox3/dist/jquery.fancybox.min.js"></script>
 <script src="assets/slick.slider/slick.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo2-QJ7RdCkLw3NFZEu71mEKJ_8LczG-c"></script>
 <script src="assets/js/jquery.matchHeight-min.js"></script>
-<script src="assets/js/wow.min.js"></script>
 <script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/wow.min.js"></script>
 <script src="assets/js/masonry.js"></script>
 <script src="assets/js/isotope-2.2.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/jquery.onscreen.min.js"></script>
+<script src="assets/js/skrollr.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/demo1.js"></script>
+<script src="assets/js/tilt.jquery.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/main.js"></script>
-
 </body>
 </html>

@@ -5,15 +5,11 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
-<!--   <?php $favicon = get_theme_mod('favicon'); if(!empty($favicon)) { ?> 
-  <link rel="shortcut icon" href="<?php echo $favicon; ?>" />
-  <?php } ?> -->
-
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-select.min.css">
   <link rel="stylesheet" type="text/css" href="assets/fonts/font-awesome/font-awesome.css">
   <link rel="stylesheet" type="text/css" href="assets/css/animate.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="assets/fancybox3/dist/jquery.fancybox.min.css">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" type="text/css" href="assets/slick.slider/slick-theme.css">
@@ -27,22 +23,17 @@
     <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
   <![endif]-->	
 
-  <svg style="display: none;">
-
-  <symbol xmlns="http://www.w3.org/2000/svg" width="26.719" height="27.09" viewBox="0 0 26.719 27.09">
-    <path id="ic_facebook" class="cls-1" d="M762.643,5491.2H738.875a1.486,1.486,0,0,0-1.475,1.5v24.1a1.486,1.486,0,0,0,1.475,1.5h12.8v-10.5h-3.482v-4.08h3.482v-3.02c0-3.5,2.108-5.41,5.186-5.41a27.3,27.3,0,0,1,3.111.17v3.65h-2.135c-1.674,0-2,.81-2,1.99v2.62h3.993l-0.52,4.08h-3.473v10.5h6.808a1.486,1.486,0,0,0,1.475-1.5v-24.1A1.486,1.486,0,0,0,762.643,5491.2Z" transform="translate(-737.406 -5491.19)"/>
-  </symbol>
-
-  <symboll xmlns="http://www.w3.org/2000/svg" width="39.312" height="28.12" viewBox="0 0 39.312 28.12">
-    <path id="ic_youTube" class="cls-1" d="M817.594,5495.59a4.971,4.971,0,0,0-3.477-3.55c-3.067-.84-15.364-0.84-15.364-0.84s-12.3,0-15.365.84a4.974,4.974,0,0,0-3.477,3.55c-0.821,3.13-.821,9.66-0.821,9.66s0,6.53.821,9.66a4.974,4.974,0,0,0,3.477,3.55c3.067,0.84,15.365.84,15.365,0.84s12.3,0,15.364-.84a4.971,4.971,0,0,0,3.477-3.55c0.822-3.13.822-9.66,0.822-9.66S818.416,5498.72,817.594,5495.59Zm-22.863,15.59v-11.86l10.278,5.93Z" transform="translate(-779.094 -5491.19)"/>
-  </symbol>
-
-  <symbol xmlns="http://www.w3.org/2000/svg" width="27.688" height="28.12" viewBox="0 0 27.688 28.12">
-    <path id="ic_instagram" class="cls-1" d="M846.746,5493.23c3.7,0,4.138.02,5.6,0.08a7.788,7.788,0,0,1,2.573.49,4.245,4.245,0,0,1,1.593,1.05,4.378,4.378,0,0,1,1.036,1.61,7.883,7.883,0,0,1,.477,2.61c0.066,1.48.081,1.93,0.081,5.68s-0.015,4.2-.081,5.68a7.883,7.883,0,0,1-.477,2.61,4.378,4.378,0,0,1-1.036,1.61,4.245,4.245,0,0,1-1.593,1.05,7.788,7.788,0,0,1-2.573.49c-1.46.06-1.9,0.08-5.6,0.08s-4.137-.02-5.6-0.08a7.78,7.78,0,0,1-2.572-.49,4.237,4.237,0,0,1-1.593-1.05,4.38,4.38,0,0,1-1.037-1.61,7.937,7.937,0,0,1-.477-2.61c-0.066-1.48-.08-1.93-0.08-5.68s0.014-4.2.08-5.68a7.937,7.937,0,0,1,.477-2.61,4.38,4.38,0,0,1,1.037-1.61,4.237,4.237,0,0,1,1.593-1.05,7.78,7.78,0,0,1,2.572-.49c1.461-.06,1.9-0.08,5.6-0.08m0-2.53c-3.762,0-4.234.02-5.712,0.09a9.783,9.783,0,0,0-3.362.65,7.129,7.129,0,0,0-4.052,4.11,10.37,10.37,0,0,0-.644,3.41c-0.067,1.5-.083,1.97-0.083,5.79s0.016,4.29.083,5.79a10.37,10.37,0,0,0,.644,3.41,7.129,7.129,0,0,0,4.052,4.11,9.783,9.783,0,0,0,3.362.65c1.478,0.07,1.95.09,5.712,0.09s4.235-.02,5.712-0.09a9.784,9.784,0,0,0,3.363-.65,7.129,7.129,0,0,0,4.052-4.11,10.423,10.423,0,0,0,.644-3.41c0.067-1.5.083-1.98,0.083-5.79s-0.016-4.29-.083-5.79a10.423,10.423,0,0,0-.644-3.41,7.129,7.129,0,0,0-4.052-4.11,9.784,9.784,0,0,0-3.363-.65c-1.477-.07-1.949-0.09-5.712-0.09h0Zm0,6.84a7.211,7.211,0,1,0,7.115,7.21A7.158,7.158,0,0,0,846.746,5497.54Zm0,11.89a4.68,4.68,0,1,1,4.618-4.68A4.645,4.645,0,0,1,846.746,5509.43Zm9.058-12.18a1.663,1.663,0,1,1-1.663-1.69A1.679,1.679,0,0,1,855.8,5497.25Z" transform="translate(-832.906 -5490.69)"/>
-  </symbol>
-
-
-  </svg>
+<svg style="display: none;">
+<symbol xmlns="http://www.w3.org/2000/svg" width="26.719" height="27.09" viewBox="0 0 26.719 27.09">
+  <path id="ic_facebook" class="cls-1" d="M762.643,5491.2H738.875a1.486,1.486,0,0,0-1.475,1.5v24.1a1.486,1.486,0,0,0,1.475,1.5h12.8v-10.5h-3.482v-4.08h3.482v-3.02c0-3.5,2.108-5.41,5.186-5.41a27.3,27.3,0,0,1,3.111.17v3.65h-2.135c-1.674,0-2,.81-2,1.99v2.62h3.993l-0.52,4.08h-3.473v10.5h6.808a1.486,1.486,0,0,0,1.475-1.5v-24.1A1.486,1.486,0,0,0,762.643,5491.2Z" transform="translate(-737.406 -5491.19)"/>
+</symbol>
+<symboll xmlns="http://www.w3.org/2000/svg" width="39.312" height="28.12" viewBox="0 0 39.312 28.12">
+  <path id="ic_youTube" class="cls-1" d="M817.594,5495.59a4.971,4.971,0,0,0-3.477-3.55c-3.067-.84-15.364-0.84-15.364-0.84s-12.3,0-15.365.84a4.974,4.974,0,0,0-3.477,3.55c-0.821,3.13-.821,9.66-0.821,9.66s0,6.53.821,9.66a4.974,4.974,0,0,0,3.477,3.55c3.067,0.84,15.365.84,15.365,0.84s12.3,0,15.364-.84a4.971,4.971,0,0,0,3.477-3.55c0.822-3.13.822-9.66,0.822-9.66S818.416,5498.72,817.594,5495.59Zm-22.863,15.59v-11.86l10.278,5.93Z" transform="translate(-779.094 -5491.19)"/>
+</symbol>
+<symbol xmlns="http://www.w3.org/2000/svg" width="27.688" height="28.12" viewBox="0 0 27.688 28.12">
+  <path id="ic_instagram" class="cls-1" d="M846.746,5493.23c3.7,0,4.138.02,5.6,0.08a7.788,7.788,0,0,1,2.573.49,4.245,4.245,0,0,1,1.593,1.05,4.378,4.378,0,0,1,1.036,1.61,7.883,7.883,0,0,1,.477,2.61c0.066,1.48.081,1.93,0.081,5.68s-0.015,4.2-.081,5.68a7.883,7.883,0,0,1-.477,2.61,4.378,4.378,0,0,1-1.036,1.61,4.245,4.245,0,0,1-1.593,1.05,7.788,7.788,0,0,1-2.573.49c-1.46.06-1.9,0.08-5.6,0.08s-4.137-.02-5.6-0.08a7.78,7.78,0,0,1-2.572-.49,4.237,4.237,0,0,1-1.593-1.05,4.38,4.38,0,0,1-1.037-1.61,7.937,7.937,0,0,1-.477-2.61c-0.066-1.48-.08-1.93-0.08-5.68s0.014-4.2.08-5.68a7.937,7.937,0,0,1,.477-2.61,4.38,4.38,0,0,1,1.037-1.61,4.237,4.237,0,0,1,1.593-1.05,7.78,7.78,0,0,1,2.572-.49c1.461-.06,1.9-0.08,5.6-0.08m0-2.53c-3.762,0-4.234.02-5.712,0.09a9.783,9.783,0,0,0-3.362.65,7.129,7.129,0,0,0-4.052,4.11,10.37,10.37,0,0,0-.644,3.41c-0.067,1.5-.083,1.97-0.083,5.79s0.016,4.29.083,5.79a10.37,10.37,0,0,0,.644,3.41,7.129,7.129,0,0,0,4.052,4.11,9.783,9.783,0,0,0,3.362.65c1.478,0.07,1.95.09,5.712,0.09s4.235-.02,5.712-0.09a9.784,9.784,0,0,0,3.363-.65,7.129,7.129,0,0,0,4.052-4.11,10.423,10.423,0,0,0,.644-3.41c0.067-1.5.083-1.98,0.083-5.79s-0.016-4.29-.083-5.79a10.423,10.423,0,0,0-.644-3.41,7.129,7.129,0,0,0-4.052-4.11,9.784,9.784,0,0,0-3.363-.65c-1.477-.07-1.949-0.09-5.712-0.09h0Zm0,6.84a7.211,7.211,0,1,0,7.115,7.21A7.158,7.158,0,0,0,846.746,5497.54Zm0,11.89a4.68,4.68,0,1,1,4.618-4.68A4.645,4.645,0,0,1,846.746,5509.43Zm9.058-12.18a1.663,1.663,0,1,1-1.663-1.69A1.679,1.679,0,0,1,855.8,5497.25Z" transform="translate(-832.906 -5490.69)"/>
+</symbol>
+</svg>
 
 </head>
 <body>
@@ -98,14 +89,18 @@
 </header><!-- end of header -->
 
 
-<section class="qk-banner-sec-wrp the-power-prd-tp" id="history-qk-banner-sec" style="background: url(assets/images/history-baner.jpg);">
+<section class="qk-banner-sec-wrp the-power-prd-tp" id="history-qk-banner-sec">
+  <div class="page-banner-wrap hasBgAnimation">
+    <div class="banner-bg" style="background: url(assets/images/history-baner.jpg);">
+    </div>
+  </div>
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
         <div class="qk-banner-dsc-wrp">
           <div class="qk-banner-dsc">
-            <strong>Ο ειδικός στη βρώμη<br/>εδώ και 140 χρόνια</strong>
-            <p>Στα Quaker είμαστε περήφανοι για τη μοναδικής ποιότητας βρώμη  <br/> που παράγουμε, καθώς διαθέτουμε πάνω από 140 χρόνια εξειδίκευσης <br/> και εμπειρίας. </p>
+            <strong data-aos="fade-up" data-aos-delay="800">Ο ειδικός στη βρώμη<br/>εδώ και 140 χρόνια</strong>
+            <p data-aos="fade-up" data-aos-delay="1000">Στα Quaker είμαστε περήφανοι για τη μοναδικής ποιότητας βρώμη  <br/> που παράγουμε, καθώς διαθέτουμε πάνω από 140 χρόνια εξειδίκευσης <br/> και εμπειρίας. </p>
           </div>
         </div>
       </div>
@@ -119,7 +114,7 @@
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
-        <div class="bnr-btm-des-innr">
+        <div class="bnr-btm-des-innr" data-aos="fade" data-aos-delay="300">
           <p>Η ηγετική μας θέση στον τομέα της βρώμης και των προϊόντων που την περιέχουν ως βάση τους είναι αποτέλεσμα της συνέπειάς μας στη φιλοσοφία μας, της αδιαπραγμάτευτης δέσμευσής μας στην ποιότητα της πρώτης μας ύλης, της συνεχούς επένδυσης στην έρευνα και στις νέες τεχνολογίες αλλά και στο όραμά μας να βελτιώνουμε τις ζωές των ανθρώπων, προσφέροντας θρεπτικές επιλογές που προάγουν έναν ισορροπημένο τρόπο ζωής.  </p>
           <p>Με πάνω από πέντε δεκαετίες παρουσίας στην ελληνική αγορά, τα Quaker πλέον αποτελούν συνώνυμο της υψηλής ποιότητας και της ισορροπημένης διατροφής. Αξιοποιώντας αυτήν την κληρονομιά, συνεχίζουμε με ζήλο να φέρνουμε στο τραπέζι σας ξεχωριστά προϊόντα, για να απολαμβάνετε μία καθημερινότητα γεμάτη από τη δύναμη της βρώμης! </p>
         </div>
@@ -135,22 +130,22 @@
       <div class="col-sm-12">
         <div class="top-history-innr">
           <div class="top-history-head"> 
-            <h1>Η πορεία μας έως τώρα</h1>
-            <p>Εδώ και 140 χρόνια, αντλούμε την έμπνευσή μας από τη δύναμη που απελευθερώνει ο ξεχωριστός καρπός της βρώμης.</p>
+            <h1 data-aos="fade-up" data-aos-delay="300">Η πορεία μας έως τώρα</h1>
+            <p data-aos="fade-up" data-aos-delay="500">Εδώ και 140 χρόνια, αντλούμε την έμπνευσή μας από τη δύναμη που απελευθερώνει ο ξεχωριστός καρπός της βρώμης.</p>
           </div>
           <div class="top-history-main"> 
             <ul class="ulc clearfix"> 
-              <li>
+              <li data-aos="fade" data-aos-delay="300">
                 <img src="assets/images/history-top-img-001.png" alt=""/>
                 <p>Οι απαρχές της εταιρείας<br/>“Quaker Oats Company”</p>
               </li>
 
-              <li>
+              <li data-aos="fade" data-aos-delay="500">
                 <img src="assets/images/history-top-img-002.png" alt=""/>
                 <p>Ο Henry Parsons Crowell ιδρύει την εταιρεία, βασισμένος στην πεποίθηση πως όλοι, όπου κι αν βρίσκονται, πρέπει να έχουν πρόσβαση στην καλή διατροφή.</p>
               </li>
 
-              <li>
+              <li data-aos="fade" data-aos-delay="800">
                 <img src="assets/images/history-top-img-003.png" alt=""/>
                 <p>Συνεχίζουμε το όραμά του, απελευθερώνοντας τη διατροφική δύναμη της βρώμης, με την πεποίθησή του ως οδηγό μας.  </p>
               </li>
@@ -176,6 +171,7 @@
   </div>
 </section>
 
+<div class="middleElement"></div>
 
 <section class="history-timeline-sec"> 
   <div class="container">
@@ -186,14 +182,16 @@
             <p>Ανακαλύψτε πως ξεκίνησαν όλα.</p>
           </div>
           <div class="history-timeline-main-wrp">
-            <div class="history-timeline-main">
+            <div class="history-timeline-main historyInit">
+              <div class="firstLine"></div>
+              <div class="activeLine"></div>
               <ul class="ulc clearfix">
                 <li class="clearfix">
                   <div class="time-line-img">
                     <img src="assets/images/history-img-01.png" alt="" />
                   </div>
                   <div class="time-line-des"> 
-                    <h3>1850</h3>
+                    <h3><span>1850</span></h3>
                     <p>Ο Ferdinand Schumacher ιδρύει τη German Mills American Cereal Company στο Akron του Οχάιο. Την ίδια περίοδο, ο John Stuart ιδρύει τη North Star Mills Company στον Καναδά.</p>
                   </div>
                 </li>
@@ -202,7 +200,7 @@
                     <img src="assets/images/history-img-02.png" alt="" />
                   </div>
                   <div class="time-line-des"> 
-                    <h3>1877</h3>
+                    <h3><span>1877</span></h3>
                     <p>Η German Mills American Cereal Company και η North Star Mills Company συγχωνεύονται σε μία εταιρεία που αργότερα θα μετονομαστεί σε “The Quaker Oats Company”. Το σήμα “Quaker Oats” γίνεται το πρώτο κατοχυρωμένο σήμα δημητριακών πρωινού. Το σήμα καταχωρήθηκε με τη γνωστή σε όλους μας φιγούρα του άντρα που βλέπετε στη φωτογραφία. Και οι δύο ιδιοκτήτες, Henry Seymour και William Heston, ισχυρίζονται ότι επέλεξαν το όνομα “Quaker” ως σύμβολο υψηλής ποιότητας και ειλικρινούς αξίας.</p>
                   </div>
                 </li>
@@ -211,7 +209,7 @@
                     <img src="assets/images/history-img-03.png" alt="" />
                   </div>
                   <div class="time-line-des"> 
-                    <h3>1881</h3>
+                    <h3><span>1881</span></h3>
                     <p>Ο Henry Parsons Crowell αγοράζει τη χρεωκοπημένη “Quaker Mill” στη Ravenna του Oχάιο και μαζί το πιο πολύτιμο περιουσιακό της στοιχείο – τη μάρκα Quaker.</p>
                   </div>
                 </li>
@@ -220,7 +218,7 @@
                     <img src="assets/images/history-img-04.png" alt="" />
                   </div>
                   <div class="time-line-des"> 
-                    <h3>1888</h3>
+                    <h3><span>1888</span></h3>
                     <p>Επτά από τα μεγαλύτερα Αμερικανικά αλεστήρια βρώμης, ενώνονται κάτω από την επωνυμία “American Cereal Company”</p>
                   </div>
                 </li>
@@ -229,7 +227,7 @@
                     <img src="assets/images/history-img-05.png" alt="" />
                   </div>
                   <div class="time-line-des"> 
-                    <h3>1901</h3>
+                    <h3><span>1901</span></h3>
                     <p>H εταιρία “American Cereal Company” αλλάζει την ονομασία της σε “The Quaker Oats Company”.</p>
                   </div>
                 </li>
@@ -238,7 +236,7 @@
                     <img src="assets/images/history-img-06.png" alt="" />
                   </div>
                   <div class="time-line-des"> 
-                    <h3>1915</h3>
+                    <h3><span>1915</span></h3>
                     <p>Λανσάρεται η κλασική κυλινδρική συσκευασία <br/> “Quaker Oats”.</p>
                   </div>
                 </li>
@@ -247,7 +245,7 @@
                     <img src="assets/images/history-img-07.png" alt="" />
                   </div>
                   <div class="time-line-des"> 
-                    <h3>1997</h3>
+                    <h3><span>1997</span></h3>
                     <p>Τα Quaker εισάγουν τον πρώτο -σχετικό με τρόφιμα- ισχυρισμό υγείας για τη βρώμη, εγκεκριμένο από την FDA. Ο νέος ισχυρισμός υγείας αφορά την καρδιά και αναγράφεται στην συσκευασία των αντίστοιχων δημητριακών βρώμης Quaker, αναφέροντας πως «Οι διαλυτές ίνες που περιέχονται στη βρώμη, ως μέρος μίας διατροφής χαμηλής σε κορεσμένα λιπαρά και χοληστερόλη, ενδέχεται να μειώσουν τον κίνδυνο καρδιοπάθειας.». </p>
                   </div>
                 </li>
@@ -256,7 +254,7 @@
                     <img src="assets/images/history-img-08.png" alt="" />
                   </div>
                   <div class="time-line-des"> 
-                    <h3>2007</h3>
+                    <h3><span>2007</span></h3>
                     <p>Στην επέτειο των 130 χρόνων τους και μετά από πολυετή παρουσία στην ελληνική αγορά, η Tasty Foods αναλαμβάνει την διανομή των Quaker στην Ελλάδα και εισάγει τα Quaker Cruesli (που στη συνέχεια θα μετονομαστούν σε «Quaker Τραγανές Μπουκιές»).</p>
                   </div>
                 </li>
@@ -265,7 +263,7 @@
                     <img src="assets/images/history-img-09.png" alt="" />
                   </div>
                   <div class="time-line-des"> 
-                    <h3>2011</h3>
+                    <h3><span>2011</span></h3>
                     <p>Λανσάρονται στην Ελλάδα τα Quaker Τραγανές Μπουκιές, σημειώνοντας μεγάλη επιτυχία μέχρι σήμερα στην αγορά των δημητριακών.</p>
                   </div>
                 </li>
@@ -274,12 +272,111 @@
                     <img src="assets/images/history-img-10.png" alt="" />
                   </div>
                   <div class="time-line-des"> 
-                    <h3>2017</h3>
+                    <h3><span>2017</span></h3>
                     <p>Τα Quaker γιορτάζουν την επέτειο των 140 χρόνων τους.</p>
                   </div>
                 </li>
               </ul>
             </div>
+
+            <div class="historyActiveWrap">
+            <div class="history-timeline-main thisActive">
+              <div class="firstLine"></div>
+              <div class="activeLine"></div>
+              <ul class="ulc clearfix">
+                <li class="clearfix">
+                  <div class="time-line-img">
+                    <img src="assets/images/history-img-01.png" alt="" />
+                  </div>
+                  <div class="time-line-des"> 
+                    <h3><span>1850</span></h3>
+                    <p>Ο Ferdinand Schumacher ιδρύει τη German Mills American Cereal Company στο Akron του Οχάιο. Την ίδια περίοδο, ο John Stuart ιδρύει τη North Star Mills Company στον Καναδά.</p>
+                  </div>
+                </li>
+                <li class="clearfix"> 
+                  <div class="time-line-img">
+                    <img src="assets/images/history-img-02.png" alt="" />
+                  </div>
+                  <div class="time-line-des"> 
+                    <h3><span>1877</span></h3>
+                    <p>Η German Mills American Cereal Company και η North Star Mills Company συγχωνεύονται σε μία εταιρεία που αργότερα θα μετονομαστεί σε “The Quaker Oats Company”. Το σήμα “Quaker Oats” γίνεται το πρώτο κατοχυρωμένο σήμα δημητριακών πρωινού. Το σήμα καταχωρήθηκε με τη γνωστή σε όλους μας φιγούρα του άντρα που βλέπετε στη φωτογραφία. Και οι δύο ιδιοκτήτες, Henry Seymour και William Heston, ισχυρίζονται ότι επέλεξαν το όνομα “Quaker” ως σύμβολο υψηλής ποιότητας και ειλικρινούς αξίας.</p>
+                  </div>
+                </li>
+                <li class="clearfix"> 
+                  <div class="time-line-img">
+                    <img src="assets/images/history-img-03.png" alt="" />
+                  </div>
+                  <div class="time-line-des"> 
+                    <h3><span>1881</span></h3>
+                    <p>Ο Henry Parsons Crowell αγοράζει τη χρεωκοπημένη “Quaker Mill” στη Ravenna του Oχάιο και μαζί το πιο πολύτιμο περιουσιακό της στοιχείο – τη μάρκα Quaker.</p>
+                  </div>
+                </li>
+                <li class="clearfix"> 
+                  <div class="time-line-img">
+                    <img src="assets/images/history-img-04.png" alt="" />
+                  </div>
+                  <div class="time-line-des"> 
+                    <h3><span>1888</span></h3>
+                    <p>Επτά από τα μεγαλύτερα Αμερικανικά αλεστήρια βρώμης, ενώνονται κάτω από την επωνυμία “American Cereal Company”</p>
+                  </div>
+                </li>
+                <li class="clearfix"> 
+                  <div class="time-line-img">
+                    <img src="assets/images/history-img-05.png" alt="" />
+                  </div>
+                  <div class="time-line-des"> 
+                    <h3><span>1901</span></h3>
+                    <p>H εταιρία “American Cereal Company” αλλάζει την ονομασία της σε “The Quaker Oats Company”.</p>
+                  </div>
+                </li>
+                <li class="clearfix"> 
+                  <div class="time-line-img">
+                    <img src="assets/images/history-img-06.png" alt="" />
+                  </div>
+                  <div class="time-line-des"> 
+                    <h3><span>1915</span></h3>
+                    <p>Λανσάρεται η κλασική κυλινδρική συσκευασία <br/> “Quaker Oats”.</p>
+                  </div>
+                </li>
+                <li class="clearfix"> 
+                  <div class="time-line-img">
+                    <img src="assets/images/history-img-07.png" alt="" />
+                  </div>
+                  <div class="time-line-des"> 
+                    <h3><span>1997</span></h3>
+                    <p>Τα Quaker εισάγουν τον πρώτο -σχετικό με τρόφιμα- ισχυρισμό υγείας για τη βρώμη, εγκεκριμένο από την FDA. Ο νέος ισχυρισμός υγείας αφορά την καρδιά και αναγράφεται στην συσκευασία των αντίστοιχων δημητριακών βρώμης Quaker, αναφέροντας πως «Οι διαλυτές ίνες που περιέχονται στη βρώμη, ως μέρος μίας διατροφής χαμηλής σε κορεσμένα λιπαρά και χοληστερόλη, ενδέχεται να μειώσουν τον κίνδυνο καρδιοπάθειας.». </p>
+                  </div>
+                </li>
+                <li class="clearfix"> 
+                  <div class="time-line-img">
+                    <img src="assets/images/history-img-08.png" alt="" />
+                  </div>
+                  <div class="time-line-des"> 
+                    <h3><span>2007</span></h3>
+                    <p>Στην επέτειο των 130 χρόνων τους και μετά από πολυετή παρουσία στην ελληνική αγορά, η Tasty Foods αναλαμβάνει την διανομή των Quaker στην Ελλάδα και εισάγει τα Quaker Cruesli (που στη συνέχεια θα μετονομαστούν σε «Quaker Τραγανές Μπουκιές»).</p>
+                  </div>
+                </li>
+                <li class="clearfix"> 
+                  <div class="time-line-img">
+                    <img src="assets/images/history-img-09.png" alt="" />
+                  </div>
+                  <div class="time-line-des"> 
+                    <h3><span>2011</span></h3>
+                    <p>Λανσάρονται στην Ελλάδα τα Quaker Τραγανές Μπουκιές, σημειώνοντας μεγάλη επιτυχία μέχρι σήμερα στην αγορά των δημητριακών.</p>
+                  </div>
+                </li>
+                <li class="clearfix"> 
+                  <div class="time-line-img">
+                    <img src="assets/images/history-img-10.png" alt="" />
+                  </div>
+                  <div class="time-line-des"> 
+                    <h3><span>2017</span></h3>
+                    <p>Τα Quaker γιορτάζουν την επέτειο των 140 χρόνων τους.</p>
+                  </div>
+                </li>
+              </ul>
+            </div></div>
+
           </div>
         </div>
       </div>
@@ -355,8 +452,19 @@
 <script src="assets/js/jquery-ui.js"></script>
 <script src="assets/js/masonry.js"></script>
 <script src="assets/js/isotope-2.2.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBo2-QJ7RdCkLw3NFZEu71mEKJ_8LczG-c"></script>
+<script src="assets/js/jquery.matchHeight-min.js"></script>
+<script src="assets/js/jquery-ui.js"></script>
+<script src="assets/js/wow.min.js"></script>
+<script src="assets/js/masonry.js"></script>
+<script src="assets/js/isotope-2.2.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="assets/js/jquery.onscreen.min.js"></script>
+<script src="assets/js/skrollr.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/demo1.js"></script>
+<script src="assets/js/tilt.jquery.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/main.js"></script>
-
 </body>
 </html>

@@ -57,6 +57,32 @@
     color: #082f58;
 }
 
+.sample-content-sec-wrp {
+    padding: 100px 0 80px;
+}
+.sample-content-wrp h5,
+.sample-content-wrp h4,
+.sample-content-wrp h3,
+.sample-content-wrp h2,
+.sample-content-wrp h1{
+    margin: 0;
+    color: #002853;
+    font-family: 'PFCatalog-Black';
+    margin-bottom: 30px;
+}
+
+.sample-content-wrp ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 15px;
+}
+.sample-content-wrp ul li{
+    font-size: 18px;
+    line-height: 20px;
+    padding: 10px 0;
+}
+
 @media(max-width: 1599px){
     
 }
@@ -143,6 +169,9 @@
     .page-banner-wrap {
         overflow: hidden;
     }
+    .sample-content-sec-wrp {
+        padding: 70px 0 60px;
+    }
 }
 
 
@@ -160,8 +189,10 @@
 
 
 @media(max-width: 479px){
-
-
+    .sample-content-wrp h1 {
+        font-size: 36px;
+        margin-bottom: 20px;
+    }
 }
 
 

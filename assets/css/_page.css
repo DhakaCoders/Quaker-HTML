@@ -103,8 +103,14 @@
 .product-hub-prd-tp.normalPage .all-page-heading {
     padding-top: 250px;
 }
-@media(max-width: 1599px){
-    
+.sample-content-wrp p a{
+    display: inline-block;
+    vertical-align: baseline;
+    text-decoration: none;
+    color:#667e98; 
+}
+.sample-content-wrp p a:hover{
+    color: #03376f;
 }
 @media(max-width: 1199px){
     .hide-md{
@@ -201,6 +207,8 @@
         font-size: 36px;
         margin-bottom: 15px;
     }
+
+
 }
 
 

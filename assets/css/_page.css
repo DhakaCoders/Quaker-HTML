@@ -97,7 +97,12 @@
     display: inline-block;
     vertical-align: baseline;
 }
-
+.normalPage.qk-banner-sec-wrp {
+    min-height: 400px !important;
+}
+.product-hub-prd-tp.normalPage .all-page-heading {
+    padding-top: 250px;
+}
 @media(max-width: 1599px){
     
 }
@@ -186,6 +191,10 @@
     }
     .sample-content-sec-wrp {
         padding: 70px 0 60px;
+    }
+    .product-hub-prd-tp.normalPage .all-page-heading {
+        padding-top: 50px;
+        padding-bottom: 50px;
     }
 }
 

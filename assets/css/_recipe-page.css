@@ -183,6 +183,10 @@ a.transparent-btn.transparent-btn-flow:hover:after{
 .recipeItemsSliderController{
 	overflow: hidden;
 }
+.recipeItemsSliderController .slick-arrow,
+.followUsSliderController .slick-arrow{
+	display: none!important;
+}
 .recipe-items-slider li{
 	float: left;
 }

@@ -85,6 +85,15 @@ $('.product-inr-tab-wrp .img-change-pagi li.img-change-pagi-2').on('click', func
   $(this).addClass('img-change-pagi-active');
 });
 
+$('.prPaginationOutside ol li').on('click', function(){
+  var thisdata = $(this).attr('data-pos');
+  console.log('hello');
+  var target = $('li[data-pos="'+thisdata+'"]')
+  $('.product-inr-tab-wrp .img-change-pagi').find(target).trigger('click');
+  $(this).parent().find('li').removeClass('img-change-pagi-active');
+  $(this).addClass('img-change-pagi-active');
+});
+
 if( $('.recipeItemsSlider').length ){
     $('.recipeItemsSlider').slick({
       dots: false,
@@ -175,26 +184,11 @@ if (windowWidth < 992) {
 }
 
 
-window.onscroll=function(){
-  scrollFunction()
-};
-function scrollFunction(){
-  if(document.body.scrollTop>700||document.documentElement.scrollTop>700){
-    $(".logo").css({'top':'0','z-index':'9999'});
-    $(".logo").addClass('add-cls');
-  }else{
-    $(".logo").css('top', '-100px');
-    $(".logo").removeClass('add-cls');
-  }
-}
-
-
 /*
 -------------------------
   Masonary Js
 -------------------------
 */
-
 if($('#filter-menu').length){
   // init Isotope
   var $container = $('#isotope').isotope({
@@ -221,9 +215,6 @@ $('.navbar-toggle').on('click', function(){
 });
 	
 
-/**
-Responsive on 767px
-*/
 var windowWidth = $(window).width();
 // if (windowWidth <= 767) {
 
@@ -232,15 +223,6 @@ var windowWidth = $(window).width();
     $('.toggle-bar ul').slideToggle(500);
   });
 
-
-// }
-
-
-// http://codepen.io/norman_pixelkings/pen/NNbqgG
-// https://stackoverflow.com/questions/38686650/slick-slides-on-pagination-hover
-
-
-//$("[data-fancybox]").fancybox({});
 
 /**
 Slick slider
@@ -284,10 +266,7 @@ if( $('.responsive-slider').length ){
 }
 
 
-
-
-
-    new WOW().init();
+new WOW().init();
 $(document).ready(function () {
  $('body').addClass('aniLoaded');
 });
@@ -321,7 +300,8 @@ $('.firstLine').onScreen({
 });
 
 window.onscroll=function(){
-  scrollTimeline()
+  scrollTimeline();
+  scrollFunction();
 };
 function scrollTimeline(){
   var mE = $('.middleElement').offset().top;
@@ -348,12 +328,16 @@ function removeLoader(){
   });  
 }
 
-var s = skrollr.init({
-    mobileCheck: function() {
-        return false;
-    },
-    forceHeight: false
-});
+function scrollFunction(){
+  if(document.body.scrollTop>700||document.documentElement.scrollTop>700){
+    $(".logo-fixed").addClass('showingFixedLogo');
+  }else{
+    $(".logo-fixed").removeClass('showingFixedLogo');
+  }
+}
+
+var prpgofstop = $('.product-inr-tab-wrp .img-change-pagi').offset().top;
+$('.prPaginationOutside').css('top', prpgofstop);
 
 })(jQuery);
 

@@ -89,10 +89,31 @@
 </header><!-- end of header -->
 
 <section class="qk-banner-sec-wrp product-inr-prd-tp" id="prInnerBanner">
-  <div class="falvor-icon" data-aos="fade" data-aos-delay="2800" data-aos-duration="800"
-  data-anchor-target="#prInnerBanner" 
-  data-bottom-top="top: 35%;"
-  data-center-bottom="top: -20%"></div>
+
+
+  <div class="btillimg-wrap" data-tilt>
+    <div class="overall-img hide">
+      <img src="assets/images/prinbn.png">
+    </div>
+    <div class="btillimg bimg3">
+      <img class="tilt-effect-no" data-tilt-options='{ "extraImgs" : 0, "bgfixed" : false, "movement": { "translateX" : 20, "translateY" : 20, "translateZ" : 0 } }' src="assets/images/bimg3.png">
+    </div>
+    <div class="btillimg bimg4">
+      <img class="tilt-effect-no" data-tilt-options='{ "extraImgs" : 0, "bgfixed" : false, "movement": { "translateX" : 20, "translateY" : 20, "translateZ" : 0 } }' src="assets/images/bimg4.png">
+    </div>
+    <div class="btillimg bimg6">
+      <img class="tilt-effect-no" data-tilt-options='{ "extraImgs" : 0, "bgfixed" : false, "movement": { "translateX" : 20, "translateY" : 20, "translateZ" : 0 } }' src="assets/images/bimg6.png">
+    </div>
+  </div>
+  <div data-aos="fade" data-aos-delay="2800" data-aos-duration="800" class="btillimg bimg1">
+    <img src="assets/images/bimg1.png">
+  </div>
+  <div data-aos="fade" data-aos-delay="2800" data-aos-duration="800" class="btillimg bimg2" data-aos-delay="2800" data-aos-duration="800" class="btillimg bimg1">
+    <img class="tilt-effect-no" data-tilt-options='{ "extraImgs" : 0, "bgfixed" : false, "movement": { "translateX" : 20, "translateY" : 20, "translateZ" : 0 } }' src="assets/images/bimg2.png">
+  </div>
+  <div data-aos="fade" data-aos-delay="2800" data-aos-duration="800" class="btillimg bimg5">
+    <img src="assets/images/bimg5.png">
+  </div>
   <div class="product-inr-bg-lft"></div>
   <div class="product-inr-bg-rgt"></div>
   <div class="container">
@@ -114,10 +135,10 @@
                 </div>
                 <div class="img-change-pagi">
                     <ol class="ulc">
-                      <li class="img-change-pagi-active img-change-pagi-1">
+                      <li data-pos="1" class="img-change-pagi-active img-change-pagi-1">
                         <span style="background: #ffc03b;"></span>
                       </li>
-                      <li class="img-change-pagi-2">
+                      <li data-pos="2" class="img-change-pagi-2">
                         <span style="background: #711011;"></span>
                       </li>
                     </ol>
@@ -139,7 +160,17 @@
           </div>
         </div>
       </div>
-  </div>    
+  </div>  
+    <div class="img-change-pagi prPaginationOutside">
+      <ol class="ulc">
+        <li data-pos="1" class="img-change-pagi-active img-change-pagi-1">
+          <span style="background: #ffc03b;"></span>
+        </li>
+        <li data-pos="2" class="img-change-pagi-2">
+          <span style="background: #711011;"></span>
+        </li>
+      </ol>
+    </div>  
 </section><!-- end of .qk-banner-sec-wrp -->
 
 
@@ -337,9 +368,14 @@
 <script src="assets/js/jquery.matchHeight-min.js"></script>
 <script src="assets/js/jquery-ui.js"></script>
 <script src="assets/js/wow.min.js"></script>
+<script src="assets/js/masonry.js"></script>
+<script src="assets/js/isotope-2.2.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script src="assets/js/jquery.onscreen.min.js"></script>
 <script src="assets/js/skrollr.min.js"></script>
+<script src="assets/js/imagesloaded.pkgd.min.js"></script>
+<script src="assets/js/demo1.js"></script>
+<script src="assets/js/tilt.jquery.js"></script>
 <script src="assets/js/app.js"></script>
 <script src="assets/js/main.js"></script>
 </body>

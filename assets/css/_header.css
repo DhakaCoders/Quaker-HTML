@@ -265,7 +265,25 @@ nav.main-nav > ul > li.menu-item-has-children:hover > a{
  opacity: 1;
  color: #969696;
 }
-
+.logo-fixed img{
+	max-width: 90px;
+}
+.logo-fixed a{
+	display: inline-block;
+	margin-left: -2px;
+}
+.logo-fixed {
+    position: fixed;
+    top: -120px;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    text-align: center;
+    transition: all 0.4s;
+}
+.logo-fixed.showingFixedLogo{
+	top: 0;
+}
 /*
 -----------------------
  Responsive Css

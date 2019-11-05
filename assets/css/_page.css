@@ -68,7 +68,7 @@
     margin: 0;
     color: #002853;
     font-family: 'PFCatalog-Black';
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .sample-content-wrp ul {
     list-style: none;
@@ -192,9 +192,14 @@
     .sample-content-sec-wrp {
         padding: 70px 0 60px;
     }
+
     .product-hub-prd-tp.normalPage .all-page-heading {
         padding-top: 50px;
         padding-bottom: 50px;
+    }
+    .sample-content-wrp h1 {
+        font-size: 36px;
+        margin-bottom: 15px;
     }
 }
 
@@ -215,7 +220,7 @@
 @media(max-width: 479px){
     .sample-content-wrp h1 {
         font-size: 36px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
 
